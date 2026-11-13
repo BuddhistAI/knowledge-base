@@ -1,0 +1,25 @@
+name: Idea
+description: A question worth an experiment
+title: "Idea: "
+labels: [idea]
+body:
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+      description: What would we learn?
+    validations: {required: true}
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it matters
+  - type: textarea
+    id: method
+    attributes:
+      label: Rough method
+      description: Data, systems and metric, if you know them.
+  - type: input
+    id: folder
+    attributes:
+      label: Experiment folder
+      description: Leave empty until a folder exists, e.g. experiments/2026-12-my-slug/
