@@ -4,7 +4,7 @@ _Draft, 2026-11-13 · Status: Planned, not frozen · Owner: NT_
 
 > **Preregistration.** This plan becomes binding when it is marked _Frozen_ with a date and commit, before the first intervention is published. After that, changes go in [LOG.md](./LOG.md) as dated deviations with reasons. The point is that nobody can say we chose the metric after seeing the results.
 
-The benchmark format, the OpenRouter runner, the search-call logging and the intervention log are designed in [buddhist-bench](https://github.com/BuddhistAI/buddhist-bench) (design doc: _link to add when it lands on main_). This plan does not repeat that design. It fixes the questions, hypotheses and analysis that the design will be used for.
+The benchmark format, the OpenRouter runner, the search-call logging and the intervention log are designed in [buddhist-bench](https://github.com/BuddhistAI/buddhist-bench) ([docs/intervention-study.md](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/docs/intervention-study.md) at `c8fb3d9`). This plan does not repeat that design. It fixes the questions, hypotheses and analysis that the design will be used for.
 
 ## Question
 
@@ -62,9 +62,11 @@ When reliable information about a specific Buddhist text, as taught by specific 
 - [ ] Item set, target/control split, and tradition coverage
 - [ ] Baseline length and follow-up window
 - [ ] First interventions: which sites and languages, in what order
-- [ ] Link to the buddhist-bench design doc and intervention log at a commit
+- [ ] Re-pin the buddhist-bench design links to the commit current at freeze time
 
 ## Links
 
-- Design, schemas and runner: [buddhist-bench](https://github.com/BuddhistAI/buddhist-bench)
+- Design: [docs/intervention-study.md](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/docs/intervention-study.md); results format: [docs/results.md](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/docs/results.md)
+- Intervention log: `studies/<study-id>/interventions.jsonl` ([schema](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/schema/intervention.schema.json)); study design: [study.schema.json](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/schema/study.schema.json); example: [studies/example-37-practices/](https://github.com/BuddhistAI/buddhist-bench/tree/c8fb3d9/studies/example-37-practices)
+- Scripts: [openrouter_run.py](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/scripts/openrouter_run.py) (runner), [analyze_study.py](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/scripts/analyze_study.py) (analysis), [check_interventions.py](https://github.com/BuddhistAI/buddhist-bench/blob/c8fb3d9/scripts/check_interventions.py) (liveness checks)
 - Related: [BuddhistBench design](https://github.com/BuddhistAI/buddhist-bench/blob/main/docs/design.md)
