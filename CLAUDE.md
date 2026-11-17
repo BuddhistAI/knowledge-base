@@ -9,3 +9,4 @@
 - Workflow pages are semver-versioned in `version`; `source_version` is the owner's own version.
 - Experiments: write PLAN.md before running and never edit it after the start (log deviations in LOG.md); numbers in a report must link to a results file at an exact commit or version. Keep the table in `experiments/README.md` current.
 - Plain English: many readers are non-native speakers. Short, literal sentences, no idioms.
+- `handbook/` is the maintainer and developer handbook (mission, rules, architecture, conventions, how-to guides, status and roadmap). When you change how any BuddhistAI repo, site, workflow or rule works, update the handbook in the same PR. Keep `handbook/status.md` current.

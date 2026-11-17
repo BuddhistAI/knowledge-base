@@ -71,6 +71,10 @@ We have no workflows or tasks yet for these areas. If your project does this wor
 - Centers and projects: newsletters, event planning, volunteer coordination, grant writing.
 - Personal AI setups: the Claude or ChatGPT files, projects and instructions you use day to day.
 
+## For maintainers
+
+The **[Project handbook](handbook/README.md)** has everything needed to keep building BuddhistAI: mission and rules, every repo and site, conventions, how-to guides (run an evaluation, update the leaderboard, promote a winner), notes for the leaderboard app and arena, and the current status, decisions and roadmap.
+
 ## Related repos
 
 - [buddhist-benchmarks](https://github.com/BuddhistAI/buddhist-benchmarks): tasks, test data, scorers and the [leaderboard](https://buddhistai.github.io/buddhist-benchmarks/) for models and skills.
