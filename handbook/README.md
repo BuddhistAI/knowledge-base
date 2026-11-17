@@ -1,5 +1,6 @@
 ---
 title: Project handbook
+permalink: /handbook/
 summary: Everything a maintainer or developer needs to keep building BuddhistAI.
 ---
 
