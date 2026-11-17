@@ -1,0 +1,27 @@
+name: Re-run
+description: Run an experiment again after data, a skill or a model changed
+title: "Re-run: "
+labels: [re-run]
+body:
+  - type: input
+    id: folder
+    attributes:
+      label: Experiment folder
+      placeholder: experiments/2026-11-toc-tibetan-skills/
+    validations: {required: true}
+  - type: textarea
+    id: trigger
+    attributes:
+      label: What changed
+      description: New benchmark version, skill version or model, with links.
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes:
+      label: What to re-run
+      description: Systems, models, number of runs.
+    validations: {required: true}
+  - type: textarea
+    id: blocked
+    attributes:
+      label: Blocked on
