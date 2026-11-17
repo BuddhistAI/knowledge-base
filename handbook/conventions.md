@@ -67,6 +67,7 @@ Everything that is scored has a semantic version (`MAJOR.MINOR.PATCH`).
 - Imported data keeps its own license, and that license must be compatible with MIT (for example the Thai exam set is Apache-2.0). Non-commercial licenses (such as CC-BY-NC-SA) cannot be imported; link to the set instead.
 - **Copy, do not use submodules.** Add a `SOURCE.md` next to the copy with the source URL, the pinned revision, the license and the date. Mark published sets `contamination: public` (they may be in model training data).
 - A linked workflow stays in its owner's document. Summarize it in our own words and link to it; never copy it.
+- Language pages: every fact has a source; mark evidence as benchmark, vendor claim or anecdotal; give the year of each test; never compare chrF++ or BLEU scores across languages.
 - Directory entries: verify every link, never invent one, describe without ranking, and write "license not stated" when you cannot find the license.
 
 ## Design system

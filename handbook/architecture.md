@@ -32,7 +32,7 @@ All repos are in the [BuddhistAI GitHub org](https://github.com/BuddhistAI), pub
 | [.github](https://github.com/BuddhistAI/.github) | Org profile (`profile/README.md`, banners in `profile/assets/`), org-wide `CODE_OF_CONDUCT.md`. | [github.com/BuddhistAI](https://github.com/BuddhistAI) |
 | [buddhistai.github.io](https://github.com/BuddhistAI/buddhistai.github.io) | The homepage. One self-contained `index.html` (inline CSS and JS). Scores on it are copied by hand from the leaderboard. | https://buddhistai.github.io/ |
 | [design](https://github.com/BuddhistAI/design) | Design system: `tokens.json` (source of truth), generated `buddhistai.css`, `tailwind.preset.js`, `tokens.js`, logos, banners, `VOICE.md`. | https://buddhistai.github.io/design/ |
-| [knowledge-base](https://github.com/BuddhistAI/knowledge-base) | This site: task definitions, workflows, experiments, the Directory, and this handbook. Jekyll on GitHub Pages. Was called `wiki`; the old `research` repo was merged in. | https://buddhistai.github.io/knowledge-base/ |
+| [knowledge-base](https://github.com/BuddhistAI/knowledge-base) | This site: task definitions, workflows, experiments, the Directory, the Languages pages (AI resources per Buddhist language and a country overview), and this handbook. Jekyll on GitHub Pages. Was called `wiki`; the old `research` repo was merged in. | https://buddhistai.github.io/knowledge-base/ |
 | [buddhist-benchmarks](https://github.com/BuddhistAI/buddhist-benchmarks) | Hub for task benchmarks: `tasks/index.json`, per task `TASK.md`, scorer, data, results; `models.json` (prices); `external.json` (other groups' leaderboards); `STATE.md`; `SUBMIT.md`. Builds the leaderboard site. | https://buddhistai.github.io/buddhist-benchmarks/ |
 | [buddhist-bench](https://github.com/BuddhistAI/buddhist-bench) | BuddhistBench: a Q&A benchmark of Buddhist knowledge (tracks by tradition, text and exam; language as an axis). Also the OpenRouter runner and the intervention study. Version 0.4.0, examples plus one imported set. | Shown on the leaderboard site |
 | [buddhist-skills](https://github.com/BuddhistAI/buddhist-skills) | The shelf: only released (promoted) skills in `skills/`, challengers in `drafts/`, unmeasured shared entries in `community/`, shared glossaries in `shared/`. Builds the Claude plugin marketplace. | Installed as a plugin |
@@ -77,6 +77,7 @@ The Skills and Benchmarks boards are public, for contributors. The Development b
 | buddhist-skills | [Report a problem](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=problem.yml) | `bug` | Fix or route. |
 | buddhist-benchmarks | [Propose a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=propose-benchmark.yml) | `benchmark` | Discuss, then add the task and data ([how-to](how-to.md#add-a-benchmark)). |
 | knowledge-base | Add to the Directory | `directory` | Verify the link, add a YAML entry. |
+| knowledge-base | Update a language page | (edit link) | Edit `languages/<id>.md`; each fact needs a source. |
 | knowledge-base | Share a workflow | `workflow` | Write a workflow page, credit the owner. |
 | knowledge-base | Suggest a task | `task` | Write a task page and a `planned` entry in `tasks/index.json`. |
 | knowledge-base | Idea (experiment) | `idea` | Discuss; if it goes ahead, write `PLAN.md`. |

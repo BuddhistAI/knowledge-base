@@ -1,9 +1,10 @@
-"""Regenerate the index tables in README.md, the "Found in workflows" list on each task page, and the directory page."""
+"""Regenerate the index tables in README.md, the "Found in workflows" list on each task page, the directory page, and the Languages tables."""
 import re
 import sys
 
 from pages import ROOT, load
 import directory
+import languages
 
 START, END = "<!-- index:start -->", "<!-- index:end -->"
 U_START, U_END = "<!-- used-in:start -->", "<!-- used-in:end -->"
@@ -53,6 +54,7 @@ def build():
     text = page.read_text(encoding="utf-8")
     block = directory.render({tid: t["meta"]["title"] for tid, t in tasks.items()})
     out[page] = re.sub(re.escape(directory.START) + ".*?" + re.escape(directory.END), lambda m: block, text, flags=re.S)
+    languages.build(out)
     return out
 
 
