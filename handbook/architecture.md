@@ -25,11 +25,12 @@ workflows → tasks → benchmarks → results → leaderboards → best skills
 
 ## Repos
 
-All repos are in the [BuddhistAI GitHub org](https://github.com/BuddhistAI), public, MIT licensed. Each has a `README.md`. The main repos also have a `CLAUDE.md` / `AGENTS.md` with their rules and a `scripts/check.py` that CI runs. The homepage and toc-extraction-tibetan have no CI.
+All repos are in the [BuddhistAI GitHub org](https://github.com/BuddhistAI), public, MIT licensed. Each has a `README.md` and a `CLAUDE.md` / `AGENTS.md` that starts with the same "Start here" block (read this handbook, check the Development board, the core rules) followed by the repo's own rules. The main repos also have a `scripts/check.py` that CI runs. The homepage and toc-extraction-tibetan have no CI.
 
 | Repo | Role | Site |
 | --- | --- | --- |
-| [.github](https://github.com/BuddhistAI/.github) | Org profile (`profile/README.md`, banners in `profile/assets/`), org-wide `CODE_OF_CONDUCT.md`. | [github.com/BuddhistAI](https://github.com/BuddhistAI) |
+| [.github](https://github.com/BuddhistAI/.github) | Org profile (`profile/README.md`, banners in `profile/assets/`), org-wide `CODE_OF_CONDUCT.md`, the standard agent notes (`agent-notes/CLAUDE.md`) and the weekly `agent-notes` workflow. | [github.com/BuddhistAI](https://github.com/BuddhistAI) |
+| [template-skill-repo](https://github.com/BuddhistAI/template-skill-repo), [template-benchmark](https://github.com/BuddhistAI/template-benchmark) | GitHub template repos for new skill repos and new benchmark repos ([how-to](how-to.md#create-a-new-repo)). Not created yet: content ready, waiting for NT to create the repos (2026-11-17). | — |
 | [buddhistai.github.io](https://github.com/BuddhistAI/buddhistai.github.io) | The homepage. One self-contained `index.html` (inline CSS and JS). Scores on it are copied by hand from the leaderboard. | https://buddhistai.github.io/ |
 | [design](https://github.com/BuddhistAI/design) | Design system: `tokens.json` (source of truth), generated `buddhistai.css`, `tailwind.preset.js`, `tokens.js`, logos, banners, `VOICE.md`. | https://buddhistai.github.io/design/ |
 | [knowledge-base](https://github.com/BuddhistAI/knowledge-base) | This site: task definitions, workflows, experiments, the Directory, the Languages pages (AI resources per Buddhist language and a country overview), and this handbook. Jekyll on GitHub Pages. Was called `wiki`; the old `research` repo was merged in. | https://buddhistai.github.io/knowledge-base/ |
@@ -109,6 +110,7 @@ Categories: Announcements (maintainers only), Introductions, Find the best AI (Q
 | buddhist-bench | `hf-sync` | `VERSION` changes on `main`, `v*` tag, manual | Checks, tags `vX.Y.Z`, publishes public splits to `BuddhistAI/buddhist-bench`. |
 | buddhist-bench | `daily` | Daily 03:00 UTC | Intervention-study runs on OpenRouter. Skips cleanly without keys. |
 | buddhist-bench | `import-nak-tham` | Manual | Imports the Thai exam set from Hugging Face (Actions can reach Hugging Face when a container cannot). |
+| .github | `agent-notes` | Mondays 04:23 UTC, manual | Opens a pull request adding the standard `CLAUDE.md` and `AGENTS.md` (from `agent-notes/CLAUDE.md`) to every org repo that has none. Needs `ORG_REPOS_TOKEN`. |
 
 Tags pushed by `GITHUB_TOKEN` do not start other workflows. That is why `hf-sync` runs on `workflow_run` after `leaderboards`.
 
@@ -128,6 +130,7 @@ Never commit a key. Repo or org secrets are set by NT in GitHub Settings → Sec
 
 | Secret | Used by | Status (2026-11-17) |
 | --- | --- | --- |
+| `ORG_REPOS_TOKEN` | `agent-notes` in BuddhistAI/.github (opens PRs in other org repos) | **Not set.** Fine-grained token, resource owner BuddhistAI, all repositories, permissions Contents: read and write, Pull requests: read and write. Without it the workflow only lists the repos that need notes. |
 | `HF_TOKEN` | `hf-sync` in buddhist-benchmarks and buddhist-bench | Set. Write token of the BuddhistAI Hugging Face org. |
 | `OPENROUTER_API_KEY` | buddhist-bench runner and `daily` workflow | **Not set.** Needed for live model runs. Dave offered sponsor keys. |
 | `BRAVE_API_KEY` | buddhist-bench `logged-search` mode | **Not set.** |
@@ -142,4 +145,4 @@ Automatic scoring of submissions (planned) will need an inference key as a secre
 - **Access model** (written 2026-11-17, see [Governance](../governance.md#adding-people-and-organizations)): anyone contributes by fork and pull request or the forms. A partner organization gets a team `@BuddhistAI/<org>-team` with Write only on its own task repos (optional Triage on buddhist-skills and buddhist-benchmarks, and CODEOWNERS lines for its language). Only a **Maintainers** team has write access to the core repos (buddhist-skills, buddhist-benchmarks, buddhistai.github.io, design, knowledge-base, .github). Releases into buddhist-skills happen only through the leaderboard.
 - **Teams (2026-11-17):** `Maintainers` (`@BuddhistAI/maintainers`) and `WeBuddhist` (`@BuddhistAI/webuddhist`) exist; NT is in both; no repo permissions given to either yet.
 - **Not set up yet** (NT decided on 2026-11-17 to document now and set up when the first partner team joins): Maintainers access on the core repos, member base permission check (must be Read), and a branch rule on `main` of each core repo requiring a pull request with one code-owner review. Today nobody outside NT and Claude sessions has write access, and they push to `main` directly.
-- Creating a new repo needs an org owner (NT) in the GitHub UI.
+- Creating a new repo needs an org owner (NT) in the GitHub UI. Always start from a template ([how-to](how-to.md#create-a-new-repo)).

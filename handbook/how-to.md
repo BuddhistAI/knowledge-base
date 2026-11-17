@@ -9,6 +9,7 @@ summary: Step-by-step guides for the regular maintainer jobs in BuddhistAI.
 
 Each guide lists the repo, the steps and the check to run. In every repo: run `python3 scripts/build.py` (where it exists), then `python3 scripts/check.py`, before you push. CI runs the same check.
 
+- [Create a new repo](#create-a-new-repo)
 - [Run an evaluation](#run-an-evaluation)
 - [Add a result and update the leaderboard](#add-a-result-and-update-the-leaderboard)
 - [Promote a winner to buddhist-skills](#promote-a-winner-to-buddhist-skills)
@@ -27,6 +28,20 @@ Each guide lists the repo, the steps and the check to run. In every repo: run `p
 - [Handle an expert review](#handle-an-expert-review)
 - [Handle a compute or API credit donation](#handle-a-compute-or-api-credit-donation)
 - [Post news](#post-news)
+
+## Create a new repo
+
+**Always create a new BuddhistAI repo from a template**, so it starts with the agent notes (`CLAUDE.md`, `AGENTS.md`), the license, CI and the right layout.
+
+| New repo for | Template | Name it |
+| --- | --- | --- |
+| One skill (a workshop repo: variants, runs, provenance) | [BuddhistAI/template-skill-repo](https://github.com/BuddhistAI/template-skill-repo) | `<task>-<language>`, for example `segmentation-tibetan` |
+| One benchmark (test data, scorer, maturity level) | [BuddhistAI/template-benchmark](https://github.com/BuddhistAI/template-benchmark) | `<task>-<language>-benchmark` |
+| Anything else | Start empty, then copy `CLAUDE.md` from [BuddhistAI/.github `agent-notes/`](https://github.com/BuddhistAI/.github/tree/main/agent-notes) | — |
+
+Steps: on GitHub, **New repository → Repository template →** pick the template, owner BuddhistAI, public. Then replace every `<task>`, `<language>` and `<code>`, write the repo's own line in `CLAUDE.md` and `AGENTS.md` ("This repo: ..."), and add the repo to the [Architecture](architecture.md#repos) table.
+
+A safety net: the weekly `agent-notes` workflow in BuddhistAI/.github opens a pull request in any org repo that has no `CLAUDE.md` ([Architecture](architecture.md#ci-workflows)).
 
 ## Run an evaluation
 
