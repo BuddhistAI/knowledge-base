@@ -1,182 +1,264 @@
 # Culturally Buddhist countries and regions.
 # Each "buddhists" figure comes from the "source" URL on the same item.
 # "not verified" means we found no reliable figure.
+# iso is the ISO 3166-1 numeric code; buddhists_n is the number of Buddhists drawn on the map (Pew 2020; count_source when the count is our estimate).
 # Figures use different methods (census, survey, estimate). Do not compare them as one series.
-
-# South Asia and the Himalayas
-
 - name: Bhutan
   region: South Asia and the Himalayas
-  buddhists: "about 75% (2020)"
+  buddhists: about 75% (2020); the count is our estimate from the Pew share and population
   traditions: Vajrayana (Drukpa Kagyu, Nyingma)
-  languages: [tibetan, dzongkha, himalayan-tibetic]
+  languages:
+  - tibetan
+  - dzongkha
+  - himalayan-tibetic
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '064'
+  buddhists_n: 580000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Tibet (Tibet Autonomous Region and Tibetan areas of China)
   region: South Asia and the Himalayas
   buddhists: not verified
   traditions: Vajrayana (Gelug, Kagyu, Nyingma, Sakya)
-  languages: [tibetan, sanskrit, chinese]
+  languages:
+  - tibetan
+  - sanskrit
+  - chinese
   source: https://en.wikipedia.org/wiki/Buddhism_by_country
-
 - name: Tibetan diaspora (India and Nepal)
   region: South Asia and the Himalayas
-  buddhists: "about 94,200 Tibetans in India and 13,500 in Nepal (2009 survey of Tibetans in exile; counts people, not religion)"
+  buddhists: about 94,200 Tibetans in India and 13,500 in Nepal (2009 survey of Tibetans in exile; counts people, not religion)
   traditions: Vajrayana (Gelug, Kagyu, Nyingma, Sakya)
-  languages: [tibetan, sanskrit]
+  languages:
+  - tibetan
+  - sanskrit
   source: https://en.wikipedia.org/wiki/Tibetan_diaspora
-
 - name: Ladakh and Himalayan India
   region: South Asia and the Himalayas
-  buddhists: "about 66% in Leh district, Ladakh (2011 census)"
+  buddhists: about 66% in Leh district, Ladakh (2011 census)
   traditions: Vajrayana (Drikung Kagyu, Drukpa Kagyu, Gelug; Nyingma and Karma Kagyu in Sikkim)
-  languages: [tibetan, himalayan-tibetic, nepali]
+  languages:
+  - tibetan
+  - himalayan-tibetic
+  - nepali
   source: https://www.census2011.co.in/data/religion/district/621-leh.html
-
 - name: Nepal
   region: South Asia and the Himalayas
-  buddhists: "8.2%, about 2.39 million (2021 census)"
+  buddhists: 8.2%, about 2.39 million (2021 census); the count is our estimate from the Pew share and population
   traditions: Vajrayana (Tibetan schools and Newar Buddhism); Theravada revival
-  languages: [sanskrit, tibetan, pali, nepali, newari, himalayan-tibetic]
+  languages:
+  - sanskrit
+  - tibetan
+  - pali
+  - nepali
+  - newari
+  - himalayan-tibetic
   source: https://theprint.in/world/nepals-81-19-per-cent-population-is-hindu-even-as-followers-of-hinduism-buddhism-decline-and-islam-christians-increase/1611622
-
+  iso: '524'
+  buddhists_n: 2380000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Sri Lanka
   region: South Asia and the Himalayas
-  buddhists: "about 70% (2020)"
+  buddhists: about 70% (2020)
   traditions: Theravada
-  languages: [pali, sinhala]
+  languages:
+  - pali
+  - sinhala
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
-# Mainland Southeast Asia
-
+  iso: '144'
+  buddhists_n: 15700000
 - name: Myanmar
   region: Mainland Southeast Asia
-  buddhists: "about 89% (2020)"
+  buddhists: about 89% (2020)
   traditions: Theravada
-  languages: [pali, burmese]
+  languages:
+  - pali
+  - burmese
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '104'
+  buddhists_n: 47210000
 - name: Thailand
   region: Mainland Southeast Asia
-  buddhists: "about 94%, 68 million (2020)"
+  buddhists: about 94%, 68 million (2020)
   traditions: Theravada (Maha Nikaya, Dhammayuttika Nikaya)
-  languages: [pali, thai]
+  languages:
+  - pali
+  - thai
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '764'
+  buddhists_n: 67620000
 - name: Laos
   region: Mainland Southeast Asia
-  buddhists: "about 64% (2020)"
+  buddhists: about 64% (2020); the count is our estimate from the Pew share and population
   traditions: Theravada
-  languages: [pali, lao]
+  languages:
+  - pali
+  - lao
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '418'
+  buddhists_n: 4720000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Cambodia
   region: Mainland Southeast Asia
-  buddhists: "about 97% (2020)"
+  buddhists: about 97% (2020)
   traditions: Theravada
-  languages: [pali, khmer]
+  languages:
+  - pali
+  - khmer
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '116'
+  buddhists_n: 16240000
 - name: Vietnam
   region: Mainland Southeast Asia
-  buddhists: "about 23% (2020, Pew estimate as reported by Wikipedia)"
+  buddhists: about 23% (2020, Pew estimate as reported by Wikipedia)
   traditions: Mahayana (Thien/Zen, Pure Land); Theravada among Khmer Krom
-  languages: [classical-chinese, pali, vietnamese, khmer]
+  languages:
+  - classical-chinese
+  - pali
+  - vietnamese
+  - khmer
   source: https://en.wikipedia.org/wiki/Buddhism_by_country
-
-# East Asia
-
+  iso: '704'
+  buddhists_n: 22580000
 - name: China (mainland)
   region: East Asia
-  buddhists: "about 4%, 53 million (2020)"
+  buddhists: about 4%, 53 million (2020)
   traditions: Mahayana (Chan, Pure Land, Tiantai, Huayan)
-  languages: [classical-chinese, chinese]
+  languages:
+  - classical-chinese
+  - chinese
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '156'
+  buddhists_n: 53380000
 - name: Taiwan
   region: East Asia
-  buddhists: "about a quarter of adults (2023 survey)"
+  buddhists: about a quarter of adults (2023 survey); the count is our estimate from the Pew share and population
   traditions: Mahayana (Pure Land, Chan, humanistic Buddhism)
-  languages: [classical-chinese, chinese]
+  languages:
+  - classical-chinese
+  - chinese
   source: https://www.pewresearch.org/short-reads/2024/07/29/4-facts-about-religion-and-diversity-in-taiwan/
-
+  iso: '158'
+  buddhists_n: 4540000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Hong Kong
   region: East Asia
-  buddhists: "more than 1 million followers (2016 government fact sheet)"
+  buddhists: more than 1 million followers (2016 government fact sheet); the count is our estimate from the Pew share and population
   traditions: Mahayana (Chan, Pure Land)
-  languages: [classical-chinese, chinese]
+  languages:
+  - classical-chinese
+  - chinese
   source: https://www.cstb.gov.hk/file_manager/en/documents/consultation-and-publications/hong_kong_fact_sheets.pdf
-
+  iso: '344'
+  buddhists_n: 630000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Japan
   region: East Asia
-  buddhists: "about 37% (2020, Pew estimate as reported by Wikipedia)"
+  buddhists: about 37% (2020, Pew estimate as reported by Wikipedia)
   traditions: Mahayana (Pure Land, Zen, Nichiren, Shingon, Tendai)
-  languages: [classical-chinese, japanese]
+  languages:
+  - classical-chinese
+  - japanese
   source: https://en.wikipedia.org/wiki/Buddhism_by_country
-
+  iso: '392'
+  buddhists_n: 46990000
 - name: South Korea
   region: East Asia
-  buddhists: "about 19% (2020)"
+  buddhists: about 19% (2020)
   traditions: Mahayana (Seon/Zen, mainly the Jogye Order)
-  languages: [classical-chinese, korean]
+  languages:
+  - classical-chinese
+  - korean
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
-# Inner Asia and Russia
-
+  iso: '410'
+  buddhists_n: 9850000
 - name: Mongolia
   region: Inner Asia and Russia
-  buddhists: "about 51% (2020)"
+  buddhists: about 51% (2020); the count is our estimate from the Pew share and population
   traditions: Vajrayana (mainly Gelug)
-  languages: [tibetan, mongolian]
+  languages:
+  - tibetan
+  - mongolian
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
-
+  iso: '496'
+  buddhists_n: 1680000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Inner Mongolia (China)
   region: Inner Asia and Russia
   buddhists: not verified
   traditions: Vajrayana (mainly Gelug)
-  languages: [tibetan, mongolian, chinese]
+  languages:
+  - tibetan
+  - mongolian
+  - chinese
   source: https://en.wikipedia.org/wiki/Buddhism_by_country
-
 - name: Buryatia (Russia)
   region: Inner Asia and Russia
-  buddhists: "about 20% (2012 survey)"
+  buddhists: about 20% (2012 survey)
   traditions: Vajrayana (mainly Gelug)
-  languages: [tibetan, buryat, mongolian]
+  languages:
+  - tibetan
+  - buryat
+  - mongolian
   source: https://en.wikipedia.org/wiki/Buryatia
-
 - name: Kalmykia (Russia)
   region: Inner Asia and Russia
-  buddhists: "about 48% (2012 survey)"
+  buddhists: about 48% (2012 survey)
   traditions: Vajrayana (mainly Gelug)
-  languages: [tibetan, kalmyk]
+  languages:
+  - tibetan
+  - kalmyk
   source: https://en.wikipedia.org/wiki/Kalmykia
-
 - name: Tuva (Russia)
   region: Inner Asia and Russia
-  buddhists: "about 62% (2012 survey)"
+  buddhists: about 62% (2012 survey)
   traditions: Vajrayana (mainly Gelug)
-  languages: [tibetan, tuvan]
+  languages:
+  - tibetan
+  - tuvan
   source: https://en.wikipedia.org/wiki/Tuva
-
-# Other countries with large Buddhist communities
-
+- name: Russia (overall)
+  region: Inner Asia and Russia
+  buddhists: about 0.4% (2020); about 590,000 is our estimate from the Pew share and population
+  traditions: Vajrayana (mainly Gelug), mostly in Buryatia, Kalmykia and Tuva
+  languages:
+  - tibetan
+  - buryat
+  - kalmyk
+  - tuvan
+  source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
+  iso: '643'
+  buddhists_n: 590000
 - name: Singapore
   region: Other countries with large Buddhist communities
-  buddhists: "31.1% of residents aged 15 and over (2020 census)"
+  buddhists: 31.1% of residents aged 15 and over (2020 census); the count is our estimate from the Pew share and population
   traditions: Mahayana (Chinese schools); also Theravada and Vajrayana
-  languages: [classical-chinese, pali, chinese]
+  languages:
+  - classical-chinese
+  - pali
+  - chinese
   source: https://www.singstat.gov.sg/-/media/files/publications/cop2020/sr1/executive-summary.pdf
-
+  iso: '702'
+  buddhists_n: 1730000
+  count_source: https://www.pewresearch.org/wp-content/uploads/sites/20/2025/06/PR_2025.06.09_global-religious-change_appendix-b.pdf
 - name: Malaysia
   region: Other countries with large Buddhist communities
-  buddhists: "18.7% (2020 census)"
+  buddhists: 18.7% (2020 census)
   traditions: Mahayana (Chinese schools); also Theravada and Vajrayana
-  languages: [classical-chinese, pali, chinese]
+  languages:
+  - classical-chinese
+  - pali
+  - chinese
   source: https://www.sinardaily.my/ampArticle/171461
-
+  iso: '458'
+  buddhists_n: 6400000
 - name: India (overall)
   region: Other countries with large Buddhist communities
-  buddhists: "about 10 million, less than 1% (2020)"
+  buddhists: about 10 million, less than 1% (2020)
   traditions: Navayana (Ambedkarite Buddhism, mainly in Maharashtra); Vajrayana in the Himalayas; Theravada
-  languages: [pali, sanskrit, tibetan]
+  languages:
+  - pali
+  - sanskrit
+  - tibetan
   source: https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/
+  iso: '356'
+  buddhists_n: 9550000

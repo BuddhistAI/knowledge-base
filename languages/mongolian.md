@@ -6,6 +6,10 @@ group: Mongolic and Turkic
 countries: [Mongolia, China, Russia]
 scripts: [Cyrillic, Traditional Mongolian, Clear Script]
 speakers: about 5 million native speakers (2020 to 2022; Wikipedia [1])
+speakers_n: 5000000
+speakers_year: 2022
+speakers_source: https://en.wikipedia.org/wiki/Mongolian_language
+speakers_basis: first-language speakers
 directory_names: [Mongolian, Classical Mongolian]
 resource_level: medium
 google_translate: yes (Cyrillic only)

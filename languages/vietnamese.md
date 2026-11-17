@@ -6,6 +6,9 @@ group: Japanese, Korean, Vietnamese
 countries: [Vietnam]
 scripts: [Latin (Quốc ngữ), Hán-Nôm]
 speakers: about 97 million (Ethnologue 2026)
+speakers_n: 97000000
+speakers_year: 2024
+speakers_source: https://en.wikipedia.org/wiki/Vietnamese_language
 directory_names: [Vietnamese, Hán-Nôm]
 resource_level: high
 google_translate: yes (Translation LLM and NMT)

@@ -6,6 +6,9 @@ group: Southeast Asian
 countries: [Cambodia]
 scripts: [Khmer]
 speakers: about 21 million incl. second-language speakers (2019 and 2024; Wikipedia, no source named [1])
+speakers_n: 21000000
+speakers_year: 2024
+speakers_source: https://en.wikipedia.org/wiki/Khmer_language
 directory_names: [Khmer]
 resource_level: medium
 google_translate: yes

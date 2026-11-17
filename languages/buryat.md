@@ -6,6 +6,10 @@ group: Mongolic and Turkic
 countries: [Russia, Mongolia, China]
 scripts: [Cyrillic]
 speakers: 130,500 to 440,000; sources disagree (2010 census and Wikipedia infobox [1])
+speakers_n: 440000
+speakers_year: 2020
+speakers_source: https://en.wikipedia.org/wiki/Buryat_language
+speakers_basis: first-language speakers
 directory_names: [Buryat]
 resource_level: very low
 google_translate: yes (since 2024)

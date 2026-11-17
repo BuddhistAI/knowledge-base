@@ -5,7 +5,10 @@ kind: modern
 group: Tibetic
 countries: [Bhutan]
 scripts: [Tibetan]
-speakers: not verified
+speakers: about 640,000 including second-language speakers (2013, via Wikipedia; weak source)
+speakers_n: 640000
+speakers_year: 2013
+speakers_source: https://en.wikipedia.org/wiki/Dzongkha
 directory_names: [Dzongkha]
 resource_level: low
 google_translate: yes (since 2024)
@@ -24,7 +27,7 @@ Dzongkha is the national language of Bhutan [1]. AI support is new and small. Go
 | | |
 | --- | --- |
 | Where | Bhutan |
-| Speakers | not verified |
+| Speakers | about 640,000 including second-language speakers (2013, via Wikipedia; weak source) [14] |
 | Script | Tibetan script |
 | AI resources | low |
 | Google Translate | yes, added in June 2024 [2]; in the Cloud API as NMT only [3] |
@@ -112,3 +115,4 @@ None listed yet.
 11. [MADLAD-400 README](https://huggingface.co/datasets/allenai/MADLAD-400/blob/f8e5ab9b4c80d211822840f9e1f3fe8079bea053/README.md?code=true), read 2026-11-17
 12. [NLLB-200 1.3B model card](https://huggingface.co/facebook/nllb-200-1.3B/raw/main/README.md), read 2026-11-17
 13. [Copy of the NLLB-200 metrics file (Mara4444/MSc_Thesis)](https://raw.githubusercontent.com/Mara4444/MSc_Thesis/main/datasets/others/nllb_metrics.csv), read 2026-11-17
+14. [Wikipedia, Dzongkha](https://en.wikipedia.org/wiki/Dzongkha), read 2026-11-17.

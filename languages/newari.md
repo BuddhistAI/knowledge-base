@@ -1,11 +1,16 @@
 ---
 id: newari
 title: Newari (Nepal Bhasa)
+short_title: Newari
 kind: classical and modern
 group: Indic
 countries: [Nepal]
 scripts: [Devanagari, Ranjana, Newar (Nepal Lipi)]
 speakers: about 880,000 native speakers (2021 census; Wikipedia [1])
+speakers_n: 880000
+speakers_year: 2021
+speakers_source: https://en.wikipedia.org/wiki/Newar_language
+speakers_basis: first-language speakers
 directory_names: [Newari]
 resource_level: low
 google_translate: yes (since 2024)

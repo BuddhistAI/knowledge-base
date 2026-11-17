@@ -6,6 +6,10 @@ group: Southeast Asian
 countries: [Laos, Thailand]
 scripts: [Lao, Tham]
 speakers: about 3.7 million first language and 0.8 million second language (2015; Wikipedia, no source named [1])
+speakers_n: 3700000
+speakers_year: 2015
+speakers_source: https://en.wikipedia.org/wiki/Lao_language
+speakers_basis: first-language speakers
 directory_names: [Lao]
 resource_level: medium
 google_translate: yes

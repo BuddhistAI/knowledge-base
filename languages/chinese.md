@@ -6,6 +6,10 @@ group: Chinese
 countries: [China, Taiwan, Hong Kong, Singapore, Malaysia]
 scripts: [Simplified Chinese, Traditional Chinese]
 speakers: Mandarin about 1.18 billion and Cantonese about 86 million (Ethnologue 2026)
+speakers_n: 1264000000
+speakers_year: 2022 and 2023
+speakers_source: https://en.wikipedia.org/wiki/Mandarin_Chinese
+speakers_basis: Mandarin and Cantonese added together
 directory_names: [Chinese, Cantonese]
 resource_level: high
 google_translate: yes (Simplified and Traditional; Cantonese NMT only)

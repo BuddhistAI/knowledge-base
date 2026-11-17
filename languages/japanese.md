@@ -6,6 +6,10 @@ group: Japanese, Korean, Vietnamese
 countries: [Japan]
 scripts: [Kanji, Hiragana, Katakana]
 speakers: about 126 million (Ethnologue 2026)
+speakers_n: 123000000
+speakers_year: 2020
+speakers_source: https://en.wikipedia.org/wiki/Japanese_language
+speakers_basis: first-language speakers
 directory_names: [Japanese]
 resource_level: high
 google_translate: yes (Translation LLM and NMT)

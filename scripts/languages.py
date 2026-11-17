@@ -7,6 +7,7 @@ import re
 
 import yaml
 
+import charts
 import directory
 from pages import ROOT, parse
 
@@ -63,12 +64,16 @@ def check():
         if not re.fullmatch(r"\d{4}-\d{2}", m.get("updated", "")):
             errors.append(f"{where}: updated must be YYYY-MM")
         errors += [f"{where}: missing section {s!r}" for s in SECTIONS if s not in l["body"]]
+        if m.get("speakers_n") and charts.number(m["speakers_n"]) is None:
+            errors.append(f"{where}: speakers_n must be a whole number")
         if D_START not in l["body"]:
             errors.append(f"{where}: missing {D_START} block")
     for c in countries():
         where = f"languages/countries.yml ({c.get('name', '?')})"
         errors += [f"{where}: missing '{k}'" for k in COUNTRY_KEYS if k not in c]
         errors += [f"{where}: language {x!r} has no page in languages/" for x in c.get("languages", []) if x not in langs]
+        if c.get("buddhists_n") not in (None, "") and charts.number(c["buddhists_n"]) is None:
+            errors.append(f"{where}: buddhists_n must be a whole number")
         if not str(c.get("source", "")).startswith("https://"):
             errors.append(f"{where}: source must be a https link")
     return errors
@@ -82,7 +87,27 @@ def cell(text):
 
 def render_index():
     langs = load()
-    lines = [START, "## Languages", "",
+    svg, missing = charts.speakers_chart({lid: l["meta"] for lid, l in langs.items()})
+    lines = [START, "## Where help reaches the most people", "",
+             "This chart compares how many people speak each language with how much AI support the language has. "
+             "A language in the shaded area has many speakers but weak AI. Work there (a benchmark, a dataset, a reviewed glossary "
+             "or a tested skill) can help the most people. Hover or tab to a dot to see the numbers, and click it to open the page.", "",
+             "What the chart shows (November 2026):", "",
+             "- **Tibetan** is the largest language with weak AI support: about 6 million speakers. Newari and Dzongkha follow, with less than 1 million each.",
+             "- Buryat, Tuvan, Kalmyk and the Himalayan languages are small (under 500,000 speakers each) and have almost no AI support. Here a small dataset or test already makes a large difference for the community, but it reaches fewer people.",
+             "- Burmese, Nepali, Khmer, Sinhala, Lao and Mongolian have medium AI support and together about 125 million speakers. A Buddhist glossary and a small translation test for each could improve quality for many people.",
+             "- The classical languages (Pali, Sanskrit, Classical Chinese) are not on the chart. They matter as source languages for translation, not by number of speakers.", "",
+             f'<figure class="chart-fig">{svg}<figcaption>Speakers are first-language and second-language speakers where the source gives both. '
+             "Sources and years are on each language page. Speakers are not the same as Buddhists: for example, most Chinese speakers are not Buddhist, "
+             "and the map below shows Buddhists by country. "
+             + (f"Not shown, because there is no reliable speaker count: {', '.join(sorted(missing))}. " if missing else "")
+             + "Pali, Sanskrit and Classical Chinese have no native speakers; they are read by monastics, scholars and translators.</figcaption></figure>", "",
+             "## Buddhists by country", "",
+             charts.map_block(countries()), "",
+             '<script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>',
+             '<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>',
+             "<script src=\"{{ '/assets/buddhist-map.js' | relative_url }}\"></script>", "",
+             "## Languages", "",
              "| Language | Kind | Where | Speakers | AI resources | Google Translate | To translate into it, use | Confidence | Directory |",
              "| --- | --- | --- | --- | --- | --- | --- | --- | --- |"]
     order = {g: i for i, g in enumerate(["Tibetic", "Indic", "Southeast Asian", "Chinese", "Japanese, Korean, Vietnamese", "Mongolic and Turkic"])}
