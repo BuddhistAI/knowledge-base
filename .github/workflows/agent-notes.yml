@@ -1,0 +1,26 @@
+name: agent-notes
+
+# Weekly: open a pull request in every BuddhistAI repo that has no CLAUDE.md,
+# adding the standard agent notes from scripts/agent-notes/CLAUDE.md.
+# Needs the org or repo secret ORG_REPOS_TOKEN (fine-grained token, BuddhistAI org, all repositories,
+# Contents: read and write, Pull requests: read and write). Without it, the run only lists the repos.
+on:
+  schedule:
+    - cron: "23 4 * * 1"
+  workflow_dispatch:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Add agent notes where missing
+        env:
+          ORG_REPOS_TOKEN: ${{ secrets.ORG_REPOS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "$ORG_REPOS_TOKEN" ]; then python3 scripts/ensure_agent_notes.py
+          else echo "ORG_REPOS_TOKEN is not set: listing only."; python3 scripts/ensure_agent_notes.py --dry-run; fi

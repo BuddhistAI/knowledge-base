@@ -45,6 +45,12 @@ Benchmark `toc-extraction/bo` 2.0.0 (85 passages from two commentaries, one book
 - **Intervention study** (does publishing sourced information change AI answers?): designed in buddhist-bench, plan not frozen ([knowledge-base#2](https://github.com/BuddhistAI/knowledge-base/issues/2)), waiting for keys and real items.
 - **Community parts not set up:** generated contributors list, monthly digest, pinned help-wanted list.
 
+### Waiting on NT
+
+- **Template repos:** create two empty public repos, `BuddhistAI/template-skill-repo` and `BuddhistAI/template-benchmark`. Their content is ready (project files `repo-templates/`). After the push, tick **Settings → Template repository** in each.
+- **Secret `ORG_REPOS_TOKEN`** in BuddhistAI/knowledge-base, for the weekly `agent-notes` check ([Architecture](architecture.md#secrets)). Until then the check only lists repos that have no `CLAUDE.md`.
+- The BuddhistAI/.github repo has no agent notes yet: the session that wrote them cannot push to it. The weekly check will open a pull request there once the token is set.
+
 ### Waiting on a reader
 
 - **Tibetan:** check *The Jewel Garland* references in TOC benchmark (see above).
