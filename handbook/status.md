@@ -21,7 +21,7 @@ Status as of 2026-11-17. Update this page when something here changes.
 | buddhist-benchmarks | 15 tasks in `tasks/index.json`; 1 active (`toc-extraction`), with data set `toc-extraction/bo` 2.0.0 (85 items). Published on Hugging Face. |
 | buddhist-bench (BuddhistBench) | Version 0.4.0, a scaffold. Format examples only, plus the imported Thai Dhamma exam set (4,075 questions). No live model runs yet (no OpenRouter key). |
 | GitHub → Hugging Face sync | Live since 2026-11-17. |
-| Boards and forms | Skills board and Benchmarks board live, fed by issue forms. |
+| Boards and forms | Skills board and Benchmarks board live (public), fed by issue forms. Development board for team members (private for now). |
 
 ### Current results: Tibetan TOC extraction
 
@@ -102,7 +102,7 @@ In rough order. Owners in brackets where known.
 6. **New benchmarks from Sitar's team:** segmentation, annotation detection, Tibetan spell check. Then promote their skills through the leaderboard [Sitar].
 7. **Split benchmarks into one repo each** with a maturity level, and make buddhist-benchmarks the list. Move the TOC data first and keep tags and Hugging Face names stable.
 8. **buddhist-skills holds both picks** (Top performance and Best value) per task and language; decide the folder naming.
-9. **Monastery exam papers** as BuddhistBench exam tracks, with permission records.
+9. **Monastery exam papers** as benchmarks, with permission records. Plan: [buddhist-benchmarks#1](https://github.com/BuddhistAI/buddhist-benchmarks/issues/1) with sub-issues #2 to #11.
 10. **Thai reader** for the imported set; **workflow owners** review their pages; more workflows from teaching, art and practice.
 11. **Community:** choose the channel, set up Discussions categories, a contributors list, a help-wanted list; decide who posts announcements.
 12. **Homepage:** read scores from the leaderboard data instead of a hand-copied array (or replace the page with the app).

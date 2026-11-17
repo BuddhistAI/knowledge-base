@@ -59,12 +59,13 @@ The team decided on 2026-11-17 that each benchmark gets **its own repo** with ma
 
 ## GitHub Projects boards
 
-Both are public org boards. Their columns and automations are set only in the GitHub web UI (Settings of each project).
+The Skills and Benchmarks boards are public, for contributors. The Development board is for team work. Columns, fields and automations are set only in the GitHub web UI (Settings of each project).
 
 | Board | Columns | Filled by |
 | --- | --- | --- |
 | [Skills board](https://github.com/orgs/BuddhistAI/projects/1) | Requested → Shared → In progress → Being measured → Released | Auto-adds open buddhist-skills issues labeled `request` or `community-share`. |
 | [Benchmarks board](https://github.com/orgs/BuddhistAI/projects/2) | Proposed → Needs test data → In progress → Being reviewed → Live | Auto-adds open buddhist-benchmarks issues labeled `benchmark`. |
+| [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members | To do → In progress → In review → Done; fields Owner and Area; views Board and Table | Team tasks, added by hand. **Private** for now (only org members can open it) until NT decides whether it should be public. |
 
 ## Issue forms and labels
 

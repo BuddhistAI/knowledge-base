@@ -60,6 +60,8 @@ These come from NT, the project lead. Every page, site, commit message and socia
 | Dave | Offered inference keys for evaluation runs. |
 | Kurt Keutzer | Owner of the [translation workflow](../workflows/translation.md) (his own document; we only link to it). |
 
+Team work is tracked on the [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members (private for now).
+
 Ask NT for: membership or owner role in the [BuddhistAI GitHub org](https://github.com/BuddhistAI), the [Hugging Face org](https://huggingface.co/BuddhistAI), repo secrets, and the `buddhistai.org` domain on Cloudflare.
 
 ## Working with Claude
