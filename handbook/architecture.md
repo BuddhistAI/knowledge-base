@@ -84,7 +84,18 @@ The Skills and Benchmarks boards are public, for contributors. The Development b
 | knowledge-base | Re-run, To-do | `re-run`, `todo` | Track work. |
 | buddhist-bench | Propose items, Propose a track, Dispute an answer (Markdown templates) | — | Follow buddhist-bench `CONTRIBUTING.md`: real items need human authors and two reviewers. |
 
-Pull request templates: buddhist-skills and knowledge-base. Discussions are on at the org level: https://github.com/orgs/BuddhistAI/discussions (no categories set up yet).
+Pull request templates: buddhist-skills and knowledge-base. 
+
+## Community: GitHub Discussions
+
+NT chose GitHub Discussions as the community home (2026-11-17): https://github.com/orgs/BuddhistAI/discussions. Start with the [welcome post](https://github.com/orgs/BuddhistAI/discussions/1) (pinned).
+
+Categories: Announcements (maintainers only), Introductions, Find the best AI (Q&A), Requests and ideas, Skills, Models and evaluations, Benchmarks and test data, Tasks and workflows, Languages (put the language in the title), Arena and judging, Website and development, Polls.
+
+- Point people to the matching category when they ask "where do I ask?". Bugs and concrete requests still go to the issue forms above.
+- Maintainers post leaderboard news and new leaders in **Announcements**.
+- To get notified: watch the BuddhistAI/.github repo, choose Custom, then Discussions.
+- A chat channel (Discord or WhatsApp) may come later. Not decided.
 
 ## CI workflows
 

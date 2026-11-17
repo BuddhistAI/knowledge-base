@@ -27,7 +27,7 @@ You do not need git. Pick whichever is easiest:
 1. **Edit a page.** Click "Edit this page" (or the pencil icon on GitHub), change it, and propose the change. Add an example, an edge case, a language note, a link.
 2. **Paste a link.** [Add a project or dataset](https://github.com/BuddhistAI/knowledge-base/issues/new?template=add-to-directory.yml) to the directory, [share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) by linking your document, or [suggest a task](https://github.com/BuddhistAI/knowledge-base/issues/new?template=suggest-task.yml) in a few sentences. A maintainer writes the page and credits you.
 3. **Write a page.** Copy [`templates/task.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/task.md) or [`templates/workflow.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/workflow.md) and open a pull request.
-4. **Discuss.** Ask or propose in [Discussions](https://github.com/orgs/BuddhistAI/discussions).
+4. **Discuss.** Ask or propose in [GitHub Discussions](https://github.com/orgs/BuddhistAI/discussions), the community home. New here? Start with the [welcome post](https://github.com/orgs/BuddhistAI/discussions/1).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for ownership, credit and review.
 
