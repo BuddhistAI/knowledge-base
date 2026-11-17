@@ -19,7 +19,7 @@ Each guide lists the repo, the steps and the check to run. In every repo: run `p
 - [Add a task, a language or a model](#add-a-task-a-language-or-a-model)
 - [Add an external leaderboard](#add-an-external-leaderboard)
 - [Release a BuddhistBench version](#release-a-buddhistbench-version)
-- [Knowledge base: pages, Directory, experiments](#knowledge-base-pages-directory-experiments)
+- [Knowledge base: pages, Directory, experiments](#knowledge-base-pages-directory-languages-experiments)
 - [Change the design](#change-the-design)
 - [Add a contributor or a backer](#add-a-contributor-or-a-backer)
 
@@ -143,12 +143,13 @@ Add an entry to buddhist-benchmarks `external.json`. The overview shows it as a 
 
 Repo: buddhist-bench. Bump `VERSION` and each changed `track.json`, add a `CHANGELOG.md` entry, run `python3 scripts/check.py`, push to `main`. `hf-sync` tags `vX.Y.Z` and publishes. Real items need human authors and two human reviewers (same tradition and another tradition). Never commit `test.jsonl`, permission letters or private papers. Never publish an intervention that is not accurate, sourced and reviewed.
 
-## Knowledge base: pages, Directory, experiments
+## Knowledge base: pages, Directory, Languages, experiments
 
 Repo: knowledge-base.
 
 - **Task or workflow page:** copy from `templates/`. Run `python3 scripts/build.py` (index tables, "Found in workflows", Directory tables), then `python3 scripts/check.py`.
 - **Directory entry:** add to `directory/projects.yml` or `directory/datasets.yml`, never to `directory/README.md`. Verify the link first.
+- **Language page:** `languages/<id>.md`, copied from `templates/language.md`. Keep every frontmatter key and section. `directory_names` must match the language names used in the Directory YAML: the "In the Directory" block on each page and the counts in `languages/README.md` are generated from them by `scripts/build.py`. Countries live in `languages/countries.yml` (each with a source link). Every fact needs a numbered source; write "not verified" when you cannot check a fact. Re-check the pages about every six months, because AI support changes fast.
 - **Experiment:** folder `experiments/<yyyy-mm>-<slug>/` from `templates/experiment/`. Write `PLAN.md` before running and never edit it after the start; record changes in `LOG.md`. Numbers in `REPORT.md` link to results at an exact commit or version. Update the table in `experiments/README.md`.
 - **This handbook:** update it in the same PR as any change it describes.
 

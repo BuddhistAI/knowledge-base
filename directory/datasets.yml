@@ -154,6 +154,24 @@
   open: MIT (imported sets keep their own license)
   updated: 2026-11
   tasks: [buddhist-knowledge-qa]
+- name: PaliBench
+  url: https://github.com/MateMetzger/palibench
+  org: Máté Metzger with Mahachulalongkornrajavidyalaya University
+  kind: Benchmarks
+  what: Pali to English translation benchmark of 1,700 passages with several reference translations, with scores for 10 LLMs. The repo has code, prompts and scores, but not the Pali passages or the reference translations.
+  languages: [Pali, English]
+  open: license not stated
+  updated: 2026-05
+  tasks: [translation]
+- name: WYWEB
+  url: https://github.com/baudzhou/WYWEB
+  org: baudzhou (ACL Findings 2023 authors)
+  kind: Benchmarks
+  what: Nine Classical Chinese tasks, including punctuation, named entities and translation into modern Chinese (about 26,000 pairs). Part of the punctuation data comes from Buddhist scriptures.
+  languages: [Classical Chinese, Chinese]
+  open: license not stated
+  updated: 2023
+  tasks: [translation]
 
 # Texts and corpora
 - name: CBETA XML P5
@@ -162,7 +180,7 @@
   kind: Texts and corpora
   what: The full Chinese Buddhist canon of CBETA in TEI XML.
   languages: [Classical Chinese]
-  open: reuse terms set by CBETA
+  open: most texts CC BY-NC-SA 4.0 (some collections not CC)
   updated: 2026-10
 - name: CBETA Chinese canon (Hugging Face copy)
   url: https://huggingface.co/datasets/linhgiang/cbeta-chinese-canon
@@ -262,6 +280,30 @@
   languages: [Classical Chinese]
   open: license not stated
   updated: 2023-07
+- name: CBETA-txt
+  url: https://github.com/DILA-edu/CBETA-txt
+  org: Dharma Drum Institute of Liberal Arts
+  kind: Texts and corpora
+  what: Plain text of Taishō volumes 1-55 and 85, made from the CBETA XML, with and without punctuation.
+  languages: [Classical Chinese]
+  open: license not stated (CBETA texts are CC BY-NC-SA 4.0)
+  updated: ""
+- name: Tipitaka in Myanmar script (DatarrX)
+  url: https://huggingface.co/datasets/DatarrX/tipitaka-dataset
+  org: DatarrX (community)
+  kind: Texts and corpora
+  what: Pali Mula, Atthakatha and Tika texts in Myanmar script, about 463,000 paragraphs as JSON.
+  languages: [Pali, Burmese]
+  open: MIT
+  updated: ""
+- name: INEL Kalmyk Corpus
+  url: https://www.fdr.uni-hamburg.de/record/17676
+  org: Universität Hamburg (INEL project)
+  kind: Texts and corpora
+  what: 55 spoken Kalmyk texts (19,742 tokens, about 4.4 hours of audio), glossed, with Russian and English translations.
+  languages: [Kalmyk, Russian, English]
+  open: CC-BY-NC-SA-4.0 (non-commercial)
+  updated: 2025-07
 
 # Parallel texts and translation
 - name: 84000 translation memory
@@ -294,9 +336,9 @@
   url: https://huggingface.co/datasets/buddhist-nlp/mitrasamgraha-released-data-only
   org: Dharmamitra team
   kind: Parallel texts and translation
-  what: Released part of the Dharmamitra parallel data collection.
+  what: Released part of the Dharmamitra parallel data collection. The paper version on GitHub (dharmamitra/mitrasamgraha-dataset) has 391,548 Sanskrit-English pairs with a test set.
   languages: [Sanskrit, Tibetan, Classical Chinese, English]
-  open: license not stated
+  open: license not stated here; GitHub release CC BY-NC-ND 4.0 (a 372,791-pair subset CC BY-SA 4.0)
   updated: 2026-02
   tasks: [translation]
 - name: Tibetan-English sentence alignment
@@ -325,6 +367,60 @@
   languages: [Pali, many]
   open: license not stated
   updated: 2019-04
+- name: BDK English Tripiṭaka
+  url: https://bdk-seiten.com/translation.php?lang=en
+  org: Bukkyō Dendō Kyōkai (BDK)
+  kind: Parallel texts and translation
+  what: English translations of texts from the Taishō canon (139 works in the first stage), as free PDFs.
+  languages: [Classical Chinese, English]
+  open: free PDFs; all rights reserved
+  updated: ""
+  tasks: [translation]
+- name: Sāmayik
+  url: https://github.com/ayushbits/saamayik
+  org: IIT Bombay, University of Utah and others
+  kind: Parallel texts and translation
+  what: About 53,000 English-Sanskrit sentence pairs of modern prose, with training and evaluation scripts. Not Buddhist-specific.
+  languages: [Sanskrit, English]
+  open: license not stated
+  updated: ""
+  tasks: [translation]
+- name: KanbunKundoku
+  url: https://github.com/shiryusann/KanbunKundoku
+  org: Zilong Li and Jie Cao
+  kind: Parallel texts and translation
+  what: Classical Chinese sentences with kundoku reading marks and Japanese readings, for studying translation of Classical Chinese into Japanese.
+  languages: [Classical Chinese, Japanese]
+  open: MIT
+  updated: 2025-11
+  tasks: [translation]
+- name: Buryat-Russian parallel corpus
+  url: https://huggingface.co/datasets/SaranaAbidueva/buryat-russian_parallel_corpus
+  org: Sarana Abidueva
+  kind: Parallel texts and translation
+  what: Buryat-Russian sentence pairs (10,000 to 100,000), used to train an NLLB-200 Buryat model.
+  languages: [Buryat, Russian]
+  open: CC-BY-4.0
+  updated: ""
+  tasks: [translation]
+- name: Tuvan-Russian parallel 50k
+  url: https://huggingface.co/datasets/Agisight/tyvan-russian-parallel-50k
+  org: Agisight (tyvan.ru)
+  kind: Parallel texts and translation
+  what: 50,000 Russian-Tuvan sentence pairs taken from the tyvan.ru corpus.
+  languages: [Tuvan, Russian]
+  open: CC-BY-SA-4.0
+  updated: ""
+  tasks: [translation]
+- name: Asian Language Treebank (ALT)
+  url: https://huggingface.co/datasets/alt
+  org: NICT and partners
+  kind: Parallel texts and translation
+  what: About 20,000 English Wikinews sentences translated into 12 Asian languages, including Thai, Lao, Khmer and Burmese. Not Buddhist-specific.
+  languages: [Thai, Lao, Khmer, Burmese, English, more]
+  open: CC-BY-4.0
+  updated: ""
+  tasks: [translation]
 
 # OCR and page layout
 - name: BDRC OCR transcriptions (several sets)
@@ -390,6 +486,22 @@
   languages: [Tibetan]
   open: license not stated
   updated: 2025-10
+- name: Nwāchā Munā (Newari speech)
+  url: https://huggingface.co/collections/ilprl-docse/nwacha-muna
+  org: Kathmandu University (ILPRL)
+  kind: Speech
+  what: 5.39 hours of transcribed Newari (Nepal Bhasa) speech in Devanagari, with speech recognition baseline models.
+  languages: [Newari]
+  open: license not stated
+  updated: 2026-04
+- name: Khmer speech corpus
+  url: https://huggingface.co/datasets/seanghay/km-speech-corpus
+  org: seanghay (community)
+  kind: Speech
+  what: About 10.4 hours of Khmer speech in 14,943 clips.
+  languages: [Khmer]
+  open: CC-BY-4.0
+  updated: ""
 
 # Language annotation
 - name: Tibetan quotation detection
@@ -528,4 +640,13 @@
   languages: [Thai]
   open: license not stated
   updated: 2024-12
+  tasks: [buddhist-knowledge-qa]
+- name: Vietnamese Buddhism Q&A
+  url: https://huggingface.co/datasets/vanloc1808/buddism-qa-dataset
+  org: vanloc1808 (community)
+  kind: Q&A and instruction data
+  what: Questions and answers on Buddhism in English and Vietnamese, merged from two source sets (about 16,000 rows in the dataset viewer).
+  languages: [Vietnamese, English]
+  open: MIT
+  updated: ""
   tasks: [buddhist-knowledge-qa]

@@ -15,7 +15,7 @@ Status as of 2026-11-17. Update this page when something here changes.
 | --- | --- |
 | Homepage https://buddhistai.github.io/ | Live. One static page. All scores on it are real results, copied by hand from the leaderboard. A banner says the arena and automatic scoring are planned. |
 | Leaderboard https://buddhistai.github.io/buddhist-benchmarks/ | Live. Generated from `result.json` files by CI. One task benchmark with results (Tibetan TOC), plus BuddhistBench and an external card (BDRC Tibetan OCR). |
-| Knowledge base https://buddhistai.github.io/knowledge-base/ | Live. 16 task pages, 2 workflow pages (both drafts, not yet reviewed by their owners), 2 experiments, a Directory of 62 projects and 59 datasets, and this handbook. |
+| Knowledge base https://buddhistai.github.io/knowledge-base/ | Live. 16 task pages, 2 workflow pages (both drafts, not yet reviewed by their owners), 2 experiments, a Directory of 87 projects and 73 datasets, Languages pages for 21 Buddhist languages with a country overview, and this handbook. |
 | Design system https://buddhistai.github.io/design/ | Live, version 1.0.0. Used by the leaderboard and the knowledge base. |
 | buddhist-skills | One released skill (`toc-extraction-tibetan` 1.0.0), the router `ask-buddhistai`, one community entry (a personal setup, `my-dharma.md`, CC0). Plugin marketplace works. |
 | buddhist-benchmarks | 15 tasks in `tasks/index.json`; 1 active (`toc-extraction`), with data set `toc-extraction/bo` 2.0.0 (85 items). Published on Hugging Face. |
@@ -109,4 +109,5 @@ In rough order. Owners in brackets where known.
 
 ## Changes since the call
 
+- 2026-11-17: the knowledge base gained Languages: one page per Buddhist language (data, AI projects, translation quality, recommendation) and a country overview.
 - 2026-11-17: this handbook was written; the knowledge base gained the Directory; GitHub → Hugging Face sync went live.

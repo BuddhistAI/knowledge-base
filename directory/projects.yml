@@ -64,6 +64,33 @@
   open: open source (MIT)
   updated: 2026-08
   tasks: [translation]
+- name: Digital Dictionary of Buddhism (DDB)
+  url: https://www.buddhism-dict.net/ddb/
+  org: A. Charles Muller
+  kind: Translation and dictionaries
+  what: Online dictionary of East Asian Buddhist terms, started in 1995. Visitors can search as "guest" with a limited number of searches per day.
+  languages: [Classical Chinese, English]
+  open: free guest searches; license not stated
+  updated: ""
+  tasks: [term-extraction]
+- name: Dzongkha NLP (GovTech Bhutan)
+  url: https://v2.nlp.tech.gov.bt/background
+  org: GovTech Agency Bhutan with DCDD and CST
+  kind: Translation and dictionaries
+  what: Dzongkha-English machine translation built on Meta NLLB (about 700,000 sentence pairs), Dzongkha speech to text and text to speech, and a chatbot prototype. For testing and research only.
+  languages: [Dzongkha, English]
+  open: license not stated
+  updated: ""
+  tasks: [translation]
+- name: Dzongkha NLP (CST)
+  url: https://nlp.cst.edu.bt
+  org: College of Science and Technology (Royal University of Bhutan) with DCDD
+  kind: Translation and dictionaries
+  what: Web app with Dzongkha-English translation, Dzongkha speech to text and text to speech.
+  languages: [Dzongkha, English]
+  open: license not stated
+  updated: ""
+  tasks: [translation]
 
 # Text libraries and search
 - name: BDRC - Buddhist Digital Resource Center
@@ -107,7 +134,7 @@
   kind: Text libraries and search
   what: Digital edition of the Chinese Buddhist canon, with an online reader (CBETA Online), XML files on GitHub and an API.
   languages: [Classical Chinese]
-  open: free to read; reuse terms set by CBETA
+  open: free to read; most texts CC BY-NC-SA 4.0 (some collections not CC)
   updated: 2026-11
   tasks: [citation-mapping, edition-collation]
 - name: SAT Daizōkyō Text Database
@@ -209,6 +236,63 @@
   open: free to read
   updated: ""
   tasks: [text-translation-alignment]
+- name: CBETA semantic search (CBSS)
+  url: https://cbetaonline.dila.edu.tw/cbss/
+  org: Dharma Drum Institute of Liberal Arts and CBETA
+  kind: Text libraries and search
+  what: Ask questions in plain language and get matching passages from the CBETA canon, with AI summaries of the top passages (built on the OpenAI API).
+  languages: [Classical Chinese, Chinese]
+  open: free to use; license not stated
+  updated: 2025-12
+  tasks: [buddhist-knowledge-qa]
+- name: Kanseki Repository (漢リポ)
+  url: https://kanripo.org/
+  org: Kanseki Repository
+  kind: Text libraries and search
+  what: Premodern Chinese texts kept as GitHub repositories, with a Buddhist section (KR6). The web server has been down since February 2026.
+  languages: [Classical Chinese]
+  open: license not stated
+  updated: 2026-02
+- name: Thai Tipitaka program
+  url: https://sourceforge.net/p/thaitipitaka
+  org: ajsun and bistechn (community)
+  kind: Text libraries and search
+  what: Desktop program with the Thai Royal, Mahachula and Mahamakut Thai Tipitaka editions and two Pali editions in Thai script.
+  languages: [Thai, Pali]
+  open: open source (GPL-2.0)
+  updated: 2019-06
+- name: BUDSIR
+  url: https://www.mahidol.ac.th/budsir/history.htm
+  org: Mahidol University
+  kind: Text libraries and search
+  what: Search system for the Pali Tipitaka and commentaries in Thai and Roman script, in use since 1988.
+  languages: [Pali, Thai]
+  open: license not stated
+  updated: ""
+- name: Tipitaka Sajjhaya
+  url: https://sajjhaya.org/node/20
+  org: World Tipitaka Foundation (Bangkok)
+  kind: Text libraries and search
+  what: The Sixth Council Pali Tipitaka in Roman script, with notation for recitation and audio recordings.
+  languages: [Pali, Thai]
+  open: all rights reserved
+  updated: ""
+- name: 5000-years.org
+  url: https://5000-years.org/en/books/all
+  org: 5000-years.org
+  kind: Text libraries and search
+  what: Khmer Buddhist site with Dhamma books, recorded Dhamma talks and chanting, videos, and a link to an online Khmer Tipitaka.
+  languages: [Khmer]
+  open: license not stated
+  updated: ""
+- name: Nepalese-German Manuscript Cataloguing Project (NGMCP)
+  url: https://ngmcp.fdm.uni-hamburg.de/mediawiki/index.php/NGMCP
+  org: University of Hamburg with the National Archives of Nepal
+  kind: Text libraries and search
+  what: Catalogue of the Nepalese manuscripts that the Nepal-German Manuscript Preservation Project microfilmed (more than 114,500 items in Sanskrit, Newari, Nepali and other languages).
+  languages: [Sanskrit, Newari, Nepali]
+  open: license not stated
+  updated: ""
 
 # OCR and digitization
 - name: BDRC Tibetan OCR app
@@ -247,6 +331,65 @@
   open: open model on Hugging Face
   updated: 2026-11
   tasks: [ocr]
+- name: Kim Hán Nôm
+  url: https://kimhannom.fit.hcmus.edu.vn/
+  org: University of Science, VNU-HCM (Center for Computational Linguistics)
+  kind: OCR and digitization
+  what: OCR for printed and handwritten Hán and Nôm texts (Buddhist scripture is one document type), transliteration into Quốc ngữ and experimental translation. Web, mobile apps and API.
+  languages: [Hán-Nôm, Classical Chinese, Vietnamese]
+  open: free to use; license not stated
+  updated: 2026-07
+  tasks: [ocr]
+- name: NDL Kotenseki OCR
+  url: https://github.com/ndl-lab/ndlkotenocr_cli
+  org: National Diet Library (Japan)
+  kind: OCR and digitization
+  what: OCR for digitized pre-modern Japanese and Chinese books (version 3), run with Docker.
+  languages: [Japanese, Classical Chinese]
+  open: CC-BY-4.0
+  updated: 2025-09
+  tasks: [ocr]
+- name: Typhoon OCR
+  url: https://huggingface.co/scb10x/typhoon-ocr1.5-2b
+  org: SCB 10X
+  kind: OCR and digitization
+  what: Open vision-language OCR models for Thai and English documents. Output is Markdown with tables and figures.
+  languages: [Thai, English]
+  open: Apache-2.0 (plus OpenTyphoon terms)
+  updated: 2026-01
+  tasks: [ocr]
+- name: Khmer Manuscript Heritage Project
+  url: https://khmer-manuscripts.bdrc.io/
+  org: BDRC with Digital Divide Data and FEMC/EFEO
+  kind: OCR and digitization
+  what: Digital copies of 11,596 Khmer manuscripts (more than 1.4 million pages), plus digitized FEMC microfilms.
+  languages: [Khmer]
+  open: license not stated
+  updated: ""
+- name: Digital Library of Lao Manuscripts
+  url: https://digital.crossasia.org/digital-library-of-lao-manuscripts/?lang=en
+  org: National Library of Laos, University of Passau, Staatsbibliothek zu Berlin
+  kind: OCR and digitization
+  what: Images of more than 12,000 Lao, Lan Na and Tai Lue manuscripts from the Preservation of Lao Manuscripts Programme, with downloadable sets.
+  languages: [Lao, Northern Thai, Tai Lue]
+  open: free to view and download; ask before publishing; license not stated
+  updated: ""
+- name: EAP813 Siberian Buddhist book heritage
+  url: https://eap.bl.uk/node/3516
+  org: Buryat State University; British Library Endangered Archives Programme
+  kind: OCR and digitization
+  what: 334 digitized Buddhist manuscripts from private collections in Buryatia and Zabaikalsky Krai. The page does not list the languages.
+  languages: [Tibetan, more]
+  open: research use only
+  updated: ""
+- name: EAP529 Dambadarjaa Monastery manuscripts
+  url: https://eap.bl.uk/node/3086
+  org: Monsound and Vision Foundation; British Library Endangered Archives Programme
+  kind: OCR and digitization
+  what: 51 Buddhist manuscripts (7,400 sheets, 1860s to 1920s) from a monastery in Mongolia. The page does not list the languages.
+  languages: [Classical Mongolian, Tibetan]
+  open: research use only
+  updated: ""
 
 # Language tools
 - name: Botok
@@ -325,6 +468,14 @@
   languages: [Tibetan, English, more]
   open: open source (MIT)
   updated: 2026-11
+- name: Thonburian Whisper
+  url: https://biodatlab.github.io/blog/thonburian-whisper-2024
+  org: Mahidol University (biodatlab)
+  kind: Speech
+  what: Whisper models fine-tuned for Thai speech recognition, including smaller distilled versions.
+  languages: [Thai]
+  open: license not stated
+  updated: 2025-01
 
 # AI models
 - name: MITRA models (buddhist-nlp)
@@ -334,7 +485,7 @@
   what: About 60 models for Buddhist languages - translation (Gemma, Qwen, NLLB and mBART based), embeddings, sentence alignment, tagging and OCR.
   languages: [Tibetan, Sanskrit, Classical Chinese, Pali, English]
   open: open models (licenses vary)
-  updated: 2026-07
+  updated: 2026-08
   tasks: [translation, text-translation-alignment, ocr]
 - name: Tibetan BERT and RoBERTa models
   url: https://huggingface.co/KoichiYasuoka/roberta-base-tibetan
@@ -362,6 +513,65 @@
   open: open models
   updated: 2026-07
   tasks: [translation]
+- name: Monlam Tibetan RoBERTa
+  url: https://huggingface.co/MonlamAI/tibetan_RoBERTa_S_e6
+  org: Monlam AI
+  kind: AI models
+  what: Tibetan masked language model (fill-mask).
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2025-04
+- name: Sun-Shine and TIB-STC
+  url: https://github.com/Vicentvankor/sun-shine
+  org: UESTC, Tibet University and others
+  kind: AI models
+  what: Tibetan language model based on Llama-3.1-8B, trained on TIB-STC, a Tibetan corpus of about 11 billion tokens. The repo says the code and model release is coming soon.
+  languages: [Tibetan]
+  open: Apache-2.0 (badge in repo)
+  updated: 2025-03
+- name: SinLlama
+  url: https://huggingface.co/polyglots/SinLlama_v01
+  org: University of Moratuwa and partners (polyglots)
+  kind: AI models
+  what: Llama-3-8B extended with Sinhala vocabulary and further training on Sinhala text. Base model, not instruction-tuned. Not Buddhist-specific.
+  languages: [Sinhala]
+  open: Llama 3 license (same as base model)
+  updated: ""
+- name: Gemma-SEA-LION-v4-27B-IT
+  url: https://huggingface.co/aisingapore/Gemma-SEA-LION-v4-27B-IT
+  org: AI Singapore
+  kind: AI models
+  what: Gemma 3 based 27B chat model for Southeast Asian languages, including Burmese, Khmer, Lao, Thai and Vietnamese. Not Buddhist-specific.
+  languages: [Thai, Lao, Khmer, Burmese, Vietnamese, more]
+  open: MIT
+  updated: 2025-08
+- name: Xunzi models for Chinese classics
+  url: https://github.com/Xunzi-LLM-of-Chinese-classics/XunziALLM
+  org: Nanjing Agricultural University with Zhonghua Book Company
+  kind: AI models
+  what: "Open models (Qwen, Baichuan2 and ChatGLM3 based) for ancient Chinese texts: translation into modern Chinese, punctuation, word segmentation and entity extraction."
+  languages: [Classical Chinese, Chinese]
+  open: Apache-2.0
+  updated: 2024-05
+  tasks: [translation]
+- name: NLLB Russian-Tuvan models
+  url: https://huggingface.co/slone/nllb-rus-tyv-v2-extvoc
+  org: SLONE
+  kind: AI models
+  what: NLLB-200-600M with an extended vocabulary, fine-tuned for Russian-Tuvan translation. No scores published.
+  languages: [Tuvan, Russian]
+  open: CC-BY-NC-4.0 (non-commercial)
+  updated: ""
+  tasks: [translation]
+- name: NLLB-200 Buryat-Russian
+  url: https://huggingface.co/SaranaAbidueva/nllb-200-bxr-ru
+  org: Sarana Abidueva
+  kind: AI models
+  what: NLLB-200 fine-tuned for Buryat-Russian translation. Reported BLEU is about 13 (Russian to Buryat) and 20 (Buryat to Russian).
+  languages: [Buryat, Russian]
+  open: MIT
+  updated: ""
+  tasks: [translation]
 
 # Chatbots and Q&A
 - name: NORBU
@@ -377,10 +587,10 @@
   url: https://www.kyoto-u.ac.jp/en/news/2025-03-03
   org: Kyoto University
   kind: Chatbots and Q&A
-  what: Chatbot based on Buddhist scriptures, built on ChatGPT. Used with monks and nuns in Bhutan, and in the Buddharoid robot at Shoren-in temple in Kyoto.
+  what: Chatbot based on Buddhist scriptures, built on ChatGPT. Used with monks and nuns in Bhutan, and in Buddharoid, a humanoid robot monk made with Teraverse Inc. and shown at Shoren-in temple in Kyoto (not for sale).
   languages: [Japanese, English]
   open: closed
-  updated: 2026-02
+  updated: 2026-06
   tasks: [buddhist-knowledge-qa]
 - name: Compassion Bot
   url: https://www.awakin.ai/about/
