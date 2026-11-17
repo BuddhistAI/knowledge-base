@@ -1,0 +1,52 @@
+name: Add a project or dataset
+description: Suggest a Buddhist AI project or dataset for the directory, or fix an entry.
+title: "Directory: "
+labels: [directory]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Paste a link and tell us what it is. A maintainer checks the link and adds it to the [directory](https://buddhistai.github.io/knowledge-base/directory/). Your own project is welcome.
+  - type: dropdown
+    id: section
+    attributes:
+      label: Is it a project or a dataset?
+      options: [Project (tool, app, model, group), Dataset (benchmark, texts, translations, images, audio), Fix an existing entry]
+    validations: {required: true}
+  - type: input
+    id: url
+    attributes:
+      label: Link
+      placeholder: https://github.com/... or https://huggingface.co/datasets/...
+    validations: {required: true}
+  - type: input
+    id: name
+    attributes:
+      label: Name and who makes it
+      placeholder: Tibetan OCR app, by BDRC
+  - type: textarea
+    id: what
+    attributes:
+      label: What does it do?
+      description: One or two plain sentences. Which Buddhist task does it help with?
+    validations: {required: true}
+  - type: input
+    id: languages
+    attributes:
+      label: Languages
+      placeholder: Tibetan, English
+  - type: input
+    id: open
+    attributes:
+      label: How open is it?
+      description: License of the code, data or models, or "free to use, closed source".
+      placeholder: MIT / CC0 / CC-BY-NC / free web app
+  - type: dropdown
+    id: relation
+    attributes:
+      label: Your relation to it
+      options: [I make it or work on it, I use it, I found it]
+  - type: input
+    id: credit
+    attributes:
+      label: How should we credit you? (optional)

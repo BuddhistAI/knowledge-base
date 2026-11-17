@@ -1,8 +1,9 @@
-"""Regenerate the index tables in README.md and the "Used in workflows" list on each task page."""
+"""Regenerate the index tables in README.md, the "Found in workflows" list on each task page, and the directory page."""
 import re
 import sys
 
 from pages import ROOT, load
+import directory
 
 START, END = "<!-- index:start -->", "<!-- index:end -->"
 U_START, U_END = "<!-- used-in:start -->", "<!-- used-in:end -->"
@@ -48,6 +49,10 @@ def build():
                  ["No workflow page uses this task yet. [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) that does."]
         block.append(U_END)
         out[t["path"]] = re.sub(re.escape(U_START) + ".*?" + re.escape(U_END), "\n".join(block), text, flags=re.S)
+    page = ROOT / "directory" / "README.md"
+    text = page.read_text(encoding="utf-8")
+    block = directory.render({tid: t["meta"]["title"] for tid, t in tasks.items()})
+    out[page] = re.sub(re.escape(directory.START) + ".*?" + re.escape(directory.END), lambda m: block, text, flags=re.S)
     return out
 
 

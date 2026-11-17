@@ -18,11 +18,12 @@
     <a href="{{ '/#tasks' | relative_url }}">Tasks</a>
     <a href="{{ '/#workflows' | relative_url }}">Workflows</a>
     <a href="{{ '/experiments/' | relative_url }}">Experiments</a>
+    <a href="{{ '/directory/' | relative_url }}">Directory</a>
     <a href="{{ '/CONTRIBUTING.html' | relative_url }}">Contribute</a>
     <a href="https://buddhistai.github.io/buddhist-benchmarks/">Leaderboard</a>
   </nav>
 </div></header>
-<main class="wrap narrow prose">
+<main class="wrap{% unless page.wide %} narrow{% endunless %} prose{% if page.wide %} wide{% endif %}">
 <p class="edit-top"><a class="btn ghost small" href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">✎ Edit this page</a></p>
 {{ content }}
 <p class="edit">

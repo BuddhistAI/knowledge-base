@@ -4,12 +4,13 @@
 
 Read and edit it on the web: **https://buddhistai.github.io/knowledge-base/** (every page has an "Edit this page" link).
 
-The knowledge base has three sections:
+The knowledge base has four sections:
 
 - **Task pages** are the core. A task is one job that a model or skill can be asked to do and measured on, such as segmentation, OCR or translation review. Its page defines it: what goes in, what should come out, worked examples, edge cases, how it differs across languages and traditions, and how it is measured. It links the task's benchmark and leaderboard and names the current best skills, or says that no benchmark exists yet so you can help build one.
 - **Workflow pages** describe how real projects work from start to finish: translating a text, preparing a digital edition, building a course, running a center. They are where tasks are found. Each step is mapped to a task, and a step with no task yet is a candidate for a new one. Workflows are owned by the people who do the work, and a workflow kept elsewhere (a Google Doc, a website) stays there: we link to it and credit its owner.
 
 - **[Experiments](experiments/README.md)** record what we tried and what we learned: a plan written before each experiment, a dated log, and a report. Ideas for new experiments start as an [Idea issue](https://github.com/BuddhistAI/knowledge-base/issues/new?template=idea.yml).
+- **[Directory](directory/README.md)** lists Buddhist AI projects and datasets from all traditions and languages: who makes them, what they do, and how open they are. The entries live in [`directory/projects.yml`](directory/projects.yml) and [`directory/datasets.yml`](directory/datasets.yml). [Add a project or dataset](https://github.com/BuddhistAI/knowledge-base/issues/new?template=add-to-directory.yml) by pasting a link.
 
 ```
 workflows  →  tasks  →  benchmarks + leaderboards  →  best skills
@@ -23,7 +24,7 @@ This is about **Buddhist tasks**, not only texts: translation and study, but als
 You do not need git. Pick whichever is easiest:
 
 1. **Edit a page.** Click "Edit this page" (or the pencil icon on GitHub), change it, and propose the change. Add an example, an edge case, a language note, a link.
-2. **Paste a link.** [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) by linking your document, or [suggest a task](https://github.com/BuddhistAI/knowledge-base/issues/new?template=suggest-task.yml) in a few sentences. A maintainer writes the page and credits you.
+2. **Paste a link.** [Add a project or dataset](https://github.com/BuddhistAI/knowledge-base/issues/new?template=add-to-directory.yml) to the directory, [share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) by linking your document, or [suggest a task](https://github.com/BuddhistAI/knowledge-base/issues/new?template=suggest-task.yml) in a few sentences. A maintainer writes the page and credits you.
 3. **Write a page.** Copy [`templates/task.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/task.md) or [`templates/workflow.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/workflow.md) and open a pull request.
 4. **Discuss.** Ask or propose in [Discussions](https://github.com/orgs/BuddhistAI/discussions).
 
