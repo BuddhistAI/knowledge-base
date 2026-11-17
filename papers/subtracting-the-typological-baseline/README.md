@@ -41,7 +41,7 @@ The author says the analysis and the text were produced with Claude in a long di
 
 ## Related
 
-- Practical guide by the same author: [Two strategies for improving machine translation from Tibetan](https://github.com/BuddhistAI/buddhist-skills/tree/main/community/translation-tibetan-to-french/drupchen-two-strategies) (buddhist-skills community).
+- Practical guide by the same author: [Two strategies for improving machine translation from Tibetan](../two-strategies-for-machine-translation-from-tibetan/README.md) (in Papers).
 - Tasks: [Translation review](../../tasks/translation-review.md), [Translation](../../tasks/translation.md).
 
 ## Source

@@ -9,7 +9,4 @@ To share a paper, open a [Share a workflow](https://github.com/BuddhistAI/knowle
 | Paper | Author | Tasks | Languages | License |
 | --- | --- | --- | --- | --- |
 | [Subtracting the Typological Baseline](subtracting-the-typological-baseline/README.md) (2026) | Drupchen | [Translation review](../tasks/translation-review.md), [Translation](../tasks/translation.md) | Tibetan → French | CC BY 4.0 |
-
-## Related
-
-- [Two strategies for improving machine translation from Tibetan](https://github.com/BuddhistAI/buddhist-skills/tree/main/community/translation-tibetan-to-french/drupchen-two-strategies) (Drupchen): the practical guide that comes from the paper above. It is a community entry in buddhist-skills, because it is written for Claude to use.
+| [Two strategies for improving machine translation from Tibetan](two-strategies-for-machine-translation-from-tibetan/README.md) (2026) | Drupchen | [Translation](../tasks/translation.md), [Translation review](../tasks/translation-review.md) | Tibetan → French | CC BY 4.0 |

@@ -50,7 +50,7 @@ Source passages with reference translations by experienced translators, and a wa
 ## Further reading
 
 - [Subtracting the Typological Baseline](../papers/subtracting-the-typological-baseline/README.md) (Drupchen, 2026, Tibetan → French): how to prompt an AI for better drafts: a context checklist, a drafting pipeline where the French is written without the Tibetan in view, and correction examples.
-- [Two strategies for improving machine translation from Tibetan](https://github.com/BuddhistAI/buddhist-skills/tree/main/community/translation-tibetan-to-french/drupchen-two-strategies) (Drupchen, 2026): the practical guide, as a community entry.
+- [Two strategies for improving machine translation from Tibetan](../papers/two-strategies-for-machine-translation-from-tibetan/README.md) (Drupchen, 2026): the practical guide.
 
 ## Related tasks
 
