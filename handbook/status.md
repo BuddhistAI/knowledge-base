@@ -47,7 +47,6 @@ Benchmark `toc-extraction/bo` 2.0.0 (85 passages from two commentaries, one book
 
 ### Waiting on NT
 
-- **Template repos:** create two empty public repos, `BuddhistAI/template-skill-repo` and `BuddhistAI/template-benchmark`. Their content is ready (project files `repo-templates/`). After the push, tick **Settings → Template repository** in each.
 - **Secret `ORG_REPOS_TOKEN`** in BuddhistAI/knowledge-base, for the weekly `agent-notes` check ([Architecture](architecture.md#secrets)). Until then the check only lists repos that have no `CLAUDE.md`.
 - The BuddhistAI/.github repo has no agent notes yet: the session that wrote them cannot push to it. The weekly check will open a pull request there once the token is set.
 
