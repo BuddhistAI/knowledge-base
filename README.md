@@ -1,6 +1,6 @@
 # BuddhistAI research
 
-The lab notebook of [BuddhistAI](https://github.com/BuddhistAI): what we tried, why, and what we found. Each experiment has its own folder with a plan written before it ran, a dated log, and a report ready to post on the WeBuddhist forum.
+The lab notebook of [BuddhistAI](https://github.com/BuddhistAI): what we tried, why, and what we found. Each experiment has its own folder with a plan written before it ran, a dated log, and a report ready to share in [Discussions](https://github.com/orgs/BuddhistAI/discussions) or any forum.
 
 Code, data and scores live in the other repos. This repo holds the reasoning and links to them.
 
@@ -25,10 +25,10 @@ Status is one of: **Planned** (plan written, not started), **Running**, **Conclu
 1. **Open an issue** with the "Idea" template. Discuss there until it is worth running.
 2. **Make the folder** `experiments/<yyyy-mm>-<slug>/`, named by the month it starts. Copy the three files from [templates/](templates/).
 3. **Write `PLAN.md` before running anything.** State the question, the hypothesis, the method, the metric and what result would count against the hypothesis. Commit it. Once the experiment starts, don't edit the plan: record changes in `LOG.md` as deviations, with the reason. Git history is the proof that the goalposts didn't move. This matters most for experiments that try to change the world and then measure it, like the intervention study.
-4. **Optionally post the plan on the forum** to invite feedback before starting.
+4. **Optionally post the plan in Discussions** (or your own forum) to invite feedback before starting.
 5. **Keep `LOG.md` as you go:** dated entries, newest last. Note runs, interventions, surprises, and anything you changed.
-6. **Write `REPORT.md` when it concludes.** It should stand alone so it can be pasted into the forum: result first, then what was measured, the numbers, the known problems and next steps. Link to data and results in the other repos at exact commits or versions.
-7. **Post the report on the forum** and add its link to the report's header.
+6. **Write `REPORT.md` when it concludes.** It should stand alone so it can be pasted into Discussions or a forum: result first, then what was measured, the numbers, the known problems and next steps. Link to data and results in the other repos at exact commits or versions.
+7. **Post the report in Discussions** (and any forum you use) and add its link to the report's header.
 8. **Open issues for follow-ups** ("To-do" or "Re-run" templates), each linking back to the folder.
 
 ## Issues and the board
@@ -42,8 +42,8 @@ The [BuddhistAI research board](https://github.com/orgs/BuddhistAI/projects) sho
 - Link, don't copy. Data, code and long designs stay in their own repos; refer to them by commit or version so a link still shows what we used.
 - Numbers in a report come from a results file you can link to.
 - A re-run after a benchmark version change is a new LOG entry and, if it changes the conclusion, a new report section. Don't overwrite old numbers.
-- Write for the forum: plain language, result first, short sentences.
+- Write for a forum post: plain language, result first, short sentences.
 
 ## License
 
-MIT. BuddhistAI was founded and is maintained by [WeBuddhist](https://webuddhist.com).
+MIT. Written by the BuddhistAI contributors; anyone can propose an experiment with the "Idea" issue form.
