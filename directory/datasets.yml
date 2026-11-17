@@ -1,0 +1,531 @@
+# Buddhist AI datasets. One entry per dataset. Rendered into directory/README.md by scripts/build.py.
+# Same fields as projects.yml; kind is one of the dataset kinds in scripts/check.py.
+# "updated" is the last change we saw on the dataset page (YYYY-MM).
+
+# Benchmarks
+- name: Thai Buddhist Studies Exam (Nak Tham)
+  url: https://huggingface.co/datasets/biodatlab/thai_buddhist_studies_exam
+  org: Mahidol University (biodatlab)
+  kind: Benchmarks
+  what: About 4,100 multiple-choice questions from the Thai national Dhamma exams (2020, 2022, 2023), three levels. Imported into BuddhistBench.
+  languages: [Thai]
+  open: Apache-2.0
+  updated: 2025-01
+  tasks: [buddhist-knowledge-qa]
+- name: BudHistBenchmark
+  url: https://mbingenheimer.net/budhistbenchmark/
+  org: Marcus Bingenheimer
+  kind: Benchmarks
+  what: 260 multiple-choice questions on Buddhist history (mostly Chinese and Japanese Buddhism). Top models now score about 95%.
+  languages: [English]
+  open: license not stated
+  updated: ""
+  tasks: [buddhist-knowledge-qa]
+- name: DharmaBench
+  url: https://github.com/Intellexus-DSI/DharmaBench
+  org: Intellexus (Reichman University, University of Hamburg)
+  kind: Benchmarks
+  what: 13 classification and span-detection tasks on Indian and Tibetan canonical texts, about 4,900 test items.
+  languages: [Sanskrit, Tibetan]
+  open: data CC-BY-4.0, code Apache-2.0
+  updated: 2026-01
+  tasks: [segmentation, citation-mapping]
+- name: MITRA-zh-eval
+  url: https://aclanthology.org/2025.nlp4dh-1.12
+  org: Dharmamitra team
+  kind: Benchmarks
+  what: 2,662 Classical Chinese to English sentence pairs from the Chinese canon for evaluating translation.
+  languages: [Classical Chinese, English]
+  open: paper CC BY 4.0; data on GitHub
+  updated: 2025
+  tasks: [translation]
+- name: BK-EVAL (佛典知識評測資料集)
+  url: https://github.com/DILA-edu/BK-EVAL
+  org: Dharma Drum Institute of Liberal Arts
+  kind: Benchmarks
+  what: Evaluation set on knowledge of the Chinese Buddhist canon.
+  languages: [Classical Chinese, Chinese]
+  open: on GitHub (license not stated)
+  updated: 2026-11
+  tasks: [buddhist-knowledge-qa]
+- name: Bo-bench
+  url: https://huggingface.co/datasets/MonlamAI/Bo-bench-v1.0.0
+  org: Monlam AI
+  kind: Benchmarks
+  what: Multiple-choice questions on Tibetan grammar, literature and history, written by subject experts, for evaluating Tibetan language models.
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2026-04
+  tasks: [buddhist-knowledge-qa]
+- name: Daham Danuma
+  url: https://github.com/sdkaluwitharana/daham-danuma
+  org: sdkaluwitharana (community)
+  kind: Benchmarks
+  what: Open bank of multiple-choice questions for Dhamma school students in Sri Lanka.
+  languages: [Sinhala]
+  open: CC-BY-SA-4.0
+  updated: 2026-10
+  tasks: [buddhist-knowledge-qa]
+- name: TLUE
+  url: https://arxiv.org/abs/2503.12051
+  org: UESTC, Tibet University and others
+  kind: Benchmarks
+  what: 22,963 multiple-choice questions on general Tibetan knowledge, translated from Chinese benchmarks (no Buddhism category).
+  languages: [Tibetan]
+  open: CC-BY-NC-SA 4.0 (non-commercial)
+  updated: 2025
+- name: canoncite
+  url: https://huggingface.co/datasets/pralia-labs/canoncite
+  org: pralia-labs
+  kind: Benchmarks
+  what: 622 citation and abstention items over ten public-domain corpora, including the Dhammapada.
+  languages: [English]
+  open: CC-BY-4.0
+  updated: ""
+  tasks: [citation-mapping]
+- name: BDRC Tibetan OCR benchmark
+  url: https://huggingface.co/datasets/BDRC/tibetan-ocr-benchmark
+  org: BDRC
+  kind: Benchmarks
+  what: Evaluation set for Tibetan OCR across many kinds of prints and manuscripts. Has a public leaderboard.
+  languages: [Tibetan]
+  open: CC0
+  updated: 2026-11
+  tasks: [ocr]
+- name: Tibetan OCR diagnostic benchmark
+  url: https://huggingface.co/datasets/BDRC/tibetan-ocr-diagnostic-benchmark
+  org: BDRC
+  kind: Benchmarks
+  what: 604 synthetic Tibetan page images that change one difficulty at a time (for example rotation or page shape) to show where OCR breaks.
+  languages: [Tibetan]
+  open: CC0
+  updated: 2026-11
+  tasks: [ocr]
+- name: Tibetan metadata benchmark
+  url: https://huggingface.co/datasets/BDRC/Bo_metadata_benchmark
+  org: BDRC
+  kind: Benchmarks
+  what: Tests how well models extract title, author, translator, date and other catalog data from the start and end of a Tibetan text.
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2026-08
+  tasks: [entity-extraction]
+- name: AI text outline benchmark
+  url: https://huggingface.co/datasets/openpecha/ai-text-outline-benchmark
+  org: OpenPecha
+  kind: Benchmarks
+  what: 124 Tibetan Buddhist texts with human-confirmed section breaks, for evaluating outline extraction.
+  languages: [Tibetan]
+  open: CC-BY-4.0
+  updated: 2026-06
+  tasks: [toc-extraction]
+- name: Page-to-character outline benchmark
+  url: https://huggingface.co/datasets/BDRC/PageToChar-Outline-benchmark
+  org: BDRC
+  kind: Benchmarks
+  what: Finds where a text starts and ends inside OCR pages when page-level outlines are turned into character-level ones.
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2026-09
+  tasks: [toc-extraction]
+- name: Tibetan speech-to-text benchmark
+  url: https://huggingface.co/datasets/openpecha/tibetan-voice-benchmark
+  org: Monlam AI and OpenPecha
+  kind: Benchmarks
+  what: Reviewed Tibetan speech transcripts from audio books, teachings and other sources, for evaluating speech recognition.
+  languages: [Tibetan]
+  open: MIT
+  updated: 2026-02
+- name: BuddhistAI TOC extraction benchmark
+  url: https://huggingface.co/datasets/BuddhistAI/toc-extraction-tibetan
+  org: BuddhistAI
+  kind: Benchmarks
+  what: Table-of-contents extraction from Tibetan texts, with a scorer and leaderboard.
+  languages: [Tibetan]
+  open: MIT
+  updated: 2026-11
+  tasks: [toc-extraction]
+- name: BuddhistBench
+  url: https://github.com/BuddhistAI/buddhist-bench
+  org: BuddhistAI
+  kind: Benchmarks
+  what: Question and answer benchmark on Buddhist knowledge across traditions and languages, built from expert-written and exam sets.
+  languages: [Thai, English, more]
+  open: MIT (imported sets keep their own license)
+  updated: 2026-11
+  tasks: [buddhist-knowledge-qa]
+
+# Texts and corpora
+- name: CBETA XML P5
+  url: https://github.com/cbeta-org/xml-p5
+  org: CBETA
+  kind: Texts and corpora
+  what: The full Chinese Buddhist canon of CBETA in TEI XML.
+  languages: [Classical Chinese]
+  open: reuse terms set by CBETA
+  updated: 2026-10
+- name: CBETA Chinese canon (Hugging Face copy)
+  url: https://huggingface.co/datasets/linhgiang/cbeta-chinese-canon
+  org: linhgiang (community)
+  kind: Texts and corpora
+  what: The CBETA canon as a ready-to-use dataset.
+  languages: [Classical Chinese]
+  open: CC-BY-NC-SA-4.0 (non-commercial)
+  updated: 2026-09
+- name: SuttaCentral data (sc-data)
+  url: https://github.com/suttacentral/sc-data
+  org: SuttaCentral
+  kind: Texts and corpora
+  what: Texts, translations and parallels behind SuttaCentral.
+  languages: [Pali, Chinese, Sanskrit, Tibetan, English, many translations]
+  open: mostly CC0 (see repo)
+  updated: 2026-11
+  tasks: [text-translation-alignment, citation-mapping]
+- name: Early Buddhist Texts, Pali and English
+  url: https://huggingface.co/datasets/linhgiang/early-buddhist-texts
+  org: linhgiang (community)
+  kind: Texts and corpora
+  what: 5,764 suttas of the Pali Sutta Piṭaka aligned segment by segment with Bhikkhu Sujato's English translations.
+  languages: [Pali, English]
+  open: CC0
+  updated: 2026-09
+  tasks: [text-translation-alignment]
+- name: BoCorpus
+  url: https://huggingface.co/datasets/openpecha/BoCorpus
+  org: OpenPecha
+  kind: Texts and corpora
+  what: Classical Tibetan texts from several digital collections, for training language models.
+  languages: [Tibetan]
+  open: CC0
+  updated: 2026-06
+- name: Tibetan corpus (Derge Kangyur and Tengyur)
+  url: https://github.com/tokushige-koyasan/tibetan-corpus
+  org: tokushige-koyasan (community)
+  kind: Texts and corpora
+  what: Plain text of 3,452 Tibetan Buddhist texts from the Derge Kangyur and Tengyur.
+  languages: [Tibetan]
+  open: CC0
+  updated: 2026-08
+- name: Derge Kangyur and Tengyur e-texts
+  url: https://github.com/Esukhia/derge-kangyur
+  org: Esukhia
+  kind: Texts and corpora
+  what: Digital Derge Kangyur (and a Tengyur repo next to it).
+  languages: [Tibetan]
+  open: on GitHub (license not stated)
+  updated: 2022-06
+- name: Thai Tipitaka and commentaries (MBU edition)
+  url: https://huggingface.co/datasets/uisp/tripitaka-mbu
+  org: uisp (community)
+  kind: Texts and corpora
+  what: The Thai Tipitaka with commentaries, Mahamakut edition, 91 volumes, one file per page.
+  languages: [Thai]
+  open: license not stated
+  updated: 2024-12
+- name: Pali Tipitaka in Thai script
+  url: https://huggingface.co/datasets/uisp/pali-tripitaka-thai-script-siamrath-version
+  org: uisp (community)
+  kind: Texts and corpora
+  what: The Pali Tipitaka (Siamrath edition) in Thai script, with a matching commentary set.
+  languages: [Pali, Thai]
+  open: license not stated
+  updated: 2024-12
+- name: Tipitaka Pali in 15 scripts
+  url: https://huggingface.co/datasets/freococo/tipitaka_pali_in_15_scripts
+  org: freococo (community)
+  kind: Texts and corpora
+  what: The Pali Tipitaka written in 15 scripts.
+  languages: [Pali]
+  open: CC-BY-NC-4.0 (non-commercial)
+  updated: 2026-02
+- name: Myanmar Tipitaka translation
+  url: https://huggingface.co/datasets/freococo/tipitaka_myanmar_translation_books
+  org: freococo (community)
+  kind: Texts and corpora
+  what: Burmese translation of the Tipitaka with the main commentaries and the Visuddhimagga, as JSONL.
+  languages: [Burmese]
+  open: CC0
+  updated: 2026-02
+- name: SiPaKosa
+  url: https://github.com/RanxduG/SiPaKosa-Dataset
+  org: RanxduG (community)
+  kind: Texts and corpora
+  what: Corpus of canonical and classical Buddhist texts in Sinhala and Pali.
+  languages: [Sinhala, Pali]
+  open: MIT
+  updated: 2026-05
+- name: Daizhige
+  url: https://huggingface.co/datasets/buddhist-nlp/daizhige
+  org: Dharmamitra team
+  kind: Texts and corpora
+  what: Large Classical Chinese corpus (Daizhige collection).
+  languages: [Classical Chinese]
+  open: license not stated
+  updated: 2023-07
+
+# Parallel texts and translation
+- name: 84000 translation memory
+  url: https://github.com/84000/data-translation-memory
+  org: 84000
+  kind: Parallel texts and translation
+  what: Tibetan source segments aligned with 84000's English translations.
+  languages: [Tibetan, English]
+  open: on GitHub (license not stated)
+  updated: 2025-03
+  tasks: [text-translation-alignment, translation]
+- name: 84000 TEI translations
+  url: https://github.com/84000/data-tei
+  org: 84000
+  kind: Parallel texts and translation
+  what: 84000's published translations in TEI XML.
+  languages: [English, Tibetan]
+  open: on GitHub (license not stated)
+  updated: 2025-02
+- name: MITRA parallel data
+  url: https://github.com/dharmamitra/mitra-parallel
+  org: Dharmamitra team
+  kind: Parallel texts and translation
+  what: Parallel sentence data from the Dharmamitra project.
+  languages: [Sanskrit, Tibetan, Classical Chinese, English]
+  open: on GitHub (license not stated)
+  updated: 2026-10
+  tasks: [text-translation-alignment]
+- name: Mitrasaṃgraha
+  url: https://huggingface.co/datasets/buddhist-nlp/mitrasamgraha-released-data-only
+  org: Dharmamitra team
+  kind: Parallel texts and translation
+  what: Released part of the Dharmamitra parallel data collection.
+  languages: [Sanskrit, Tibetan, Classical Chinese, English]
+  open: license not stated
+  updated: 2026-02
+  tasks: [translation]
+- name: Tibetan-English sentence alignment
+  url: https://huggingface.co/datasets/buddhist-nlp/sentence-alignment-tib-eng
+  org: Dharmamitra team
+  kind: Parallel texts and translation
+  what: Aligned Tibetan and English sentences.
+  languages: [Tibetan, English]
+  open: license not stated
+  updated: 2024-09
+  tasks: [text-translation-alignment]
+- name: Tibetan to English, Spanish, French and German pairs
+  url: https://huggingface.co/datasets/billingsmoore/tibetan-to-english-translation-dataset
+  org: billingsmoore (community)
+  kind: Parallel texts and translation
+  what: Tibetan sentences paired with translations, with sister sets for Spanish, French and German and a phonetics set.
+  languages: [Tibetan, English, Spanish, French, German]
+  open: CC-BY-NC-4.0 (non-commercial)
+  updated: 2024-10
+  tasks: [translation]
+- name: Pali Tripitaka parallel corpus
+  url: https://github.com/x39826/Pali_Tripitaka
+  org: x39826 (community)
+  kind: Parallel texts and translation
+  what: Pali scriptures as used in 15 countries, with a parallel corpus.
+  languages: [Pali, many]
+  open: license not stated
+  updated: 2019-04
+
+# OCR and page layout
+- name: BDRC OCR transcriptions (several sets)
+  url: https://huggingface.co/BDRC
+  org: BDRC
+  kind: OCR and page layout
+  what: Page images with checked transcriptions from many sources (ACIP, Berkeley, Monlam AI handwritten, Palri Parkhang and more), as separate datasets.
+  languages: [Tibetan]
+  open: mostly CC0
+  updated: 2026-09
+  tasks: [ocr]
+- name: TiBLAD - Tibetan Book Layout Analysis Dataset
+  url: https://huggingface.co/datasets/BDRC/TiBLAD
+  org: BDRC
+  kind: OCR and page layout
+  what: Tibetan book pages with layout regions marked.
+  languages: [Tibetan]
+  open: see dataset card
+  updated: 2026-08
+  tasks: [ocr]
+- name: OpenPecha OCR datasets
+  url: https://huggingface.co/openpecha
+  org: OpenPecha
+  kind: OCR and page layout
+  what: Line images and transcriptions from Kangyur and other prints and manuscripts (Lhasa, Lithang, Derge, Stok, Drutsa and more), plus line and layout annotation.
+  languages: [Tibetan]
+  open: mostly ODC-BY or CC0
+  updated: 2025-10
+  tasks: [ocr]
+- name: Sinhala and Pali OCR data
+  url: https://huggingface.co/datasets/pathnirvana/sinhala-pali-ocr
+  org: Path Nirvana
+  kind: OCR and page layout
+  what: Old Sinhala and Pali prints with transcriptions.
+  languages: [Sinhala, Pali]
+  open: CC-BY-4.0
+  updated: 2026-11
+  tasks: [ocr]
+- name: Tripitaka Koreana in Han (TKH, MTH)
+  url: https://github.com/HCIILAB/TKH_MTH_Datasets_Release
+  org: HCIILAB
+  kind: OCR and page layout
+  what: Page images of the Tripitaka Koreana and other Chinese canons with character annotation.
+  languages: [Classical Chinese]
+  open: research use (see repo)
+  updated: 2020-09
+  tasks: [ocr]
+
+# Speech
+- name: Tibetan voice datasets
+  url: https://huggingface.co/datasets/openpecha/tibetan_voice
+  org: OpenPecha
+  kind: Speech
+  what: Tibetan speech with transcripts, including teachings, audio books and more. Monlam AI also publishes Bo-voice.
+  languages: [Tibetan]
+  open: see dataset cards
+  updated: 2026-05
+- name: Garchen Rinpoche teachings speech data
+  url: https://huggingface.co/datasets/openpecha/garchen_rinpoche_data
+  org: OpenPecha
+  kind: Speech
+  what: 5.6 hours of transcribed teachings by Garchen Rinpoche, for speech recognition of one teacher.
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2025-10
+
+# Language annotation
+- name: Tibetan quotation detection
+  url: https://huggingface.co/datasets/BDRC/Bo-Quotation-Dataset
+  org: BDRC
+  kind: Language annotation
+  what: 254 classical Tibetan books with 23,095 human-reviewed quotation spans, for finding quotations in commentaries.
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2026-11
+  tasks: [citation-mapping]
+- name: Tibetan yigchung (small-print notes) detection
+  url: https://huggingface.co/datasets/BDRC/Bo-Yigchung-Dataset
+  org: BDRC
+  kind: Language annotation
+  what: 762 classical Tibetan books with marked spans of yigchung, the small-print notes written under or beside the main line.
+  languages: [Tibetan]
+  open: license not stated
+  updated: 2026-11
+  tasks: [annotation-detection]
+- name: Tibetan spelling correction
+  url: https://huggingface.co/datasets/BDRC/tibetan-spelling-correction-dataset
+  org: BDRC
+  kind: Language annotation
+  what: Sentence pairs of a first transcription and the reviewer's corrected version, from BDRC's double-annotation work.
+  languages: [Tibetan]
+  open: CC0
+  updated: 2026-08
+  tasks: [spell-check]
+- name: Tibetan word segmentation
+  url: https://huggingface.co/datasets/billingsmoore/tibetan-word-segmentation-ds
+  org: billingsmoore (community)
+  kind: Language annotation
+  what: Expert word boundaries for 100 sentences of modern Lhasa Tibetan news speech.
+  languages: [Tibetan]
+  open: CC-BY-4.0
+  updated: 2026-07
+  tasks: [segmentation]
+- name: Tibetan NER
+  url: https://huggingface.co/datasets/TibetanAI/TibetanAI_NERv1.0
+  org: TibetanAI
+  kind: Language annotation
+  what: Named entity data for Tibetan.
+  languages: [Tibetan]
+  open: Apache-2.0
+  updated: 2023-08
+  tasks: [entity-extraction]
+- name: Tibetan normalisation test data
+  url: https://huggingface.co/datasets/pagantibet/Tibetan-normalisation-testdata
+  org: pagantibet
+  kind: Language annotation
+  what: Test data for normalising historical Tibetan spelling, with an abbreviation dictionary next to it.
+  languages: [Tibetan]
+  open: CC-BY-NC-SA-4.0 (non-commercial)
+  updated: 2026-04
+  tasks: [text-cleanup, spell-check]
+- name: Sanskrit sandhi, lemma and grammar data
+  url: https://huggingface.co/chronbmm
+  org: chronbmm
+  kind: Language annotation
+  what: Sanskrit datasets for splitting sandhi, lemmas, grammar tags and OCR post-correction.
+  languages: [Sanskrit]
+  open: see dataset cards
+  updated: 2024-05
+  tasks: [segmentation, text-cleanup]
+
+# Metadata, outlines and knowledge
+- name: Tibetan metadata extracted
+  url: https://huggingface.co/datasets/openpecha/tibetan-metadata-extracted
+  org: OpenPecha
+  kind: Metadata, outlines and knowledge
+  what: Catalog data extracted from Tibetan texts, with training sets for language models.
+  languages: [Tibetan]
+  open: CC-BY-4.0
+  updated: 2026-06
+  tasks: [entity-extraction]
+- name: Tibetan outline boundary snippets
+  url: https://huggingface.co/datasets/openpecha/tibetan-outline-boundary-snippets-unique
+  org: OpenPecha
+  kind: Metadata, outlines and knowledge
+  what: Tibetan text snippets around outline boundaries, for finding where works start and end.
+  languages: [Tibetan]
+  open: Apache-2.0
+  updated: 2026-06
+  tasks: [toc-extraction]
+- name: Buddhist Philosophy Graph
+  url: https://huggingface.co/datasets/joyboseroy/buddhist-philosophy-graph
+  org: joyboseroy (community)
+  kind: Metadata, outlines and knowledge
+  what: Knowledge graph of nine Buddhist schools, from Theravada to Tibetan Vajrayana. Every link cites a named text with a quote.
+  languages: [English, Pali, Sanskrit, Tibetan, Chinese, Japanese]
+  open: CC-BY-4.0
+  updated: 2026-06
+- name: Dhamma.Gift definitions
+  url: https://huggingface.co/datasets/dhammagift/dg-dataset
+  org: Dhamma.Gift
+  kind: Metadata, outlines and knowledge
+  what: Key terms of the suttas with the definitions the suttas themselves give.
+  languages: [Pali, English, Russian]
+  open: CC-BY-4.0
+  updated: 2026-11
+  tasks: [term-extraction]
+- name: INNER ATLAS SuttaCentral quotations
+  url: https://huggingface.co/datasets/Zaneoiji/inneratlas-suttacentral
+  org: Zaneoiji (community)
+  kind: Metadata, outlines and knowledge
+  what: 703,068 quotation records from SuttaCentral texts in many languages, each with its own rights and attribution.
+  languages: [Pali, English, many]
+  open: CC0 (920 records CC-BY-SA-3.0)
+  updated: 2026-09
+  tasks: [citation-mapping]
+
+# Q&A and instruction data
+- name: MITRA instruction data
+  url: https://huggingface.co/datasets/buddhist-nlp/mitra-instructions
+  org: Dharmamitra team
+  kind: Q&A and instruction data
+  what: Instruction data from the MITRA project.
+  languages: [Tibetan, Sanskrit, Classical Chinese, English]
+  open: license not stated
+  updated: 2024-10
+- name: Buddhist LLM fine-tuning data
+  url: https://github.com/guyiicn/buddhist-llm-finetune
+  org: guyiicn (community)
+  kind: Q&A and instruction data
+  what: 4,386 question and answer pairs on 18 CBETA scriptures, with fine-tuning scripts.
+  languages: [Chinese]
+  open: license not stated
+  updated: 2026-02
+  tasks: [buddhist-knowledge-qa]
+- name: Thai Dhamma books
+  url: https://huggingface.co/datasets/uisp/dhamma-scholar-book
+  org: uisp (community)
+  kind: Q&A and instruction data
+  what: Thai Dhamma study books, with a second set for the general public.
+  languages: [Thai]
+  open: license not stated
+  updated: 2024-12
+  tasks: [buddhist-knowledge-qa]

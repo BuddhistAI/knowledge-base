@@ -1,9 +1,10 @@
-"""Check frontmatter and links between task and workflow pages."""
+"""Check frontmatter and links between task and workflow pages, and the directory entries."""
 import re
 import subprocess
 import sys
 
 from pages import ROOT, load
+import directory
 
 AREAS = {"Texts", "Translation", "Study and teaching", "Art and visual", "Practice", "Centers and projects", "Personal setups"}
 TASK_KEYS = ["id", "title", "area", "summary", "status", "related", "benchmarks", "leaderboard", "skills", "contributors"]
@@ -48,6 +49,8 @@ for fid, f in flows.items():
     errors += [f"{where}: links to missing task {t!r}" for t in linked if t not in tasks]
     errors += [f"{where}: step table links {t!r} but frontmatter tasks does not list it" for t in linked - set(m.get("tasks", []))]
 
+errors += directory.check(set(tasks))
+
 r = subprocess.run([sys.executable, str(ROOT / "scripts" / "build.py"), "--check"], capture_output=True, text=True)
 if r.returncode:
     errors.append((r.stderr or r.stdout).strip())
@@ -55,4 +58,4 @@ if r.returncode:
 if errors:
     print("\n".join(errors))
     sys.exit(1)
-print(f"OK: {len(tasks)} tasks, {len(flows)} workflows")
+print(f"OK: {len(tasks)} tasks, {len(flows)} workflows, {len(directory.load('projects'))} projects, {len(directory.load('datasets'))} datasets")

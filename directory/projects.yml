@@ -1,0 +1,559 @@
+# Buddhist AI projects. One entry per project. Rendered into directory/README.md by scripts/build.py.
+# Fields:
+#   name, url, org        who made it and where to find it
+#   kind                  one of the project kinds in scripts/check.py
+#   what                  one or two plain sentences: what it does
+#   languages             language names, or [any]
+#   open                  how open it is: license of code, data or models, or "free to use, closed source"
+#   updated               last activity we saw (YYYY-MM), or "" if we could not tell
+#   tasks                 knowledge-base task ids it helps with (optional)
+# Keep entries neutral: describe, do not rank. Add a new entry at the end of its kind.
+
+# Translation and dictionaries
+- name: Dharmamitra
+  url: https://dharmamitra.org/
+  org: Dharmamitra team (UC Berkeley and partners)
+  kind: Translation and dictionaries
+  what: Machine translation, grammar analysis and search for Buddhist source languages. Its MITRA models are published on Hugging Face.
+  languages: [Sanskrit, Tibetan, Classical Chinese, Pali, English]
+  open: free web app; many models open (Hugging Face buddhist-nlp)
+  updated: 2026-11
+  tasks: [translation, text-translation-alignment]
+- name: 84000
+  url: https://84000.co/
+  org: 84000
+  kind: Translation and dictionaries
+  what: Translates the Tibetan Buddhist canon (Kangyur and Tengyur) into English. Publishes its TEI files and translation memory on GitHub, and a public position on AI translation of canonical texts.
+  languages: [Tibetan, English]
+  open: free to read; data on GitHub (license not stated)
+  updated: 2026-10
+  tasks: [translation, text-translation-alignment]
+- name: Monlam AI
+  url: https://monlam.ai/
+  org: Monlam
+  kind: Translation and dictionaries
+  what: Tibetan AI tools in one web app - translation, speech to text, text to speech and OCR.
+  languages: [Tibetan, English]
+  open: free to use; web app code open (MIT)
+  updated: 2026-09
+  tasks: [translation, ocr]
+- name: Digital Pāḷi Dictionary
+  url: https://www.dpdict.net/
+  org: Digital Pāḷi Dictionary team
+  kind: Translation and dictionaries
+  what: Pali to English dictionary with grammar data and a compound splitter. The full database is on GitHub.
+  languages: [Pali, English]
+  open: open data on GitHub (see repo for license)
+  updated: 2026-11
+  tasks: [segmentation, term-extraction]
+- name: Dharmamitra dictionaries and lexicon
+  url: https://github.com/dharmamitra/dharmamitra-stardict-dictionaries
+  org: Dharmamitra team
+  kind: Translation and dictionaries
+  what: StarDict dictionaries and a lexicon built from Dharmamitra's parallel text collection.
+  languages: [Sanskrit, Tibetan, Classical Chinese, English]
+  open: open on GitHub (license not stated)
+  updated: 2026-11
+  tasks: [term-extraction]
+- name: Buddhist AI Translator (慧译通)
+  url: https://github.com/xr843/Buddhist-AI-Translator
+  org: xr843 (community)
+  kind: Translation and dictionaries
+  what: AI translator for Buddhist texts with support for Sanskrit, Pali and Tibetan terms.
+  languages: [Chinese, Sanskrit, Pali, Tibetan, English]
+  open: open source (MIT)
+  updated: 2026-08
+  tasks: [translation]
+
+# Text libraries and search
+- name: BDRC - Buddhist Digital Resource Center
+  url: https://www.bdrc.io/
+  org: BDRC
+  kind: Text libraries and search
+  what: The largest digital library of Tibetan texts (scans, e-texts and catalog). In 2026 it started an initiative to build open Buddhist datasets for AI, and it publishes OCR models and datasets on Hugging Face.
+  languages: [Tibetan, Sanskrit, Chinese, Pali]
+  open: free library; many datasets CC0
+  updated: 2026-11
+  tasks: [ocr, entity-extraction]
+- name: OpenPecha
+  url: https://openpecha.org/
+  org: OpenPecha (WeBuddhist)
+  kind: Text libraries and search
+  what: Open Tibetan texts and the tools and datasets to work with them (OCR, speech, translation, outlines). Datasets and models are on Hugging Face.
+  languages: [Tibetan, English]
+  open: open data and code (licenses vary)
+  updated: 2026-08
+  tasks: [ocr, toc-extraction, translation]
+- name: WeBuddhist app
+  url: https://webuddhist.com/
+  org: WeBuddhist
+  kind: Text libraries and search
+  what: App that connects readers to Buddhist scriptures in several languages.
+  languages: [Tibetan, English, more]
+  open: free app (code on GitHub, license not stated)
+  updated: 2026-11
+- name: SuttaCentral
+  url: https://suttacentral.net/
+  org: SuttaCentral
+  kind: Text libraries and search
+  what: Early Buddhist texts with parallels across languages and many translations. Texts and parallels are on GitHub (sc-data).
+  languages: [Pali, Chinese, Sanskrit, Tibetan, English, many translations]
+  open: code and data on GitHub; many translations CC0
+  updated: 2026-11
+  tasks: [text-translation-alignment, citation-mapping]
+- name: CBETA
+  url: https://www.cbeta.org/
+  org: Chinese Buddhist Electronic Text Association
+  kind: Text libraries and search
+  what: Digital edition of the Chinese Buddhist canon, with an online reader (CBETA Online), XML files on GitHub and an API.
+  languages: [Classical Chinese]
+  open: free to read; reuse terms set by CBETA
+  updated: 2026-11
+  tasks: [citation-mapping, edition-collation]
+- name: SAT Daizōkyō Text Database
+  url: https://21dzk.l.u-tokyo.ac.jp/SAT/
+  org: University of Tokyo
+  kind: Text libraries and search
+  what: Searchable Taishō edition of the Chinese Buddhist canon.
+  languages: [Classical Chinese]
+  open: free to use
+  updated: ""
+- name: DILA Authority Databases
+  url: https://authority.dila.edu.tw/
+  org: Dharma Drum Institute of Liberal Arts
+  kind: Text libraries and search
+  what: Reference data on people, places, times and catalogs for Buddhist studies. Also on GitHub.
+  languages: [Classical Chinese, English]
+  open: free; data on GitHub
+  updated: 2026-11
+  tasks: [entity-extraction]
+- name: DharmaNexus
+  url: https://dharmanexus.org/
+  org: Dharmamitra team (successor of BuddhaNexus)
+  kind: Text libraries and search
+  what: Finds parallel and similar passages across the Pali, Sanskrit, Tibetan and Chinese canons.
+  languages: [Pali, Sanskrit, Tibetan, Classical Chinese]
+  open: free to use; BuddhaNexus code GPL-3.0
+  updated: 2026-11
+  tasks: [citation-mapping, text-commentary-alignment]
+- name: FoJin
+  url: https://fojin.app/
+  org: xr843 (community)
+  kind: Text libraries and search
+  what: Buddhist text platform with more than 10,000 texts from over 600 sources and search across languages.
+  languages: [Classical Chinese, Pali, Sanskrit, Tibetan, English]
+  open: open source (Apache-2.0)
+  updated: 2026-11
+- name: Deer Park
+  url: https://deerpark.app/
+  org: deerpark.app
+  kind: Text libraries and search
+  what: Reader for Chinese Buddhist texts. An agent skill lets AI agents look up and read texts through its public URLs.
+  languages: [Classical Chinese]
+  open: free to use; skill open source (MIT)
+  updated: 2026-09
+- name: Tipitaka.lk
+  url: https://tipitaka.lk/
+  org: Path Nirvana
+  kind: Text libraries and search
+  what: The Buddha Jayanthi Tipitaka of Sri Lanka with its Sinhala translation, plus other Pali editions.
+  languages: [Pali, Sinhala]
+  open: free; code on GitHub
+  updated: 2026-11
+- name: Tipitaka.org (Chaṭṭha Saṅgāyana)
+  url: https://www.tipitaka.org/
+  org: Vipassana Research Institute
+  kind: Text libraries and search
+  what: The Pali canon of the Sixth Council in many scripts.
+  languages: [Pali]
+  open: free to read
+  updated: ""
+- name: Digital Pali Reader
+  url: https://digitalpalireader.online/
+  org: Digital Pali Reader project
+  kind: Text libraries and search
+  what: Pali canon reader with built-in dictionary lookup.
+  languages: [Pali, English]
+  open: free to use
+  updated: ""
+- name: GRETIL
+  url: https://gretil.sub.uni-goettingen.de/
+  org: Göttingen State and University Library
+  kind: Text libraries and search
+  what: Collection of Sanskrit and other Indic e-texts, including many Buddhist texts.
+  languages: [Sanskrit, Pali]
+  open: free to download (terms per text)
+  updated: ""
+- name: Digital Sanskrit Buddhist Canon
+  url: https://www.dsbcproject.org/
+  org: University of the West and partners
+  kind: Text libraries and search
+  what: Sanskrit Buddhist texts in digital form.
+  languages: [Sanskrit]
+  open: free to read
+  updated: ""
+- name: Adarshah
+  url: https://adarshah.org/
+  org: Dharma Treasure
+  kind: Text libraries and search
+  what: Digital Tibetan canon (Kangyur and Tengyur) with search.
+  languages: [Tibetan]
+  open: free to use
+  updated: ""
+- name: Lotsawa House
+  url: https://www.lotsawahouse.org/
+  org: Lotsawa House
+  kind: Text libraries and search
+  what: Translations of Tibetan Buddhist texts, often with the Tibetan source.
+  languages: [Tibetan, English, many translations]
+  open: free to read
+  updated: ""
+  tasks: [text-translation-alignment]
+
+# OCR and digitization
+- name: BDRC Tibetan OCR app
+  url: https://github.com/buda-base/tibetan-ocr-app
+  org: BDRC
+  kind: OCR and digitization
+  what: Offline app for Tibetan OCR. The models are on Hugging Face (BDRC/tibetan-ocr).
+  languages: [Tibetan]
+  open: open source (MIT)
+  updated: 2025-12
+  tasks: [ocr]
+- name: BDRC OCR and layout models
+  url: https://huggingface.co/BDRC
+  org: BDRC
+  kind: OCR and digitization
+  what: More than 40 models for Tibetan OCR, line and layout detection, script type and page orientation, with matching datasets.
+  languages: [Tibetan]
+  open: open models (licenses vary)
+  updated: 2026-10
+  tasks: [ocr, annotation-detection]
+- name: Namgyal OCR
+  url: https://github.com/eric86y/Namgyal-OCR
+  org: Tibetan Manuscript Project Vienna
+  kind: OCR and digitization
+  what: OCR for Tibetan manuscripts.
+  languages: [Tibetan]
+  open: open source (MIT)
+  updated: 2024-12
+  tasks: [ocr]
+- name: Sinhala and Pali OCR model
+  url: https://huggingface.co/pathnirvana/sinhala-pali-ocr-lightonocr-1b
+  org: Path Nirvana
+  kind: OCR and digitization
+  what: OCR model for old Sinhala and Pali prints, trained on its own open dataset.
+  languages: [Sinhala, Pali]
+  open: open model on Hugging Face
+  updated: 2026-11
+  tasks: [ocr]
+
+# Language tools
+- name: Botok
+  url: https://github.com/WeBuddhist/Botok
+  org: WeBuddhist
+  kind: Language tools
+  what: Tibetan word tokenizer in Python.
+  languages: [Tibetan]
+  open: open source (Apache-2.0)
+  updated: 2026-10
+  tasks: [segmentation]
+- name: pyewts
+  url: https://github.com/WeBuddhist/pyewts
+  org: WeBuddhist
+  kind: Language tools
+  what: Converts Tibetan Unicode to and from Wylie (EWTS) transliteration.
+  languages: [Tibetan]
+  open: open source (Apache-2.0)
+  updated: 2026-07
+- name: bophono
+  url: https://github.com/Esukhia/bophono
+  org: Esukhia
+  kind: Language tools
+  what: Tibetan phonetics engine in Python.
+  languages: [Tibetan]
+  open: open source (MIT)
+  updated: 2026-11
+- name: lucene-bo
+  url: https://github.com/buda-base/lucene-bo
+  org: BDRC
+  kind: Language tools
+  what: Tibetan text analyzer for Lucene and Elasticsearch search.
+  languages: [Tibetan]
+  open: open source (Apache-2.0)
+  updated: 2026-11
+- name: ByT5 Sanskrit analyzers
+  url: https://github.com/dharmamitra/byt5-sanskrit-analyzers
+  org: Dharmamitra team
+  kind: Language tools
+  what: Models for Sanskrit word splitting (sandhi), lemmas and grammar tags, and OCR post-correction.
+  languages: [Sanskrit]
+  open: code on GitHub; models on Hugging Face
+  updated: 2024-11
+  tasks: [segmentation, text-cleanup]
+- name: Pali script tools (paliscript)
+  url: https://github.com/5w0rdf15h/paliscript
+  org: 5w0rdf15h (community)
+  kind: Language tools
+  what: Python library and command line tool for Pali transliteration between Thai, Sinhala, Roman and other scripts.
+  languages: [Pali]
+  open: open source (license not stated)
+  updated: 2026-02
+
+# Speech
+- name: OpenPecha speech models
+  url: https://huggingface.co/openpecha
+  org: OpenPecha (WeBuddhist)
+  kind: Speech
+  what: Tibetan speech-to-text models, including models for the teachings of specific teachers, with training data and a benchmark.
+  languages: [Tibetan]
+  open: open models (licenses vary)
+  updated: 2026-05
+- name: SuttaCentral Voice
+  url: https://github.com/sc-voice/sc-voice
+  org: SuttaCentral Voice
+  kind: Speech
+  what: Reads suttas from SuttaCentral aloud with text-to-speech.
+  languages: [Pali, English, German, more]
+  open: open source (MIT)
+  updated: 2026-11
+- name: dharma-transcribe
+  url: https://github.com/retiform-labs/dharma-transcribe
+  org: Retiform Labs (community)
+  kind: Speech
+  what: Transcription pipeline for recorded Dharma teachings in several languages.
+  languages: [Tibetan, English, more]
+  open: open source (MIT)
+  updated: 2026-11
+
+# AI models
+- name: MITRA models (buddhist-nlp)
+  url: https://huggingface.co/buddhist-nlp
+  org: Dharmamitra team
+  kind: AI models
+  what: About 60 models for Buddhist languages - translation (Gemma, Qwen, NLLB and mBART based), embeddings, sentence alignment, tagging and OCR.
+  languages: [Tibetan, Sanskrit, Classical Chinese, Pali, English]
+  open: open models (licenses vary)
+  updated: 2026-07
+  tasks: [translation, text-translation-alignment, ocr]
+- name: Tibetan BERT and RoBERTa models
+  url: https://huggingface.co/KoichiYasuoka/roberta-base-tibetan
+  org: Koichi Yasuoka (Kyoto University)
+  kind: AI models
+  what: Tibetan language models, with versions for part-of-speech tagging.
+  languages: [Tibetan]
+  open: open models
+  updated: ""
+  tasks: [segmentation]
+- name: Buddhist Sanskrit BERT
+  url: https://huggingface.co/Matej/bert-base-buddhist-sanskrit
+  org: Matej (Hugging Face user)
+  kind: AI models
+  what: BERT model trained on Buddhist Sanskrit texts.
+  languages: [Sanskrit]
+  open: open model
+  updated: ""
+- name: MLotsawa and Tibetan speech models
+  url: https://huggingface.co/billingsmoore
+  org: billingsmoore (community)
+  kind: AI models
+  what: Tibetan to English translation models (MLotsawa) and Tibetan speech recognition models, with open datasets.
+  languages: [Tibetan, English]
+  open: open models
+  updated: 2026-07
+  tasks: [translation]
+
+# Chatbots and Q&A
+- name: NORBU
+  url: https://norbu-ai.org/en/norbu
+  org: Buddhist Channel (Malaysia)
+  kind: Chatbots and Q&A
+  what: Chatbot that answers questions about Buddhism from Buddhist sources.
+  languages: [English, more]
+  open: free to use, closed source
+  updated: ""
+  tasks: [buddhist-knowledge-qa]
+- name: BuddhaBot-Plus
+  url: https://www.kyoto-u.ac.jp/en/news/2025-03-03
+  org: Kyoto University
+  kind: Chatbots and Q&A
+  what: Chatbot based on Buddhist scriptures, built on ChatGPT. Used with monks and nuns in Bhutan, and in the Buddharoid robot at Shoren-in temple in Kyoto.
+  languages: [Japanese, English]
+  open: closed
+  updated: 2026-02
+  tasks: [buddhist-knowledge-qa]
+- name: Compassion Bot
+  url: https://www.awakin.ai/about/
+  org: Awakin.ai
+  kind: Chatbots and Q&A
+  what: Chatbot that draws on teachings of many traditions, Buddhism included.
+  languages: [English]
+  open: free to use
+  updated: ""
+- name: Roshibot
+  url: https://nozeninthewest.com/roshibot/
+  org: Jiryu Mark Rutschman-Byler
+  kind: Chatbots and Q&A
+  what: Zen chatbot.
+  languages: [English]
+  open: free to use
+  updated: ""
+- name: Master-skill
+  url: https://github.com/xr843/Master-skill
+  org: xr843 (community)
+  kind: Chatbots and Q&A
+  what: Framework for Buddhist AI personas that answer from sources (using FoJin) and know their limits.
+  languages: [Chinese, English]
+  open: open source (license not stated)
+  updated: 2026-11
+  tasks: [buddhist-knowledge-qa]
+
+# Agent skills and tools
+- name: Dharmamitra Claude Code agent
+  url: https://github.com/dharmamitra/dharmamitra-claude-code-agent
+  org: Dharmamitra team
+  kind: Agent skills and tools
+  what: Starter pack for agent-based translation, critical editions and finding parallel passages.
+  languages: [Sanskrit, Tibetan, Classical Chinese, Pali]
+  open: open on GitHub (license not stated)
+  updated: 2026-11
+  tasks: [translation, edition-collation, citation-mapping]
+- name: Tripitaka MCP server
+  url: https://github.com/dhamma-seeker/tripitaka-mcp
+  org: dhamma-seeker (community)
+  kind: Agent skills and tools
+  what: Gives AI assistants access to the full Pali Tipiṭaka (about 444,000 segments, aligned with SuttaCentral).
+  languages: [Pali, English]
+  open: open source (license not stated)
+  updated: 2026-11
+  tasks: [citation-mapping, buddhist-knowledge-qa]
+- name: Deer Park skill
+  url: https://github.com/briansun/deerpark-skill
+  org: briansun (community)
+  kind: Agent skills and tools
+  what: Agent skill to search and read Chinese Buddhist texts on deerpark.app.
+  languages: [Classical Chinese]
+  open: open source (MIT)
+  updated: 2026-09
+- name: buddhist-canons skill
+  url: https://github.com/luohy-qh/buddhist-canons
+  org: luohy-qh (community)
+  kind: Agent skills and tools
+  what: Agent skill built from 19 canons (2,494 texts) as searchable evidence cards that keep the source text apart from AI summaries.
+  languages: [Classical Chinese]
+  open: open source (license not stated)
+  updated: 2026-07
+  tasks: [buddhist-knowledge-qa]
+- name: Chinese kepan outliner
+  url: https://github.com/aaronbao1/chinese-kepan-outliner
+  org: aaronbao1 (community)
+  kind: Agent skills and tools
+  what: Claude skill that recovers the kēpàn (科判) outlines of classical Chinese Buddhist texts.
+  languages: [Classical Chinese]
+  open: open source (MIT)
+  updated: 2026-11
+  tasks: [toc-extraction]
+- name: BuddhistAI skills
+  url: https://github.com/BuddhistAI/buddhist-skills
+  org: BuddhistAI
+  kind: Agent skills and tools
+  what: The best measured skill for each Buddhist task, per language, plus shared community skills.
+  languages: [Tibetan, more]
+  open: open source (MIT)
+  updated: 2026-11
+  tasks: [toc-extraction]
+
+# Practice and teaching
+- name: Meditatewith.ai
+  url: https://meditatewith.ai/
+  org: Vince Horn
+  kind: Practice and teaching
+  what: Experiments with AI for guided and social meditation.
+  languages: [English]
+  open: free to use
+  updated: ""
+- name: my-dharma.md
+  url: https://github.com/BuddhistAI/buddhist-skills/tree/main/community
+  org: Shoukei Matsumoto
+  kind: Practice and teaching
+  what: A personal file that tells an AI assistant about your practice and how you want it to talk about the Dharma.
+  languages: [English]
+  open: CC0
+  updated: 2026-11
+- name: Dharma lesson planner
+  url: https://github.com/BobConscious/dharma-lesson-planner
+  org: BobConscious (community)
+  kind: Practice and teaching
+  what: App that drafts lesson plans for Buddhist studies classes from source material.
+  languages: [English]
+  open: open source (MIT)
+  updated: 2026-07
+
+# Research and community
+- name: Intellexus
+  url: https://www.kc-tbts.uni-hamburg.de/projects/intellexus.html
+  org: University of Hamburg, Reichman University and partners
+  kind: Research and community
+  what: EU-funded research project on AI for Buddhist texts in Sanskrit and Tibetan. Makers of DharmaBench.
+  languages: [Sanskrit, Tibetan]
+  open: research code open (Apache-2.0)
+  updated: 2026-10
+- name: Tsadra Dharma AI Project
+  url: https://www.tsadra.org/ai-tools-for-tibetan-buddhist-translation/
+  org: Tsadra Foundation with Dharmamitra
+  kind: Research and community
+  what: Webinars, slides and case studies on using AI tools in Tibetan translation work, and a Discord community for Dharma translation and AI.
+  languages: [Tibetan, Sanskrit, English]
+  open: free
+  updated: ""
+  tasks: [translation]
+- name: Buddhism & AI Initiative
+  url: https://www.engagedbuddhists.ai/
+  org: Buddhism & AI Initiative
+  kind: Research and community
+  what: Maps who works where Buddhism and AI meet, in six domains (its "Field Framework"), and brings the field together.
+  languages: [English]
+  open: free to read
+  updated: ""
+- name: BuddhistAI benchmarks
+  url: https://buddhistai.github.io/buddhist-benchmarks/
+  org: BuddhistAI
+  kind: Research and community
+  what: Open benchmarks and leaderboards for Buddhist tasks. Ranks models and skills by top performance and best value.
+  languages: [Tibetan, Thai, more]
+  open: open source (MIT)
+  updated: 2026-11
+
+# Other lists
+- name: Awesome Tibetan NLP
+  url: https://github.com/tibetan-nlp/awesome-tibetan-nlp
+  org: tibetan-nlp
+  kind: Other lists
+  what: List of Tibetan NLP tools and data.
+  languages: [Tibetan]
+  open: open
+  updated: 2020-07
+- name: SuttaCentral awesome list
+  url: https://github.com/suttacentral/awesome
+  org: SuttaCentral
+  kind: Other lists
+  what: Projects built on SuttaCentral texts and data.
+  languages: [Pali, English]
+  open: CC0
+  updated: 2026-07
+- name: awesome-buddhist-dharma
+  url: https://github.com/yuqianyi1001/awesome-buddhist-dharma
+  org: yuqianyi1001 (community)
+  kind: Other lists
+  what: Collection of Buddhist study resources, mostly in Chinese.
+  languages: [Chinese]
+  open: open
+  updated: 2026-10
+- name: Related benchmarks (BuddhistBench)
+  url: https://github.com/BuddhistAI/buddhist-bench/blob/main/docs/related-benchmarks.md
+  org: BuddhistAI
+  kind: Other lists
+  what: Benchmarks on Buddhism and other religions, with license and import status.
+  languages: [any]
+  open: MIT
+  updated: 2026-11
