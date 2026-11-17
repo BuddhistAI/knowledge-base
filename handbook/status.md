@@ -86,7 +86,7 @@ Readers volunteer with the [language reader form](https://github.com/BuddhistAI/
 - **Cheap evaluations:** evals and optimizers like GEPA burn many tokens. Always set an iteration limit; keep benchmarks small but diverse.
 - **Who owns workflow documentation:** Kurt's translation workflow stays his own document. Evan and Kalden were asked and did not commit.
 - **Who maintains benchmarks:** proposal: skill publishers also publish benchmarks, and others add edge cases. An agent that improves benchmarks was mentioned, not settled.
-- **Who posts on LinkedIn and X** when there is a new leader.
+- **Who posts on LinkedIn and X** when there is a new leader. The X account [@buddhist_ai](https://x.com/buddhist_ai) exists (2026-11-17); LinkedIn is pending.
 - **Hosting** of the FastAPI app and DNS for `buddhistai.org`.
 - From buddhist-skills design notes: a shared runner for reproducible runs across models; human evaluation where metrics fall short; a minimum data size before a promotion counts.
 

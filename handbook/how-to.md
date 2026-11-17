@@ -231,4 +231,4 @@ Page: knowledge-base [news/README.md](../news/README.md).
 1. Add a section at the top: `## <day> <Month> <year> · <title>`, then two to five plain sentences with links (leaderboard row, skill, benchmark, person).
 2. Post for: a new Top performance or Best value, a new benchmark or data version, a new best skill release, a new partner organization or backer, a big change to the sites.
 3. Credit people and organizations by name. Neutral wording: what changed, who made it, where to find it.
-4. Copy the post to Discussions (Announcements) and to LinkedIn and X when someone owns those accounts.
+4. Copy the post to Discussions (Announcements) and to X ([@buddhist_ai](https://x.com/buddhist_ai), created 2026-11-17). LinkedIn: not set up yet.

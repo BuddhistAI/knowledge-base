@@ -8,7 +8,7 @@ permalink: /news/
 
 Announcements from BuddhistAI: new best skills and leaders, new benchmarks, releases, and new contributors and supporters. Newest first.
 
-To follow along, watch the [BuddhistAI repos on GitHub](https://github.com/BuddhistAI) or the [Discussions](https://github.com/orgs/BuddhistAI/discussions). Maintainers: how to post is in the [handbook](../handbook/how-to.md#post-news).
+Follow updates on X: [@buddhist_ai](https://x.com/buddhist_ai). You can also watch the [BuddhistAI repos on GitHub](https://github.com/BuddhistAI) or the [Discussions](https://github.com/orgs/BuddhistAI/discussions). Maintainers: how to post is in the [handbook](../handbook/how-to.md#post-news).
 
 <!-- Add new posts at the top. Format: ## <date> · <title>, then 2 to 5 plain sentences with links. -->
 
