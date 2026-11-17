@@ -2,6 +2,7 @@
 title: Directory
 summary: "Buddhist AI projects and datasets from all traditions and languages: who makes them, what they do, and how open they are."
 wide: true
+permalink: /directory/
 ---
 
 # Directory: Buddhist AI projects and datasets
