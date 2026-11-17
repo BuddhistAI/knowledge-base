@@ -43,7 +43,7 @@ Benchmark `toc-extraction/bo` 2.0.0 (85 passages from two commentaries, one book
 - **One repo per benchmark** with a maturity level (Example → Draft → Reviewed → Stable): shown on the homepage, not built. Benchmarks still live inside buddhist-benchmarks.
 - **Best value and Top performance both in buddhist-skills:** decided, not built. Today one skill per task and language.
 - **Intervention study** (does publishing sourced information change AI answers?): designed in buddhist-bench, plan not frozen ([knowledge-base#2](https://github.com/BuddhistAI/knowledge-base/issues/2)), waiting for keys and real items.
-- **Community parts not set up:** Discussions categories, generated contributors list, monthly digest, pinned help-wanted list.
+- **Community parts not set up:** generated contributors list, monthly digest, pinned help-wanted list.
 
 ### Waiting on a reader
 
@@ -81,7 +81,7 @@ Readers volunteer with the [language reader form](https://github.com/BuddhistAI/
 
 ### Open questions
 
-- **Community channel:** Discord, WhatsApp, Discourse or GitHub Discussions? Translators lean to WhatsApp; Discord is workable. GitHub Discussions is on for now. Not decided.
+- **Community channel:** answered 2026-11-17: [GitHub Discussions](https://github.com/orgs/BuddhistAI/discussions), with categories for each area of the project. A chat channel (WhatsApp, which translators prefer, or Discord) may come later.
 - **Edge-case fixes back to the template:** fixes made in one repo's copy of a skill stay local because they can break the generic version. Idea: a skill that scans repos built from the template and improves the template skill.
 - **Cheap evaluations:** evals and optimizers like GEPA burn many tokens. Always set an iteration limit; keep benchmarks small but diverse.
 - **Who owns workflow documentation:** Kurt's translation workflow stays his own document. Evan and Kalden were asked and did not commit.
@@ -104,7 +104,7 @@ In rough order. Owners in brackets where known.
 8. **buddhist-skills holds both picks** (Top performance and Best value) per task and language; decide the folder naming.
 9. **Monastery exam papers** as benchmarks, with permission records. Plan: [buddhist-benchmarks#1](https://github.com/BuddhistAI/buddhist-benchmarks/issues/1) with sub-issues #2 to #11.
 10. **Thai reader** for the imported set; **workflow owners** review their pages; more workflows from teaching, art and practice.
-11. **Community:** choose the channel, set up Discussions categories, a contributors list, a help-wanted list; decide who posts announcements.
+11. **Community:** Discussions is set up (2026-11-17). Still to do: a contributors list, a help-wanted list, decide who posts on LinkedIn and X; maybe a chat channel later.
 12. **Homepage:** read scores from the leaderboard data instead of a hand-copied array (or replace the page with the app).
 13. **Access for partner organizations:** before the first partner team gets access, create the Maintainers team, check member base permission is Read, and add branch rules (pull request + code-owner review) on the core repos ([Governance](../governance.md#adding-people-and-organizations)) [NT].
 

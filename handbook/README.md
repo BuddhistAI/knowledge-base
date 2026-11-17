@@ -50,6 +50,10 @@ These come from NT, the project lead. Every page, site, commit message and socia
 8. **Never edit generated files by hand.** Leaderboards, `STATE.md`, `SKILLS.md`, the plugin marketplace, index tables and design CSS are all built by scripts. Each repo's `CLAUDE.md` (also `AGENTS.md`) says which.
 9. **Version everything that is scored.** Skills, data sets, scorers and workflow pages use semver ([Conventions](conventions.md#versions)).
 
+## Where to ask
+
+Questions, ideas and news go to [GitHub Discussions](https://github.com/orgs/BuddhistAI/discussions) (start with the [welcome post](https://github.com/orgs/BuddhistAI/discussions/1)). Each area of the project has its own category; see [Architecture](architecture.md#community-github-discussions). Team tasks are on the Development board (below).
+
 ## People
 
 | Who | Role |

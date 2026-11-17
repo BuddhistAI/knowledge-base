@@ -110,7 +110,7 @@ Never edit a released `SKILL.md` directly. Improvements start as a challenger in
 When a submission becomes the Top performance or Best value pick for a task and language, or a new benchmark goes live:
 
 1. Congratulate the author on the issue or PR.
-2. Add a post at the top of [News](../news/README.md) ([Post news](#post-news)).
+2. Add a post at the top of [News](../news/README.md) ([Post news](#post-news)), and post the same news in [Discussions → Announcements](https://github.com/orgs/BuddhistAI/discussions).
 3. Post on LinkedIn and X, crediting the person and their organization, with a link to the leaderboard row. Who owns the social accounts is not decided yet ([Status](status.md#open-questions)); until then, ask NT.
 4. Keep posts plain and neutral: what the task is, the score and cost, who made it, how to install it.
 
