@@ -1,0 +1,36 @@
+name: Suggest a task
+description: Propose a task, or a change to how a task is defined.
+title: "Task: "
+labels: [task]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Task name
+      placeholder: Mantra identification
+    validations: {required: true}
+  - type: textarea
+    id: what
+    attributes:
+      label: What is the task?
+      description: What goes in, what should come out, and where it fits in your work.
+    validations: {required: true}
+  - type: textarea
+    id: example
+    attributes:
+      label: A real example
+      description: A short input and the answer a careful person would give.
+  - type: input
+    id: languages
+    attributes:
+      label: Languages or traditions
+      placeholder: Tibetan, Sanskrit
+  - type: textarea
+    id: data
+    attributes:
+      label: Data you could share for a benchmark
+  - type: input
+    id: credit
+    attributes:
+      label: How should we credit you?
+    validations: {required: true}

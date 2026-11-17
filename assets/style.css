@@ -1,0 +1,21 @@
+:root { --bg: #fbf8f2; --fg: #2b2620; --muted: #6f665a; --line: #e4dccd; --link: #8a4b14; --card: #fff; }
+@media (prefers-color-scheme: dark) { :root { --bg: #1b1916; --fg: #ece5d8; --muted: #a59b8c; --line: #3a352e; --link: #e0a65f; --card: #24211d; } }
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+a { color: var(--link); }
+.top { display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: center; padding: 14px 16px; border-bottom: 1px solid var(--line); }
+.brand { font-weight: 700; text-decoration: none; color: var(--fg); }
+.top nav { display: flex; flex-wrap: wrap; gap: 16px; }
+.top nav a { text-decoration: none; }
+main { max-width: 920px; margin: 0 auto; padding: 8px 16px 40px; }
+h1 { line-height: 1.25; }
+table { border-collapse: collapse; width: 100%; display: block; overflow-x: auto; font-size: 15px; }
+th, td { border: 1px solid var(--line); padding: 6px 10px; text-align: left; vertical-align: top; }
+th { background: var(--card); }
+blockquote { margin: 0; padding: 4px 16px; border-left: 4px solid var(--link); background: var(--card); }
+pre, code { background: var(--card); border-radius: 4px; }
+pre { padding: 12px; overflow-x: auto; }
+.edit { margin-top: 40px; padding-top: 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 15px; }
+footer { text-align: center; color: var(--muted); font-size: 14px; padding: 24px 16px; border-top: 1px solid var(--line); }
+.edit-top { float: right; margin: 22px 0 0 16px; font-size: 15px; }
+.edit-top a { text-decoration: none; }

@@ -1,0 +1,44 @@
+name: Share a workflow
+description: Tell us how your project does its work. A link to your own document is enough.
+title: "Workflow: "
+labels: [workflow]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you! A maintainer will write a short page that credits you, links to your document and maps its steps to tasks, then ask you to check it. Your document stays yours; we never copy it wholesale.
+  - type: input
+    id: title
+    attributes:
+      label: What the workflow produces
+      placeholder: A published translation of a Tibetan commentary
+    validations: {required: true}
+  - type: input
+    id: link
+    attributes:
+      label: Link to your document (optional)
+      description: Google Doc, website, PDF. Make sure it is viewable by anyone with the link.
+  - type: textarea
+    id: steps
+    attributes:
+      label: The steps, if there is no document
+      description: A rough list is fine. Include the steps no AI does today.
+  - type: dropdown
+    id: mode
+    attributes:
+      label: Where should the workflow live?
+      options:
+        - Keep it in my document; link to it from the wiki
+        - Host it in the wiki; I will review changes to it
+    validations: {required: true}
+  - type: input
+    id: credit
+    attributes:
+      label: How should we credit you?
+      placeholder: Your Name (Your Organization)
+    validations: {required: true}
+  - type: input
+    id: github
+    attributes:
+      label: Your GitHub username (optional)
+      description: So we can ask you to review your page.

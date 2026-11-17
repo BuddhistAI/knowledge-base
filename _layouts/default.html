@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title and page.url != "/" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
+<meta name="description" content="{{ page.summary | default: site.description }}">
+<link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="{{ '/' | relative_url }}">☸📊 BuddhistAI Wiki</a>
+  <nav>
+    <a href="{{ '/#tasks' | relative_url }}">Tasks</a>
+    <a href="{{ '/#workflows' | relative_url }}">Workflows</a>
+    <a href="{{ '/CONTRIBUTING.html' | relative_url }}">Contribute</a>
+    <a href="https://buddhistai.github.io/buddhist-benchmarks/">Leaderboard</a>
+  </nav>
+</header>
+<main>
+<p class="edit-top"><a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">✎ Edit this page</a></p>
+{{ content }}
+<p class="edit">
+  <a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">✎ Edit this page</a>
+  · <a href="https://github.com/{{ site.repository }}/commits/main/{{ page.path }}">History</a>
+  · <a href="https://github.com/{{ site.repository }}/issues/new?title={{ page.title | default: page.path | url_encode }}%3A%20">Discuss</a>
+</p>
+</main>
+<footer>Open Buddhist AI benchmarks and skills · MIT · <a href="https://github.com/BuddhistAI">BuddhistAI on GitHub</a></footer>
+</body>
+</html>
