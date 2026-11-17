@@ -46,6 +46,11 @@ None yet. Add a short real example with its correct answer, and say where it com
 
 Translations with reviewers' real comments, so a benchmark can test whether a model finds the same issues. A first benchmark can be small: twenty to fifty items. See [how to submit a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/SUBMIT.md).
 
+## Further reading
+
+- [Subtracting the Typological Baseline](../papers/subtracting-the-typological-baseline/README.md) (Drupchen, 2026, Tibetan → French): why word-by-word comparison flags good translations, and a four-step review procedure that counts a loss only when the source made a real choice and the target language had a way to say it.
+- [Two strategies for improving machine translation from Tibetan](https://github.com/BuddhistAI/buddhist-skills/tree/main/community/translation-tibetan-to-french/drupchen-two-strategies) (Drupchen, 2026): the practical guide, as a community entry.
+
 ## Related tasks
 
 - [translation](translation.md)

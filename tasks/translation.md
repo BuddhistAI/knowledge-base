@@ -47,6 +47,11 @@ None yet. Add a short real example with its correct answer, and say where it com
 
 Source passages with reference translations by experienced translators, and a way to score them that translators trust. A first benchmark can be small: twenty to fifty items. See [how to submit a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/SUBMIT.md).
 
+## Further reading
+
+- [Subtracting the Typological Baseline](../papers/subtracting-the-typological-baseline/README.md) (Drupchen, 2026, Tibetan → French): how to prompt an AI for better drafts: a context checklist, a drafting pipeline where the French is written without the Tibetan in view, and correction examples.
+- [Two strategies for improving machine translation from Tibetan](https://github.com/BuddhistAI/buddhist-skills/tree/main/community/translation-tibetan-to-french/drupchen-two-strategies) (Drupchen, 2026): the practical guide, as a community entry.
+
 ## Related tasks
 
 - [translation-review](translation-review.md)
