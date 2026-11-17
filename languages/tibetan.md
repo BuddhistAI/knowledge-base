@@ -5,7 +5,11 @@ kind: classical and modern
 group: Tibetic
 countries: [China, India, Nepal, Bhutan]
 scripts: [Tibetan]
-speakers: not verified
+speakers: about 6 million first-language speakers of all Tibetic varieties (2014, Tournadre, via Wikipedia)
+speakers_n: 6000000
+speakers_year: 2014
+speakers_source: https://en.wikipedia.org/wiki/Tibetic_languages
+speakers_basis: first-language speakers of all Tibetic varieties
 directory_names: [Tibetan, Classical Tibetan]
 resource_level: low
 google_translate: yes (since 2024)
@@ -24,7 +28,7 @@ Classical (literary) Tibetan is the language of the Kangyur, the Tengyur and mos
 | | |
 | --- | --- |
 | Where | Tibet and other Tibetan areas of China, and exile communities in India and Nepal |
-| Speakers | not verified |
+| Speakers | about 6 million first-language speakers of all Tibetic varieties (2014, Tournadre, via Wikipedia) [15] |
 | Script | Tibetan script |
 | AI resources | low |
 | Google Translate | yes, added in June 2024 [1]; the Google Cloud API page did not list Tibetan when we read it [2] |
@@ -188,3 +192,4 @@ Projects and datasets in the [Directory](../directory/README.md) that list Tibet
 12. [FineWeb-2 README](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/blob/cab26bb3cab1ca7c26bb13a48f80fc3d2def4620/README.md), read 2026-11-17
 13. [MADLAD-400 README](https://huggingface.co/datasets/allenai/MADLAD-400/blob/f8e5ab9b4c80d211822840f9e1f3fe8079bea053/README.md?code=true), read 2026-11-17
 14. [Monlam AI on Hugging Face](https://huggingface.co/MonlamAI/models), read 2026-11-17
+15. [Wikipedia, Tibetic languages (citing Tournadre 2014)](https://en.wikipedia.org/wiki/Tibetic_languages), read 2026-11-17.

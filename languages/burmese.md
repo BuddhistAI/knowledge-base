@@ -6,6 +6,9 @@ group: Southeast Asian
 countries: [Myanmar]
 scripts: [Myanmar]
 speakers: about 33 million first language and 10 million second language (2019; Wikipedia [1])
+speakers_n: 42900000
+speakers_year: 2019
+speakers_source: https://en.wikipedia.org/wiki/Burmese_language
 directory_names: [Burmese, Shan, Mon]
 resource_level: medium
 google_translate: yes

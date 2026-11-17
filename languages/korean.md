@@ -6,6 +6,10 @@ group: Japanese, Korean, Vietnamese
 countries: [South Korea, North Korea]
 scripts: [Hangul, Hanja]
 speakers: about 82 million (Ethnologue 2026)
+speakers_n: 81000000
+speakers_year: 2020
+speakers_source: https://en.wikipedia.org/wiki/Korean_language
+speakers_basis: first-language speakers
 directory_names: [Korean]
 resource_level: high
 google_translate: yes (Translation LLM and NMT)

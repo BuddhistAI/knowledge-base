@@ -6,6 +6,9 @@ group: Southeast Asian
 countries: [Thailand]
 scripts: [Thai]
 speakers: about 71 million incl. second-language speakers (2024; Wikipedia [1])
+speakers_n: 71000000
+speakers_year: 2024
+speakers_source: https://en.wikipedia.org/wiki/Thai_language
 directory_names: [Thai]
 resource_level: high
 google_translate: yes

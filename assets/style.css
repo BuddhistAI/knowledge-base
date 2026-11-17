@@ -25,3 +25,32 @@ main.prose { padding-top: 16px; padding-bottom: 24px; }
 .site-footer { margin-top: 0; }
 @media (max-width: 760px) { .prose table { display: block; overflow-x: auto; } }
 @media (max-width: 640px) { .edit-top { float: none; margin: 16px 0 0; } }
+/* Languages charts (scripts/charts.py, assets/buddhist-map.js). Design-system variables only. */
+.chart-fig { margin: 20px 0 28px; max-width: none !important; }
+.chart-fig figcaption { color: var(--muted); font-size: var(--text-sm); margin-top: 8px; max-width: 72ch; }
+.chart { width: 100%; height: auto; display: block; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); }
+.chart .grid { stroke: var(--line); stroke-width: 1; }
+.chart .tick, .chart .axis { fill: var(--muted); font-size: 12px; font-variant-numeric: tabular-nums; }
+.chart .axis { fill: var(--ink); font-weight: 600; }
+.chart .lab { fill: var(--ink); font-size: 12px; }
+.chart .zone { fill: var(--saffron-soft); }
+.chart .zone-label { fill: var(--saffron); font-size: 12px; font-weight: 600; }
+.chart .dot { stroke: var(--surface); stroke-width: 2; }
+.chart .dot.ok { fill: var(--lapis); }
+.chart .dot.gap { fill: var(--saffron); }
+.chart .hit { fill: transparent; }
+.chart .pt:hover .dot, .chart .pt:focus .dot { r: 8; }
+.chart .pt:focus { outline: none; }
+.chart .pt:focus .lab, .chart .pt:hover .lab { font-weight: 600; text-decoration: underline; }
+.map { position: relative; }
+.map .country { fill: var(--sunk); stroke: var(--surface); stroke-width: .6; }
+.map .country.has:hover, .map .ring:hover { stroke: var(--ink); stroke-width: 1.2; }
+.map .ring { stroke: var(--surface); stroke-width: 2; }
+.map-tip { position: absolute; pointer-events: none; background: var(--surface); color: var(--ink); border: 1px solid var(--line);
+  border-radius: var(--r-sm); box-shadow: var(--shadow-panel); padding: 8px 10px; font-size: var(--text-sm); max-width: 260px; }
+.map-tip span { color: var(--muted); }
+.map-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; align-items: center; margin-top: 10px; font-size: var(--text-sm); color: var(--muted); }
+.map-legend .lg-title { color: var(--ink); font-weight: 600; }
+.map-legend .lg-item { display: inline-flex; align-items: center; gap: 6px; }
+.map-legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); }
+.chart .lead { stroke: var(--muted); stroke-width: 1; }

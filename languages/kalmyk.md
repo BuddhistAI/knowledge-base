@@ -6,6 +6,10 @@ group: Mongolic and Turkic
 countries: [Russia]
 scripts: [Cyrillic, Clear Script]
 speakers: about 110,000 (2021 Russian census; Wikipedia [1])
+speakers_n: 110000
+speakers_year: 2021
+speakers_source: https://en.wikipedia.org/wiki/Kalmyk_Oirat
+speakers_basis: first-language speakers
 directory_names: [Kalmyk]
 resource_level: very low
 google_translate: no

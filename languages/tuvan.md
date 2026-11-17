@@ -6,6 +6,10 @@ group: Mongolic and Turkic
 countries: [Russia, China]
 scripts: [Cyrillic]
 speakers: about 253,000 native speakers (2020; Rosstat via Wikipedia [1])
+speakers_n: 252953
+speakers_year: 2020
+speakers_source: https://en.wikipedia.org/wiki/Tuvan_language
+speakers_basis: first-language speakers
 directory_names: [Tuvan]
 resource_level: very low
 google_translate: yes (since 2024)

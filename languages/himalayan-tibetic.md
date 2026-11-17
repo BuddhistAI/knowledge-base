@@ -1,11 +1,16 @@
 ---
 id: himalayan-tibetic
 title: Ladakhi and other Himalayan languages
+short_title: Ladakhi and others
 kind: modern
 group: Tibetic
 countries: [India, Nepal, Pakistan]
 scripts: [Tibetan]
-speakers: not verified
+speakers: about 400,000 together: Ladakhi 110,826 (2011 census), Sherpa about 260,000, Sikkimese about 25,000 (via Wikipedia)
+speakers_n: 395826
+speakers_year: 2011 to 2021
+speakers_source: https://en.wikipedia.org/wiki/Ladakhi_language
+speakers_basis: Ladakhi, Sherpa and Sikkimese added together
 directory_names: [Ladakhi, Sikkimese, Sherpa]
 resource_level: very low
 google_translate: no
@@ -24,7 +29,7 @@ This page covers smaller Tibetic languages of the Himalaya, such as Ladakhi (Lad
 | | |
 | --- | --- |
 | Where | Himalayan regions of India, Nepal and Pakistan |
-| Speakers | not verified |
+| Speakers | about 400,000 together: Ladakhi 110,826 (2011 census), Sherpa about 260,000, Sikkimese about 25,000 (via Wikipedia) [6] |
 | Script | Tibetan script (Balti: not verified) |
 | AI resources | very low |
 | Google Translate | no; Ladakhi and Sherpa are not in the June 2024 list [1] |
@@ -90,3 +95,4 @@ None listed yet.
 3. [OpenAI Whisper tokenizer.py (language list)](https://raw.githubusercontent.com/openai/whisper/main/whisper/tokenizer.py), read 2026-11-17
 4. [FineWeb-2 README](https://huggingface.co/datasets/HuggingFaceFW/fineweb-2/blob/cab26bb3cab1ca7c26bb13a48f80fc3d2def4620/README.md), read 2026-11-17
 5. [Meta Omnilingual ASR README](https://raw.githubusercontent.com/facebookresearch/omnilingual-asr/main/README.md), read 2026-11-17
+6. [Wikipedia, Ladakhi language, Sherpa language and Sikkimese language](https://en.wikipedia.org/wiki/Ladakhi_language), read 2026-11-17.

@@ -6,6 +6,9 @@ group: Indic
 countries: [Nepal, India, Bhutan]
 scripts: [Devanagari]
 speakers: about 32 million (19 million first language; Wikipedia [1])
+speakers_n: 32000000
+speakers_year: 2021
+speakers_source: https://en.wikipedia.org/wiki/Nepali_language
 directory_names: [Nepali]
 resource_level: medium
 google_translate: yes (year not verified)

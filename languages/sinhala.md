@@ -6,6 +6,9 @@ group: Indic
 countries: [Sri Lanka]
 scripts: [Sinhala]
 speakers: about 20 million (18 million first language; Wikipedia [1])
+speakers_n: 20000000
+speakers_year: 2021
+speakers_source: https://en.wikipedia.org/wiki/Sinhala_language
 directory_names: [Sinhala]
 resource_level: medium
 google_translate: yes (year not verified)
