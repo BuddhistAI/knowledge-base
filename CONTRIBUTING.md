@@ -7,7 +7,7 @@ This wiki is the shared reference for Buddhist tasks: what each task is, how it 
 Task pages belong to everyone. Click "Edit this page" on the site (or the pencil icon on GitHub) and propose a change. The most useful additions are:
 
 - a real **example** with its correct answer, and where it comes from;
-- an **edge case** that trips up people or models;
+- an **edge case**: a hard case where people or models often make mistakes;
 - a **language or tradition note**: how the task differs in Pali, Classical Chinese, Tibetan and so on;
 - a sharper **definition**, especially where two tasks overlap;
 - a link to a tool, data set, paper or benchmark.
