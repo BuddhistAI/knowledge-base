@@ -1,17 +1,19 @@
-# BuddhistAI Wiki
+# BuddhistAI Knowledge base
 
-> BuddhistAI helps anyone working on a Buddhist project find the best-performing and best-value AI solution for their task, and helps anyone building AI solutions share theirs and take part in the evaluations. **This wiki is the shared reference for what those tasks are.**
+> BuddhistAI helps anyone working on a Buddhist project find the best-performing and best-value AI solution for their task, and helps anyone building AI solutions share theirs and take part in the evaluations. **This knowledge base is the shared place to learn about those tasks: what each task is, how projects do their work, and what our experiments found.**
 
-Read and edit it on the web: **https://buddhistai.github.io/wiki/** (every page has an "Edit this page" link).
+Read and edit it on the web: **https://buddhistai.github.io/knowledge-base/** (every page has an "Edit this page" link).
 
-The wiki has two kinds of page:
+The knowledge base has three sections:
 
 - **Task pages** are the core. A task is one job that a model or skill can be asked to do and measured on, such as segmentation, OCR or translation review. Its page defines it: what goes in, what should come out, worked examples, edge cases, how it differs across languages and traditions, and how it is measured. It links the task's benchmark and leaderboard and names the current best skills, or says that no benchmark exists yet so you can help build one.
 - **Workflow pages** describe how real projects work from start to finish: translating a text, preparing a digital edition, building a course, running a center. They are where tasks are found. Each step is mapped to a task, and a step with no task yet is a candidate for a new one. Workflows are owned by the people who do the work, and a workflow kept elsewhere (a Google Doc, a website) stays there: we link to it and credit its owner.
 
+- **[Experiments](experiments/README.md)** record what we tried and what we learned: a plan written before each experiment, a dated log, and a report. Ideas for new experiments start as an [Idea issue](https://github.com/BuddhistAI/knowledge-base/issues/new?template=idea.yml).
+
 ```
 workflows  →  tasks  →  benchmarks + leaderboards  →  best skills
-   (this wiki)          (buddhist-benchmarks)         (buddhist-skills)
+   (knowledge base)     (buddhist-benchmarks)         (buddhist-skills)
 ```
 
 This is about **Buddhist tasks**, not only texts: translation and study, but also teaching, art and visual work, practice support, personal AI setups and the running of centers and projects.
@@ -21,8 +23,8 @@ This is about **Buddhist tasks**, not only texts: translation and study, but als
 You do not need git. Pick whichever is easiest:
 
 1. **Edit a page.** Click "Edit this page" (or the pencil icon on GitHub), change it, and propose the change. Add an example, an edge case, a language note, a link.
-2. **Paste a link.** [Share a workflow](https://github.com/BuddhistAI/wiki/issues/new?template=share-workflow.yml) by linking your document, or [suggest a task](https://github.com/BuddhistAI/wiki/issues/new?template=suggest-task.yml) in a few sentences. A maintainer writes the page and credits you.
-3. **Write a page.** Copy [`templates/task.md`](https://github.com/BuddhistAI/wiki/blob/main/templates/task.md) or [`templates/workflow.md`](https://github.com/BuddhistAI/wiki/blob/main/templates/workflow.md) and open a pull request.
+2. **Paste a link.** [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) by linking your document, or [suggest a task](https://github.com/BuddhistAI/knowledge-base/issues/new?template=suggest-task.yml) in a few sentences. A maintainer writes the page and credits you.
+3. **Write a page.** Copy [`templates/task.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/task.md) or [`templates/workflow.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/workflow.md) and open a pull request.
 4. **Discuss.** Ask or propose in [Discussions](https://github.com/orgs/BuddhistAI/discussions).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for ownership, credit and review.
@@ -59,7 +61,7 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for ownership, credit and review.
 
 ## Wanted
 
-We have no workflows or tasks yet for these areas. If your project does this work, [share how you do it](https://github.com/BuddhistAI/wiki/issues/new?template=share-workflow.yml):
+We have no workflows or tasks yet for these areas. If your project does this work, [share how you do it](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml):
 
 - Teaching: building a course, preparing a talk, answering students' questions.
 - Study: preparing for monastic exams, reading a text with its commentaries.
@@ -72,10 +74,9 @@ We have no workflows or tasks yet for these areas. If your project does this wor
 
 - [buddhist-benchmarks](https://github.com/BuddhistAI/buddhist-benchmarks): tasks, test data, scorers and the [leaderboard](https://buddhistai.github.io/buddhist-benchmarks/) for models and skills.
 - [buddhist-skills](https://github.com/BuddhistAI/buddhist-skills): the best skill per task and language, ready to install, plus community skills not yet measured.
-- [research](https://github.com/BuddhistAI/research): experiment reports.
 
 ## Contributors
 
-Owners and contributors are credited on each page. Kurt Keutzer's model translation workflow was the first workflow linked here. Pages are maintained by BuddhistAI contributors, including the WeBuddhist team.
+Owners and contributors are credited on each page. Kurt Keutzer's model translation workflow was the first workflow linked here. The Experiments section was the separate `research` repo until 2026-11-17; its full history is kept here. Pages are maintained by BuddhistAI contributors, including the WeBuddhist team.
 
-MIT licensed (see [LICENSE](https://github.com/BuddhistAI/wiki/blob/main/LICENSE)). A linked document keeps its own owner and terms; we only link to it and summarize it in our own words.
+MIT licensed (see [LICENSE](https://github.com/BuddhistAI/knowledge-base/blob/main/LICENSE)). A linked document keeps its own owner and terms; we only link to it and summarize it in our own words.

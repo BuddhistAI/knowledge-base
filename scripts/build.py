@@ -45,7 +45,7 @@ def build():
         fl = used.get(tid, [])
         block = [U_START, "## Found in workflows", ""]
         block += [f"- [{flows[f]['meta']['title']}](../workflows/{f}.md) ({flows[f]['meta']['owner']})" for f in fl] or \
-                 ["No workflow page uses this task yet. [Share a workflow](https://github.com/BuddhistAI/wiki/issues/new?template=share-workflow.yml) that does."]
+                 ["No workflow page uses this task yet. [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) that does."]
         block.append(U_END)
         out[t["path"]] = re.sub(re.escape(U_START) + ".*?" + re.escape(U_END), "\n".join(block), text, flags=re.S)
     return out

@@ -1,8 +1,10 @@
 # Notes for agents working in this repo
 
-- This is the BuddhistAI wiki: the shared reference that defines Buddhist tasks (`tasks/<task-id>.md`) and the workflows they come from (`workflows/<id>.md`). Framing is Buddhist tasks, not only texts.
+- This is the BuddhistAI knowledge base: task definitions (`tasks/<task-id>.md`), the workflows tasks come from (`workflows/<id>.md`), and experiments (`experiments/<yyyy-mm>-<slug>/` with PLAN.md, LOG.md, REPORT.md; rules in `experiments/README.md`). Framing is Buddhist tasks, not only texts.
 - Task IDs are shared with buddhist-benchmarks `tasks/index.json` and buddhist-skills skill names (`<task>-<language>`). A new task page needs a matching (planned) entry there.
 - Workflows have an owner. A `linked` workflow lives in its owner's document: summarize it in our own words and link it, never copy it. A `hosted` workflow's owner reviews changes (CODEOWNERS).
 - Never hand-edit the README index tables or the "Found in workflows" blocks. Run `python3 scripts/build.py`, then `python3 scripts/check.py`.
 - Credit people in `contributors`. Neutral branding: WeBuddhist is one contributor among others.
 - Workflow pages are semver-versioned in `version`; `source_version` is the owner's own version.
+- Experiments: write PLAN.md before running and never edit it after the start (log deviations in LOG.md); numbers in a report must link to a results file at an exact commit or version. Keep the table in `experiments/README.md` current.
+- Plain English: many readers are non-native speakers. Short, literal sentences, no idioms.

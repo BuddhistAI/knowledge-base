@@ -28,8 +28,8 @@ body:
     attributes:
       label: Where should the workflow live?
       options:
-        - Keep it in my document; link to it from the wiki
-        - Host it in the wiki; I will review changes to it
+        - Keep it in my document; link to it from the knowledge base
+        - Host it in the knowledge base; I will review changes to it
     validations: {required: true}
   - type: input
     id: credit

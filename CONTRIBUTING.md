@@ -1,6 +1,6 @@
 # Contributing
 
-This wiki is the shared reference for Buddhist tasks: what each task is, how it is measured, and the workflows it comes from. Everyone who does Buddhist work is welcome here: translators, teachers, editors, artists, librarians, center staff, developers. You do not need to write code or use git. Please follow the [code of conduct](https://github.com/BuddhistAI/.github/blob/main/CODE_OF_CONDUCT.md).
+This knowledge base is the shared place to learn about Buddhist tasks: what each task is, how it is measured, the workflows it comes from, and what our experiments found. Everyone who does Buddhist work is welcome here: translators, teachers, editors, artists, librarians, center staff, developers. You do not need to write code or use git. Please follow the [code of conduct](https://github.com/BuddhistAI/.github/blob/main/CODE_OF_CONDUCT.md).
 
 ## Improve a task page
 
@@ -32,22 +32,26 @@ Rules for both modes:
 
 ## Share a workflow
 
-1. **Easiest:** [open a "Share a workflow" issue](https://github.com/BuddhistAI/wiki/issues/new?template=share-workflow.yml) and paste a link. A maintainer writes the `linked` page, maps your steps to tasks and asks you to check it.
-2. **By pull request:** copy [`templates/workflow.md`](https://github.com/BuddhistAI/wiki/blob/main/templates/workflow.md) to `workflows/<id>.md`, fill it in, run `python3 scripts/build.py` and `python3 scripts/check.py`, and open a pull request.
+1. **Easiest:** [open a "Share a workflow" issue](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) and paste a link. A maintainer writes the `linked` page, maps your steps to tasks and asks you to check it.
+2. **By pull request:** copy [`templates/workflow.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/workflow.md) to `workflows/<id>.md`, fill it in, run `python3 scripts/build.py` and `python3 scripts/check.py`, and open a pull request.
 
 Good workflow pages:
 
 - Describe what people really do, including the steps no AI does today. A step with no task is useful information: it shows what is missing.
-- Map each step to a task ID from [`tasks/`](https://github.com/BuddhistAI/wiki/tree/main/tasks) where one fits. If none fits, write `new task?` in the table and say what the step needs; a maintainer will propose a task.
+- Map each step to a task ID from [`tasks/`](https://github.com/BuddhistAI/knowledge-base/tree/main/tasks) where one fits. If none fits, write `new task?` in the table and say what the step needs; a maintainer will propose a task.
 - Stay one workflow per page. A variant (another language, another tradition, another team's order of steps) gets its own page that names the one it adapts.
 
 ## Propose a task
 
-A task is one step that a model or skill can be measured on, such as segmentation or translation review. [Open a "Suggest a task" issue](https://github.com/BuddhistAI/wiki/issues/new?template=suggest-task.yml), or copy [`templates/task.md`](https://github.com/BuddhistAI/wiki/blob/main/templates/task.md). Task IDs are shared with [buddhist-benchmarks `tasks/index.json`](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/tasks/index.json) and skill names in buddhist-skills (`<task>-<language>`), so a new task gets added there too.
+A task is one step that a model or skill can be measured on, such as segmentation or translation review. [Open a "Suggest a task" issue](https://github.com/BuddhistAI/knowledge-base/issues/new?template=suggest-task.yml), or copy [`templates/task.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/task.md). Task IDs are shared with [buddhist-benchmarks `tasks/index.json`](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/tasks/index.json) and skill names in buddhist-skills (`<task>-<language>`), so a new task gets added there too.
 
 ## Help a task get a benchmark
 
 Most tasks have no benchmark yet. A benchmark starts small: twenty to fifty real items from work you already do, with the answer a careful human would give. See [buddhist-benchmarks SUBMIT.md](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/SUBMIT.md) and the task page's "Help wanted" section.
+
+## Propose or run an experiment
+
+Start with an [Idea issue](https://github.com/BuddhistAI/knowledge-base/issues/new?template=idea.yml). How an experiment is planned, logged and reported is described in [experiments/README.md](experiments/README.md).
 
 ## For maintainers
 

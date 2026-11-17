@@ -49,5 +49,5 @@ Questions and reviewed answers from your tradition, and exam papers you have per
 <!-- used-in:start -->
 ## Found in workflows
 
-No workflow page uses this task yet. [Share a workflow](https://github.com/BuddhistAI/wiki/issues/new?template=share-workflow.yml) that does.
+No workflow page uses this task yet. [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) that does.
 <!-- used-in:end -->

@@ -1,8 +1,8 @@
-# BuddhistAI research
+# Experiments
 
-The record of [BuddhistAI](https://github.com/BuddhistAI) experiments: what we tried, why, and what we found. Each experiment has its own folder with a plan written before it ran, a dated log, and a report ready to share in [Discussions](https://github.com/orgs/BuddhistAI/discussions) or any forum.
+This section of the [BuddhistAI knowledge base](../README.md) is the record of [BuddhistAI](https://github.com/BuddhistAI) experiments: what we tried, why, and what we found. Each experiment has its own folder with a plan written before it ran, a dated log, and a report ready to share in [Discussions](https://github.com/orgs/BuddhistAI/discussions) or any forum.
 
-Code, data and scores live in the other repos. This repo holds the reasoning and links to them.
+Code, data and scores live in the other repos. This section holds the reasoning and links to them. (It used to be the separate `research` repo, which is now archived. Its full history is kept here.)
 
 | Repo | Holds |
 | --- | --- |
@@ -15,15 +15,15 @@ Code, data and scores live in the other repos. This repo holds the reasoning and
 
 | Experiment | Status | Question |
 | --- | --- | --- |
-| [2026-11-toc-tibetan-skills](experiments/2026-11-toc-tibetan-skills/) | Concluded, re-run pending | Which skill finds the sa-bcad outline of a Tibetan commentary best? |
-| [2026-11-ai-intervention-study](experiments/2026-11-ai-intervention-study/) | Planned | Does publishing reliable information about a text change what AI models answer about it, and how fast? |
+| [2026-11-toc-tibetan-skills](2026-11-toc-tibetan-skills/) | Concluded, re-run pending | Which skill finds the sa-bcad outline of a Tibetan commentary best? |
+| [2026-11-ai-intervention-study](2026-11-ai-intervention-study/) | Planned | Does publishing reliable information about a text change what AI models answer about it, and how fast? |
 
 Status is one of: **Planned** (plan written, not started), **Running**, **Concluded**, **Abandoned** (with a note on why). Keep this table current when an experiment changes status.
 
 ## How an experiment works
 
-1. **Open an issue** with the "Idea" template. Discuss there until it is worth running.
-2. **Make the folder** `experiments/<yyyy-mm>-<slug>/`, named by the month it starts. Copy the three files from [templates/](templates/).
+1. **Open an issue** with the ["Idea" form](https://github.com/BuddhistAI/knowledge-base/issues/new?template=idea.yml). Discuss there until it is worth running.
+2. **Make the folder** `experiments/<yyyy-mm>-<slug>/`, named by the month it starts. Copy the three files from [templates/experiment/](https://github.com/BuddhistAI/knowledge-base/tree/main/templates/experiment).
 3. **Write `PLAN.md` before running anything.** State the question, the hypothesis, the method, the metric and what result would count against the hypothesis. Commit it. Once the experiment starts, don't edit the plan: record changes in `LOG.md` as deviations, with the reason. Git history is the proof that the goalposts didn't move. This matters most for experiments that try to change the world and then measure it, like the intervention study.
 4. **Optionally post the plan in Discussions** (or your own forum) to invite feedback before starting.
 5. **Keep `LOG.md` as you go:** dated entries, newest last. Note runs, interventions, surprises, and anything you changed.
@@ -46,4 +46,4 @@ The [BuddhistAI research board](https://github.com/orgs/BuddhistAI/projects) sho
 
 ## License
 
-MIT. Written by the BuddhistAI contributors; anyone can propose an experiment with the "Idea" issue form.
+MIT, like the rest of the knowledge base. Written by the BuddhistAI contributors; anyone can propose an experiment with the "Idea" issue form.

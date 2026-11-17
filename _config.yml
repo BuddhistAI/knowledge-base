@@ -1,6 +1,6 @@
-title: BuddhistAI Wiki
-description: The shared reference for Buddhist tasks, and the workflows they come from.
-repository: BuddhistAI/wiki
+title: BuddhistAI Knowledge base
+description: What each Buddhist task is, how projects do their work, and what our experiments found.
+repository: BuddhistAI/knowledge-base
 markdown: kramdown
 kramdown:
   input: GFM
