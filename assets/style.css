@@ -54,3 +54,7 @@ main.prose { padding-top: 16px; padding-bottom: 24px; }
 .map-legend .lg-item { display: inline-flex; align-items: center; gap: 6px; }
 .map-legend i { width: 14px; height: 14px; border-radius: 3px; display: inline-block; border: 1px solid var(--line); }
 .chart .lead { stroke: var(--muted); stroke-width: 1; }
+
+/* Directory: open and collaborative badges under a dataset name */
+td br + .badge { margin-left: 0; }
+a.badge { text-decoration: none; }

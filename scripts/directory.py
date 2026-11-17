@@ -15,6 +15,14 @@ KINDS = {
                  "Language annotation", "Metadata, outlines and knowledge", "Q&A and instruction data"],
 }
 FIELDS = ["name", "url", "org", "kind", "what", "languages", "open", "updated"]
+ACCESS = {  # value -> (badge text, badge class, meaning)
+    "open": ("Open", "ship", "open license: you may reuse and share it"),
+    "open-nc": ("Open, non-commercial", "ship", "open license, but non-commercial use only"),
+    "free": ("Free to use", "", "free to download or read, but no license stated or reuse restricted: ask before reuse"),
+    "gated": ("Gated", "", "you must ask or sign in to get it"),
+    "closed": ("Closed", "", "not available"),
+}
+COLLAB = {"yes", "no", "not stated"}
 MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
 
@@ -43,6 +51,13 @@ def check(task_ids):
                 errors.append(f"{where}: languages must be a non-empty list")
             if not re.fullmatch(r"(\d{4}(-\d{2})?)?", str(e.get("updated", ""))):
                 errors.append(f"{where}: updated must be YYYY-MM, YYYY or empty")
+            if section == "datasets":
+                if e.get("access") not in ACCESS:
+                    errors.append(f"{where}: access must be one of {list(ACCESS)}")
+                if e.get("collaborative") not in COLLAB:
+                    errors.append(f"{where}: collaborative must be \"yes\", \"no\" or not stated (quote yes and no)")
+                if e.get("collaborative") == "yes" and not str(e.get("contribute", "")).startswith("https://"):
+                    errors.append(f"{where}: a collaborative dataset needs a contribute link (https://)")
             errors += [f"{where}: task {t!r} has no page in tasks/" for t in e.get("tasks", []) if t not in task_ids]
             key = (e.get("name"), e.get("url"))
             if key in seen:
@@ -66,6 +81,18 @@ def anchor(text):
     return re.sub(r"[^a-z0-9 -]", "", text.lower()).strip().replace(" ", "-")
 
 
+def badges(e):
+    """Open and collaborative badges for a dataset."""
+    out = []
+    if e.get("access") in ACCESS:
+        text, cls, meaning = ACCESS[e["access"]]
+        out.append(f'<span class="badge {cls}" title="{meaning}">{text}</span>')
+    if e.get("collaborative") == "yes":
+        out.append(f'<a class="badge val" href="{e["contribute"]}" title="The makers ask for corrections or new data. '
+                   f'Click to see how to contribute.">Collaborative</a>')
+    return " ".join(out)
+
+
 def table(section, entries, tasks):
     head = "Project" if section == "projects" else "Dataset"
     out = [f"| {head} | Made by | What it does | Languages | How open | Last activity |",
@@ -75,7 +102,10 @@ def table(section, entries, tasks):
         if e.get("tasks"):
             what += " Tasks: " + ", ".join(f"[{tasks[t]}](../tasks/{t}.md)" for t in e["tasks"]) + "."
         edit = f"[✎]({REPO}/blob/main/directory/{section}.yml#L{e['_line']} \"Edit this entry\")"
-        out.append(f"| **[{cell(e['name'])}]({e['url']})** {edit} | {cell(e['org'])} | {what} | "
+        name = f"**[{cell(e['name'])}]({e['url']})** {edit}"
+        if section == "datasets":
+            name += "<br>" + badges(e)
+        out.append(f"| {name} | {cell(e['org'])} | {what} | "
                    f"{cell(', '.join(map(str, e['languages'])))} | {cell(e['open'])} | {when(e['updated'])} |")
     return out
 
@@ -89,6 +119,13 @@ def render(tasks):
         lines += ["", f"## {title}", "", f"{len(entries)} {section}. Jump to: " +
                   " · ".join(f"[{k}](#{anchor(k)}{'-1' if section == 'datasets' and k in KINDS['projects'] else ''})"
                              for k in kinds if any(e['kind'] == k for e in entries)), ""]
+        if section == "datasets":
+            n = {a: sum(e.get("access") == a for e in entries) for a in ACCESS}
+            collab = [e for e in entries if e.get("collaborative") == "yes"]
+            lines += [f"**{n['open']} open** (open license), {n['open-nc']} open for non-commercial use only, "
+                      f"{n['free']} free to use without a clear license, {n['gated']} gated. "
+                      f"**{len(collab)} collaborative**, that is, their makers ask for corrections or new data: " +
+                      ", ".join(f"[{cell(e['name'])}]({e['contribute']})" for e in collab) + ".", ""]
         for k in kinds:
             group = [e for e in entries if e["kind"] == k]
             if group:

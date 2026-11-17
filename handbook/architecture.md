@@ -76,7 +76,9 @@ The Skills and Benchmarks boards are public, for contributors. The Development b
 | buddhist-skills | [Volunteer as a language reader](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=reader.yml) | `language-reader` | Match them with data that needs a reader (see [Status](status.md#waiting-on-a-reader)). |
 | buddhist-skills | [Report a problem](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=problem.yml) | `bug` | Fix or route. |
 | buddhist-benchmarks | [Propose a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=propose-benchmark.yml) | `benchmark` | Discuss, then add the task and data ([how-to](how-to.md#add-a-benchmark)). |
-| knowledge-base | Add to the Directory | `directory` | Verify the link, add a YAML entry. |
+| buddhist-benchmarks | [Review a benchmark as an expert](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=expert-review.yml) | `expert-review` | Agree on the scope, share the items, record the review ([how-to](how-to.md#handle-an-expert-review)). |
+| buddhist-benchmarks | [Donate compute or API credits](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=donate-compute.yml) | `compute` | NT replies; set up the key as a secret; credit the donor ([how-to](how-to.md#handle-a-compute-or-api-credit-donation)). |
+| knowledge-base | Add to the Directory | `directory` | Verify the link, add a YAML entry (with `access` and `collaborative` for datasets). |
 | knowledge-base | Update a language page | (edit link) | Edit `languages/<id>.md`; each fact needs a source. |
 | knowledge-base | Share a workflow | `workflow` | Write a workflow page, credit the owner. |
 | knowledge-base | Suggest a task | `task` | Write a task page and a `planned` entry in `tasks/index.json`. |
@@ -126,4 +128,6 @@ Automatic scoring of submissions (planned) will need an inference key as a secre
 
 - NT has given standing permission to merge PRs, push to `main`, and create repos in the org without asking first.
 - CODEOWNERS: NT reviews everything until language and workflow owners exist. A hosted workflow's owner is added on the line for their page.
+- **Access model** (written 2026-11-17, see [Governance](../governance.md#adding-people-and-organizations)): anyone contributes by fork and pull request or the forms. A partner organization gets a team `@BuddhistAI/<org>-team` with Write only on its own task repos (optional Triage on buddhist-skills and buddhist-benchmarks, and CODEOWNERS lines for its language). Only a **Maintainers** team has write access to the core repos (buddhist-skills, buddhist-benchmarks, buddhistai.github.io, design, knowledge-base, .github). Releases into buddhist-skills happen only through the leaderboard.
+- **Not set up yet** (NT decided on 2026-11-17 to document now and set up when the first partner team joins): the Maintainers team, member base permission check (must be Read), and a branch rule on `main` of each core repo requiring a pull request with one code-owner review. Today nobody outside NT and Claude sessions has write access, and they push to `main` directly.
 - Creating a new repo needs an org owner (NT) in the GitHub UI.

@@ -2,6 +2,21 @@
 
 This knowledge base is the shared place to learn about Buddhist tasks: what each task is, how it is measured, the workflows it comes from, and what our experiments found. Everyone who does Buddhist work is welcome here: translators, teachers, editors, artists, librarians, center staff, developers. You do not need to write code or use git. Please follow the [code of conduct](https://github.com/BuddhistAI/.github/blob/main/CODE_OF_CONDUCT.md).
 
+## Ways to take part
+
+| You can give | How | Credit |
+| --- | --- | --- |
+| A skill, prompt, model or personal AI setup | [Share form](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) or paste a link on the [homepage](https://buddhistai.github.io/#submit) | `authors` on the entry; leaderboard row |
+| Test material (exam papers, checked translations, corrected OCR) | [Propose a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=propose-benchmark.yml) | Dataset card; benchmark page |
+| **An expert review of a benchmark** | [Review a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=expert-review.yml): check items and answers in a field you know | Named as reviewer in the dataset card |
+| Reading in your language | [Volunteer as a language reader](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=reader.yml) | Named as reader |
+| **Compute or API credits** | [Donate compute or API credits](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=donate-compute.yml): pays for evaluations of everyone's submissions | "Supported by" on the homepage and org profile, if you wish |
+| How your project works | [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) | Owner of the workflow page |
+| A project or dataset we do not list | [Add to the Directory](https://github.com/BuddhistAI/knowledge-base/issues/new?template=add-to-directory.yml) | — |
+| A fix or a new page | "Edit this page" on any page | `contributors` on the page |
+
+New to this? The [tutorials](learn/README.md) teach the steps by doing them. Organizations that contribute often can get their own GitHub team: see [Governance](governance.md#adding-people-and-organizations).
+
 ## Improve a task page
 
 Task pages belong to everyone. Click "Edit this page" on the site (or the pencil icon on GitHub) and propose a change. The most useful additions are:

@@ -42,6 +42,17 @@ body:
       description: License of the code, data or models, or "free to use, closed source".
       placeholder: MIT / CC0 / CC-BY-NC / free web app
   - type: dropdown
+    id: collaborative
+    attributes:
+      label: Does it accept contributions?
+      description: For a dataset. "Yes" only if its makers ask for corrections or new data (for example a contribution guide or an open issue tracker for errors).
+      options: ["Yes, and here is where (add the link below)", "No", "I don't know"]
+  - type: input
+    id: contribute
+    attributes:
+      label: Where to contribute (optional)
+      placeholder: https://github.com/owner/repo/blob/main/CONTRIBUTING.md
+  - type: dropdown
     id: relation
     attributes:
       label: Your relation to it

@@ -59,6 +59,7 @@ Everything that is scored has a semantic version (`MAJOR.MINOR.PATCH`).
 - Never change items or references without bumping the version.
 - Leaderboard rows cite the exact data version. **Never compare rows across data versions.**
 - Every result cites the exact skill commit: `owner/repo@commit:path`.
+- Every leaderboard row has a **provenance record** in the skill's own repo (`provenance/<run-id>.json`, format `buddhistai/provenance@1`): see [Provenance records](provenance.md). buddhist-benchmarks keeps only the short `result.json`.
 - Rules in full: buddhist-benchmarks [VERSIONING.md](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/VERSIONING.md).
 
 ## Licenses and imports
@@ -94,4 +95,7 @@ One look for every site. Source: [BuddhistAI/design](https://github.com/Buddhist
 - Credit every author by name: `authors` in a community `CARD.md`, `metadata.authors` in a `SKILL.md`, `made_by` in `skills.json`, `contributors` on task and workflow pages. Reviewers and language readers too.
 - **Contributors** (organizations and people who build things) are shown as avatar cards on the org profile and the homepage `#people` section: today WeBuddhist and ngawangtrinley. Add new contributors to both places, in alphabetical order.
 - **Backers** ("Supported by") are organizations that support the project, shown as text cards in alphabetical order on both pages: today Buddha Educational Foundation, OpenPecha, Unione Buddhista Italiana. Only list a backer after NT confirms it. Never rank or size them by amount.
+- **Expert reviewers** of a benchmark are named in its dataset card (`reviewers`, with the version they reviewed and the date) and in the task `CHANGELOG.md`.
+- **Donors of compute or API credits** are thanked in [News](../news/README.md) and, if they wish and NT confirms, listed with the backers under "Supported by". A donation never changes a score, a ranking or the order of any list.
+- **Partner organizations** that join with a team are added to the Contributors cards like any other contributor.
 - WeBuddhist is one contributor among others. Never put it at the top or call it the lead.

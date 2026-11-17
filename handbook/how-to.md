@@ -22,6 +22,11 @@ Each guide lists the repo, the steps and the check to run. In every repo: run `p
 - [Knowledge base: pages, Directory, experiments](#knowledge-base-pages-directory-languages-experiments)
 - [Change the design](#change-the-design)
 - [Add a contributor or a backer](#add-a-contributor-or-a-backer)
+- [Add a partner organization](#add-a-partner-organization)
+- [Write provenance records](#write-provenance-records)
+- [Handle an expert review](#handle-an-expert-review)
+- [Handle a compute or API credit donation](#handle-a-compute-or-api-credit-donation)
+- [Post news](#post-news)
 
 ## Run an evaluation
 
@@ -43,6 +48,7 @@ Today a maintainer runs every evaluation on their own machine with their own API
 5. Repeat at least 3 times when the model is not deterministic (Claude 5.5 models only accept temperature 1.0).
 6. Never tune a skill on the test set. Use separate training data (for example toc-extraction-tibetan `benchmark/data/train.jsonl`).
 7. Run the same model with no skill too, so the leaderboard can show the gain.
+8. Save the exact command, library versions and run logs, and write a [provenance record](provenance.md) per leaderboard row in the skill's own repo.
 
 **Worked example: Tibetan TOC** ([toc-extraction-tibetan](https://github.com/BuddhistAI/toc-extraction-tibetan)):
 
@@ -63,11 +69,12 @@ python scripts/to_result_json.py --date <date> --commit <short-commit> --benchma
 Repo: buddhist-benchmarks. Format: [docs/results.md](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/docs/results.md).
 
 1. Make `tasks/<task>/results/<code>/runs/<run-id>/` with `result.json` (required), plus `scores.json` and the outputs so anyone can re-score. `<run-id>` = `<date>-<skill>-<variant>-<version>-<short-commit>-<model-slug>`.
-2. `result.json` must cite `skill_ref` (`owner/repo@commit:path`), `model` (must be in `models.json`), `data_version`, `scorer_version`, `repeats` and `usage` (real tokens, `estimated: false`).
-3. Add the variant to that language's `skills.json` if it is new: `status` (`promoted`, `challenger`, `baseline` or `reference`), `name`, `approach` (two sentences), `made_by`, `source`.
-4. Run `python3 scripts/build_leaderboards.py` and `python3 scripts/check.py`. Commit and push to `main` (or open a PR and merge it).
-5. CI rebuilds `LEADERBOARD.md`, the README table, `STATE.md` and the site, and publishes the results table to Hugging Face.
-6. **Update the homepage by hand:** the leaderboard preview on https://buddhistai.github.io/ is a `rows` array in buddhistai.github.io `index.html` (search for `const rows=`). Copy the new numbers there. (Planned: read them from the leaderboard data instead.)
+2. Check that the skill's repo has a [provenance record](provenance.md) for the run (from 2026-11-17 on).
+3. `result.json` must cite `skill_ref` (`owner/repo@commit:path`), `model` (must be in `models.json`), `data_version`, `scorer_version`, `repeats` and `usage` (real tokens, `estimated: false`).
+4. Add the variant to that language's `skills.json` if it is new: `status` (`promoted`, `challenger`, `baseline` or `reference`), `name`, `approach` (two sentences), `made_by`, `source`.
+5. Run `python3 scripts/build_leaderboards.py` and `python3 scripts/check.py`. Commit and push to `main` (or open a PR and merge it).
+6. CI rebuilds `LEADERBOARD.md`, the README table, `STATE.md` and the site, and publishes the results table to Hugging Face.
+7. **Update the homepage by hand:** the leaderboard preview on https://buddhistai.github.io/ is a `rows` array in buddhistai.github.io `index.html` (search for `const rows=`). Copy the new numbers there. (Planned: read them from the leaderboard data instead.)
 
 Top performance = highest headline score among shippable skills on the latest data version. Best value = highest score among options that cost at most 20% of the top performance. The script picks both.
 
@@ -91,7 +98,7 @@ Never edit a released `SKILL.md` directly. Improvements start as a challenger in
 **Today (manual):**
 
 1. A submission arrives as a pull request to buddhist-benchmarks (following [SUBMIT.md](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/SUBMIT.md)), a Share issue, a homepage "paste your repo" link (opens a prefilled buddhist-skills issue), or a post in Discussions.
-2. Check: the result cites an exact commit, the right data version, real token counts, and includes outputs. The skill follows the one-language rule. The author is named.
+2. Check: the result cites an exact commit, the right data version, real token counts, and includes outputs. The author's repo has a provenance record (for a closed tool, the same facts in the PR description). The skill follows the one-language rule. The author is named.
 3. If only a skill was submitted (no run), run the evaluation yourself ([above](#run-an-evaluation)) on the standard models (today Claude Haiku 5.5 and Claude Sonnet 5.5).
 4. Merge. Move the item on the [Skills board](https://github.com/orgs/BuddhistAI/projects/1) to "Being measured", then "Released" if it is promoted.
 5. Thank the author on the issue or PR.
@@ -103,8 +110,9 @@ Never edit a released `SKILL.md` directly. Improvements start as a challenger in
 When a submission becomes the Top performance or Best value pick for a task and language, or a new benchmark goes live:
 
 1. Congratulate the author on the issue or PR.
-2. Post on LinkedIn and X, crediting the person and their organization, with a link to the leaderboard row. Who owns the social accounts is not decided yet ([Status](status.md#open-questions)); until then, ask NT.
-3. Keep posts plain and neutral: what the task is, the score and cost, who made it, how to install it.
+2. Add a post at the top of [News](../news/README.md) ([Post news](#post-news)).
+3. Post on LinkedIn and X, crediting the person and their organization, with a link to the leaderboard row. Who owns the social accounts is not decided yet ([Status](status.md#open-questions)); until then, ask NT.
+4. Keep posts plain and neutral: what the task is, the score and cost, who made it, how to install it.
 
 Example: "New Best value for Tibetan TOC extraction: [skill] by [author, org] scores 0.82 on Claude Haiku 5.5 at about $0.05 per 100 pages. Install it from buddhist-skills. Leaderboard: [link]"
 
@@ -167,3 +175,45 @@ Repo: design.
 1. Edit both the org profile (BuddhistAI/.github `profile/README.md`, "Contributors" and "Supported by") and the homepage (buddhistai.github.io `index.html`, section `#people`). Alphabetical order.
 2. Contributors get avatar cards (GitHub avatar, name, "Person" or "Organization"). Backers get text cards (name + website).
 3. Only add a backer after NT confirms it. No logos without permission. WeBuddhist stays one card among others.
+4. Compute and API credit donors can be listed with the backers if they wish ([Conventions](conventions.md#credit)).
+
+## Add a partner organization
+
+A group that contributes often (for example a translation team) gets its own GitHub team with write access to its own task repos only. The full steps (invite as Member, create `<org>-team`, give Write on their repos, optional Triage, CODEOWNERS lines, credit) are on the public [Governance page](../governance.md#steps-add-a-partner-organization). Never give a partner team write access to a core repo (buddhist-skills, buddhist-benchmarks, buddhistai.github.io, design, knowledge-base, .github). Before the first partner team gets access, set up the Maintainers team and the branch rules ([Architecture](architecture.md#permissions)).
+
+## Write provenance records
+
+Repo: the skill's own repo. Standard: [Provenance records](provenance.md).
+
+1. Run with a script that saves the exact command and library versions (toc-extraction-tibetan `bench_skills.py` writes `<out>.meta.json`).
+2. After `to_result_json.py`, run `python scripts/provenance.py --benchmarks ../buddhist-benchmarks`, then `python scripts/provenance.py --check`.
+3. Commit `provenance/` together with the run files and logs. Never change a run file after its record is made.
+4. For a new skill repo, copy the [workshop template](https://github.com/BuddhistAI/buddhist-skills/tree/main/templates/workshop) and adapt `provenance.py` from toc-extraction-tibetan.
+
+## Handle an expert review
+
+An expert review arrives through the [Review a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=expert-review.yml) form (label `expert-review`).
+
+1. Thank the reviewer. Agree on the scope (all items, a sample, or one subset) and how they will mark problems (a table in the issue, a spreadsheet, or comments on a pull request).
+2. Share the items in a readable form. For a private benchmark, share only what its permission record allows.
+3. Turn each confirmed problem into a fix: wrong answers → patch version, missing hard cases → minor version ([Versions](conventions.md#versions)). Record the review in the task `CHANGELOG.md`.
+4. Name the reviewer in the dataset card (`reviewers`: name, version reviewed, date). A full review by a second reader from the tradition moves the benchmark to maturity level 3, Reviewed. Update the maturity shown on the homepage.
+5. Re-run the best skill and the challengers on the new version. Move the card on the [Benchmarks board](https://github.com/orgs/BuddhistAI/projects/2).
+
+## Handle a compute or API credit donation
+
+An offer arrives through the [Donate compute or API credits](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=donate-compute.yml) form (label `compute`). Only NT accepts a donation.
+
+1. NT replies on the issue and agrees the details in private (never ask for a key in an issue).
+2. Store keys only as repo or org secrets (`OPENROUTER_API_KEY` or a provider key), never in a file or chat. Note in [Status](status.md) which runs the donation pays for and any limits (amount, end date, models).
+3. Use donated credits for evaluations of everyone's submissions in the order they come, not only the donor's.
+4. Thank the donor in [News](../news/README.md). If they wish and NT confirms, add them to "Supported by" ([Add a contributor or a backer](#add-a-contributor-or-a-backer)).
+
+## Post news
+
+Page: knowledge-base [news/README.md](../news/README.md).
+
+1. Add a section at the top: `## <day> <Month> <year> · <title>`, then two to five plain sentences with links (leaderboard row, skill, benchmark, person).
+2. Post for: a new Top performance or Best value, a new benchmark or data version, a new best skill release, a new partner organization or backer, a big change to the sites.
+3. Credit people and organizations by name. Neutral wording: what changed, who made it, where to find it.
+4. Copy the post to Discussions (Announcements) and to LinkedIn and X when someone owns those accounts.

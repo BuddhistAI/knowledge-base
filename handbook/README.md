@@ -17,7 +17,8 @@ Last full review: 2026-11-17.
 3. **[Conventions](conventions.md)**: names, data format, versions, licenses, design system, writing style.
 4. **[How-to guides](how-to.md)**: run an evaluation, update the leaderboard, promote a winner, add a benchmark, handle a submission, announce a new leader.
 5. **[Building the leaderboard app and arena](leaderboard-app.md)**: notes for the FastAPI + React site: which files to read, which design files to use, what the homepage already promises.
-6. **[Status, decisions and roadmap](status.md)**: what is real today, what is still a mock or a plan, decisions and open questions from the team call of 2026-11-17, and the next steps.
+6. **[Provenance records](provenance.md)**: the standard record of what made each score (skill files, model, prompt, data, code, logs, cost), kept in the skill's own repo.
+7. **[Status, decisions and roadmap](status.md)**: what is real today, what is still a mock or a plan, decisions and open questions from the team call of 2026-11-17, and the next steps.
 
 ## Mission
 
@@ -59,6 +60,8 @@ These come from NT, the project lead. Every page, site, commit message and socia
 | Evan | Helps document Buddhist data workflows (structure not decided). |
 | Dave | Offered inference keys for evaluation runs. |
 | Kurt Keutzer | Owner of the [translation workflow](../workflows/translation.md) (his own document; we only link to it). |
+
+Who decides what, and how people and partner organizations get access, is on the public [Governance](../governance.md) page. Newcomers learn the basics in [Learn by building](../learn/README.md), the [Glossary](../glossary.md) and the [FAQ](../faq.md).
 
 Team work is tracked on the [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members (private for now).
 

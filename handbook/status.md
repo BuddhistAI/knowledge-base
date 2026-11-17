@@ -106,8 +106,11 @@ In rough order. Owners in brackets where known.
 10. **Thai reader** for the imported set; **workflow owners** review their pages; more workflows from teaching, art and practice.
 11. **Community:** choose the channel, set up Discussions categories, a contributors list, a help-wanted list; decide who posts announcements.
 12. **Homepage:** read scores from the leaderboard data instead of a hand-copied array (or replace the page with the app).
+13. **Access for partner organizations:** before the first partner team gets access, create the Maintainers team, check member base permission is Read, and add branch rules (pull request + code-owner review) on the core repos ([Governance](../governance.md#adding-people-and-organizations)) [NT].
 
 ## Changes since the call
 
+- 2026-11-17: after a comparison with openwaldo.org, NT decided: (1) a **provenance record** per leaderboard row, kept in the skill's own repo, never in buddhist-benchmarks: standard [buddhistai/provenance@1](provenance.md), applied to all 10 toc-extraction-tibetan rows (costs still estimated); (2) no shared data commons for now, but the Directory marks each dataset **open** and **collaborative**; (3) four **tutorials** in [Learn by building](../learn/README.md); (4) two new contribution paths: **expert review of a benchmark** and **donate compute or API credits** (buddhist-benchmarks forms, CONTRIBUTING files, homepage); (5) [Governance](../governance.md) (with the access model for partner organizations), [FAQ](../faq.md), [Glossary](../glossary.md) and [News](../news/README.md) pages.
+- 2026-11-17: access model written down; NT chose to set up the Maintainers team and branch rules later, when the first partner team joins.
 - 2026-11-17: the knowledge base gained Languages: one page per Buddhist language (data, AI projects, translation quality, recommendation) and a country overview.
 - 2026-11-17: this handbook was written; the knowledge base gained the Directory; GitHub → Hugging Face sync went live.
