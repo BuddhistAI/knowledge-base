@@ -88,7 +88,7 @@ Done by an org owner or maintainer, in the GitHub web UI.
 
 ### Protection of the core repos
 
-Planned when the first partner team joins: on each core repo, a branch rule on `main` that requires a pull request with one approving review from a code owner, and the Maintainers team as the only team with write access. Until then, the project lead and Claude sessions working for the project push to `main` directly. See the [handbook](handbook/architecture.md#permissions) for the current state.
+The org has a **Maintainers** team (`@BuddhistAI/maintainers`) since 17 November 2026; repo permissions for it are not set yet. Planned when the first partner team joins: on each core repo, a branch rule on `main` that requires a pull request with one approving review from a code owner, and the Maintainers team as the only team with write access. Until then, the project lead and Claude sessions working for the project push to `main` directly. See the [handbook](handbook/architecture.md#permissions) for the current state.
 
 ## Money, compute and credit
 

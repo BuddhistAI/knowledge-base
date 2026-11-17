@@ -106,7 +106,7 @@ In rough order. Owners in brackets where known.
 10. **Thai reader** for the imported set; **workflow owners** review their pages; more workflows from teaching, art and practice.
 11. **Community:** Discussions is set up (2026-11-17). Still to do: a contributors list, a help-wanted list, decide who posts on LinkedIn and X; maybe a chat channel later.
 12. **Homepage:** read scores from the leaderboard data instead of a hand-copied array (or replace the page with the app).
-13. **Access for partner organizations:** before the first partner team gets access, create the Maintainers team, check member base permission is Read, and add branch rules (pull request + code-owner review) on the core repos ([Governance](../governance.md#adding-people-and-organizations)) [NT].
+13. **Access for partner organizations:** before the first partner team gets access, give the Maintainers team (created 2026-11-17) access to the core repos, check member base permission is Read, and add branch rules (pull request + code-owner review) on the core repos ([Governance](../governance.md#adding-people-and-organizations)) [NT].
 
 ## Changes since the call
 
