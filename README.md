@@ -22,7 +22,7 @@ This is about **Buddhist tasks**, not only texts: translation and study, but als
 
 ## Learn and get started
 
-- **[Learn by building](learn/README.md):** four short tutorials. Run the scorer, evaluate your first model on a Buddhist task, write your first skill, and add a benchmark.
+- **[Learn by building](learn/README.md):** five short tutorials. Run the scorer, evaluate your first model on a Buddhist task, write your first skill, add a benchmark, and improve your skill with GEPA.
 - **[Glossary](glossary.md)** of the words we use, and a **[FAQ](faq.md)**.
 - **[Governance](governance.md):** who decides what, how a skill becomes the best skill, and how people and organizations join.
 - **[News](news/README.md):** new best skills, new benchmarks, releases and new contributors.

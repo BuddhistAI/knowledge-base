@@ -6,7 +6,7 @@ permalink: /learn/
 
 # Learn by building
 
-These tutorials teach you how BuddhistAI works by doing it. Each one takes less than an hour. Do them in order, or pick the one you need.
+These tutorials teach you how BuddhistAI works by doing it. Each one is short. Do them in order, or pick the one you need.
 
 | # | Tutorial | You will | You need | Cost |
 | --- | --- | --- | --- | --- |
@@ -14,6 +14,7 @@ These tutorials teach you how BuddhistAI works by doing it. Each one takes less 
 | 2 | [Evaluate your first model on a Buddhist task](evaluate-your-first-model.md) | Run an AI model on a real benchmark and score it | Tutorial 1, an OpenRouter API key | About $0.01 to $1 |
 | 3 | [Write your first skill](write-your-first-skill.md) | Write a SKILL.md, try it, share it, and have it measured | A text editor, a GitHub account | Free (or a few cents to test) |
 | 4 | [Add a benchmark](add-a-benchmark.md) | Turn material your team already checks by hand into a test set | Real examples with correct answers | Free |
+| 5 | [Improve your skill with GEPA](improve-your-skill-with-gepa.md) | Let an optimizer rewrite your skill to raise its score | Tutorials 1 and 3, an Anthropic API key | A few dollars; always set a limit |
 
 The tutorials use the Tibetan table-of-contents task, because it has a benchmark and a scorer today. The same steps work for every task with a benchmark.
 
