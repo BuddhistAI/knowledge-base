@@ -73,7 +73,7 @@ The Skills and Benchmarks boards are public, for contributors. The Development b
 | Repo | Form | Label | What a maintainer does |
 | --- | --- | --- | --- |
 | buddhist-skills | [Request an AI solution for a task](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=request.yml) | `request` | Find or define the task; add a task page here if needed. |
-| buddhist-skills | [Share a skill or workflow](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) | `community-share` | Turn it into a `community/` entry and credit the author ([how-to](how-to.md#turn-a-share-issue-into-a-community-entry)). |
+| buddhist-skills | [Share a skill](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) (a link or uploaded files) | `community-share` | Turn it into a `community/` entry and credit the author ([how-to](how-to.md#turn-a-share-issue-into-a-community-entry)). |
 | buddhist-skills | [Volunteer as a language reader](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=reader.yml) | `language-reader` | Match them with data that needs a reader (see [Status](status.md#waiting-on-a-reader)). |
 | buddhist-skills | [Report a problem](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=problem.yml) | `bug` | Fix or route. |
 | buddhist-benchmarks | [Propose a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=propose-benchmark.yml) | `benchmark` | Discuss, then add the task and data ([how-to](how-to.md#add-a-benchmark)). |

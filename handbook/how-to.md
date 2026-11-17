@@ -135,8 +135,10 @@ Example: "New Best value for Tibetan TOC extraction: [skill] by [author, org] sc
 
 Repo: buddhist-skills.
 
-1. Create `community/<task>-<language>/<author>-<name>/` with `CARD.md` (from `templates/CARD.md`) and the content as `SKILL.md`, `WORKFLOW.md`, `PROMPT.md` or, for a personal setup, its own file name with `kind: personal`.
-2. Credit the author in `authors`. Keep one language per entry. Use a task ID from `tasks/index.json` when one fits.
+The [Share a skill](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) form takes either a link to a GitHub repo or uploaded files (dragged into the form). Name and picture are optional. The homepage links to it from the hero ("Upload your files") and from the Contribute section.
+
+1. Create `community/<task>-<language>/<author>-<name>/` with `CARD.md` (from `templates/CARD.md`) and the content as `SKILL.md`, `WORKFLOW.md`, `PROMPT.md` or, for a personal setup, its own file name with `kind: personal`. Copy linked or attached files unchanged.
+2. Credit the author in `authors` (the name they gave, or their GitHub name). Set `github` to the issue author's GitHub name, `avatar` to the picture they attached (if any) and `license` to their choice. Write `SOURCE.md` (where the files came from, author, date, license). Keep one language per entry. Use a task ID from `tasks/index.json` when one fits.
 3. Run `python3 scripts/build.py` and `python3 scripts/check.py`. Link the commit on the issue and close it. Move the card on the Skills board to "Shared".
 
 ## Add a benchmark
@@ -187,8 +189,8 @@ Repo: design.
 
 ## Add a contributor or a backer
 
-1. Edit both the org profile (BuddhistAI/.github `profile/README.md`, "Contributors" and "Supported by") and the homepage (buddhistai.github.io `index.html`, section `#people`). Alphabetical order.
-2. Contributors get avatar cards (GitHub avatar, name, "Person" or "Organization"). Backers get text cards (name + website).
+1. The homepage contributor row (`#people`) is generated every day by `scripts/update_contributors.py` in buddhistai.github.io. It adds commit authors of public BuddhistAI repos, public org members, authors of community entries (`github`, `authors` and `avatar` in each buddhist-skills `community/*/*/CARD.md`; people with no GitHub name show their picture or initials), and the GitHub names in `contributors-extra.json`. To credit someone by hand, add them to `contributors-extra.json`. Never edit the row between the `contributors:start` / `contributors:end` markers.
+2. Backers ("Supported by") are edited by hand in both the org profile (BuddhistAI/.github `profile/README.md`) and the homepage (`#people`), as text or logo cards.
 3. Only add a backer after NT confirms it. No logos without permission. WeBuddhist stays one card among others.
 4. Compute and API credit donors can be listed with the backers if they wish ([Conventions](conventions.md#credit)).
 

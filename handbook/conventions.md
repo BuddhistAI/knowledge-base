@@ -93,7 +93,7 @@ One look for every site. Source: [BuddhistAI/design](https://github.com/Buddhist
 ## Credit
 
 - Credit every author by name: `authors` in a community `CARD.md`, `metadata.authors` in a `SKILL.md`, `made_by` in `skills.json`, `contributors` on task and workflow pages. Reviewers and language readers too.
-- **Contributors** (organizations and people who build things) are shown as avatar cards on the org profile and the homepage `#people` section: today WeBuddhist and ngawangtrinley. Add new contributors to both places, in alphabetical order.
+- **Contributors** (organizations and people who build things) are shown as avatars on the homepage `#people` section and the org profile. The list is generated daily from commits, org members, community `CARD.md` files and `contributors-extra.json` ([how-to](how-to.md#add-a-contributor-or-a-backer)).
 - **Backers** ("Supported by") are organizations that support the project, shown as text cards in alphabetical order on both pages: today Buddha Educational Foundation, OpenPecha, Unione Buddhista Italiana. Only list a backer after NT confirms it. Never rank or size them by amount.
 - **Expert reviewers** of a benchmark are named in its dataset card (`reviewers`, with the version they reviewed and the date) and in the task `CHANGELOG.md`.
 - **Donors of compute or API credits** are thanked in [News](../news/README.md) and, if they wish and NT confirms, listed with the backers under "Supported by". A donation never changes a score, a ranking or the order of any list.

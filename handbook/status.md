@@ -43,7 +43,8 @@ Benchmark `toc-extraction/bo` 2.0.0 (85 passages from two commentaries, one book
 - **One repo per benchmark** with a maturity level (Example → Draft → Reviewed → Stable): shown on the homepage, not built. Benchmarks still live inside buddhist-benchmarks.
 - **Best value and Top performance both in buddhist-skills:** decided, not built. Today one skill per task and language.
 - **Intervention study** (does publishing sourced information change AI answers?): designed in buddhist-bench, plan not frozen ([knowledge-base#2](https://github.com/BuddhistAI/knowledge-base/issues/2)), waiting for keys and real items.
-- **Community parts not set up:** generated contributors list, monthly digest, pinned help-wanted list.
+- **Community parts not set up:** monthly digest, pinned help-wanted list. (The contributors list is generated daily, and includes community authors.)
+- **Sharing without a GitHub account:** not possible yet. The Share form needs a free GitHub account.
 
 ### Waiting on NT
 
