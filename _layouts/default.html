@@ -5,20 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{% if page.title and page.url != "/" %}{{ page.title }} · {% endif %}{{ site.title }}</title>
 <meta name="description" content="{{ page.summary | default: site.description }}">
+<link rel="icon" href="{{ '/assets/logo-128.png' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Noto+Serif+Tibetan:wght@400&display=swap">
+<link rel="stylesheet" href="{{ '/assets/buddhistai.css' | relative_url }}">
 <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 </head>
 <body>
-<header class="top">
-  <a class="brand" href="{{ '/' | relative_url }}">☸📊 BuddhistAI Wiki</a>
-  <nav>
+<header class="site-header"><div class="wrap">
+  <a class="brand" href="{{ '/' | relative_url }}"><img class="logo-light" src="{{ '/assets/logo-128.png' | relative_url }}" alt=""><img class="logo-dark" src="{{ '/assets/logo-dark-128.png' | relative_url }}" alt="">{{ site.title }}</a>
+  <nav class="site-nav">
     <a href="{{ '/#tasks' | relative_url }}">Tasks</a>
     <a href="{{ '/#workflows' | relative_url }}">Workflows</a>
+    <a href="{{ '/experiments/' | relative_url }}">Experiments</a>
     <a href="{{ '/CONTRIBUTING.html' | relative_url }}">Contribute</a>
     <a href="https://buddhistai.github.io/buddhist-benchmarks/">Leaderboard</a>
   </nav>
-</header>
-<main>
-<p class="edit-top"><a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">✎ Edit this page</a></p>
+</div></header>
+<main class="wrap narrow prose">
+<p class="edit-top"><a class="btn ghost small" href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">✎ Edit this page</a></p>
 {{ content }}
 <p class="edit">
   <a href="https://github.com/{{ site.repository }}/edit/main/{{ page.path }}">✎ Edit this page</a>
@@ -26,6 +31,9 @@
   · <a href="https://github.com/{{ site.repository }}/issues/new?title={{ page.title | default: page.path | url_encode }}%3A%20">Discuss</a>
 </p>
 </main>
-<footer>Open Buddhist AI benchmarks and skills · MIT · <a href="https://github.com/BuddhistAI">BuddhistAI on GitHub</a></footer>
+<footer class="site-footer"><div class="wrap cols">
+  <span>Open Buddhist AI benchmarks and skills · MIT</span>
+  <span><a href="https://github.com/BuddhistAI">BuddhistAI on GitHub</a> · <a href="https://buddhistai.github.io/buddhist-benchmarks/">Leaderboard</a></span>
+</div></footer>
 </body>
 </html>
