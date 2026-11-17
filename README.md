@@ -1,6 +1,6 @@
 # BuddhistAI research
 
-The lab notebook of [BuddhistAI](https://github.com/BuddhistAI): what we tried, why, and what we found. Each experiment has its own folder with a plan written before it ran, a dated log, and a report ready to share in [Discussions](https://github.com/orgs/BuddhistAI/discussions) or any forum.
+The record of [BuddhistAI](https://github.com/BuddhistAI) experiments: what we tried, why, and what we found. Each experiment has its own folder with a plan written before it ran, a dated log, and a report ready to share in [Discussions](https://github.com/orgs/BuddhistAI/discussions) or any forum.
 
 Code, data and scores live in the other repos. This repo holds the reasoning and links to them.
 
