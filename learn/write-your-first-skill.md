@@ -43,7 +43,7 @@ For a task with a benchmark, you can test on the real items: put the text of you
 
 ## 4. Share it
 
-Open the [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) form and paste a link to your folder (or attach the file). A maintainer adds it to the [prompt library](https://github.com/BuddhistAI/buddhist-prompt-library) with your name in `authors`. You do not need to know git, but you need a free GitHub account. The form is public.
+Open the [Share your files](https://github.com/BuddhistAI/buddhist-prompts/issues/new?template=share.yml) form and paste a link to your folder (or attach the file). A maintainer adds it to the [prompt library](https://github.com/BuddhistAI/buddhist-prompts) with your name in `authors`. You do not need to know git, but you need a free GitHub account. The form is public.
 
 ## 5. Have it measured
 

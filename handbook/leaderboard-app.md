@@ -37,7 +37,7 @@ Files to read (all in public repos; raw URL pattern `https://raw.githubuserconte
 | `STATE.md` | buddhist-benchmarks | Summary for funders (generated). |
 | `tracks/index.json`, `tracks/*/results/*/runs/*/{run.json,scores.json}` | buddhist-bench | BuddhistBench tracks and model runs (skip `dry_run` and the `example` split). |
 | `SKILLS.md`, `.claude-plugin/marketplace.json`, `skills/*/SKILL.md` | buddhist-skills | Released skills with metadata, plugins per language. |
-| `*/*/CARD.md` (not `templates/`) | buddhist-prompt-library | Shared, unmeasured entries (`kind`, authors, license). |
+| `*/*/CARD.md` (not `templates/`) | buddhist-prompts | Shared, unmeasured entries (`kind`, authors, license). |
 | `languages.json` | buddhist-skills | Language names and codes. |
 | `tasks/*.md` front matter | knowledge-base | Task area, summary, related tasks, contributors; link "Learn more" to `https://buddhistai.github.io/knowledge-base/tasks/<id>.html`. |
 

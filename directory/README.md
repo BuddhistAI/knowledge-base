@@ -145,7 +145,7 @@ Being listed does not mean we tested or recommend a project. To compare tools on
 | Project | Made by | What it does | Languages | How open | Last activity |
 | --- | --- | --- | --- | --- | --- |
 | **[Meditatewith.ai](https://meditatewith.ai/)** [✎](https://github.com/BuddhistAI/knowledge-base/blob/main/directory/projects.yml#L677 "Edit this entry") | Vince Horn | Experiments with AI for guided and social meditation. | English | free to use | – |
-| **[my-dharma.md](https://github.com/BuddhistAI/buddhist-prompt-library/tree/main/personal-ai-setup-english/shoukei-matsumoto-my-dharma)** [✎](https://github.com/BuddhistAI/knowledge-base/blob/main/directory/projects.yml#L685 "Edit this entry") | Shoukei Matsumoto | A personal file that tells an AI assistant about your practice and how you want it to talk about the Dharma. | English | CC0 | Nov 2026 |
+| **[my-dharma.md](https://github.com/BuddhistAI/buddhist-prompts/tree/main/personal-ai-setup-english/shoukei-matsumoto-my-dharma)** [✎](https://github.com/BuddhistAI/knowledge-base/blob/main/directory/projects.yml#L685 "Edit this entry") | Shoukei Matsumoto | A personal file that tells an AI assistant about your practice and how you want it to talk about the Dharma. | English | CC0 | Nov 2026 |
 | **[Dharma lesson planner](https://github.com/BobConscious/dharma-lesson-planner)** [✎](https://github.com/BuddhistAI/knowledge-base/blob/main/directory/projects.yml#L693 "Edit this entry") | BobConscious (community) | App that drafts lesson plans for Buddhist studies classes from source material. | English | open source (MIT) | Jul 2026 |
 
 ### Research and community

@@ -133,9 +133,9 @@ Example: "New Best value for Tibetan TOC extraction: [skill] by [author, org] sc
 
 ## Turn a Share issue into a prompt library entry
 
-Repo: [buddhist-prompt-library](https://github.com/BuddhistAI/buddhist-prompt-library) (until 2026-11-18 this was `community/` in buddhist-skills).
+Repo: [buddhist-prompts](https://github.com/BuddhistAI/buddhist-prompts) (until 2026-11-18 this was `community/` in buddhist-skills).
 
-The [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) form takes a link or uploaded files: a skill, or any file someone gives to AI (personal AI file such as CLAUDE.md, project instructions, style guide, glossary, prompt, workflow). Name and picture are optional. It says that the form is public and needs a GitHub account. The homepage links to it from the hero, the Contribute section and the "Art, practice and teaching" cards.
+The [Share your files](https://github.com/BuddhistAI/buddhist-prompts/issues/new?template=share.yml) form takes a link or uploaded files: a skill, or any file someone gives to AI (personal AI file such as CLAUDE.md, project instructions, style guide, glossary, prompt, workflow). Name and picture are optional. It says that the form is public and needs a GitHub account. The homepage links to it from the hero, the Contribute section and the "Art, practice and teaching" cards.
 
 1. Create `<topic>-<language>/<author>-<name>/` with `CARD.md` (from `templates/CARD.md`) and the file unchanged. Set `kind` (skill, workflow, prompt, personal, project-instructions, style-guide, glossary, other) and `file` for kinds other than skill, workflow and prompt. For a repo link, copy the files at one commit and record the repo and commit in `SOURCE.md`.
 2. Credit the author in `authors` (the name they gave, or their GitHub name). Set `github` to the issue author's GitHub name, `avatar` to the picture they attached (if any) and `license` to their choice. Write `SOURCE.md` (where the files came from, author, date, license). One language per entry.
@@ -193,7 +193,7 @@ Repo: design.
 
 ## Add a contributor or a backer
 
-1. The homepage contributor row (`#people`) is generated every day by `scripts/update_contributors.py` in buddhistai.github.io. It adds commit authors of public BuddhistAI repos, public org members, authors of prompt library entries (`github`, `authors` and `avatar` in each buddhist-prompt-library `<topic>-<language>/<entry>/CARD.md`; people with no GitHub name show their picture or initials), and the GitHub names in `contributors-extra.json`. To credit someone by hand, add them to `contributors-extra.json`. Never edit the row between the `contributors:start` / `contributors:end` markers.
+1. The homepage contributor row (`#people`) is generated every day by `scripts/update_contributors.py` in buddhistai.github.io. It adds commit authors of public BuddhistAI repos, public org members, authors of prompt library entries (`github`, `authors` and `avatar` in each buddhist-prompts `<topic>-<language>/<entry>/CARD.md`; people with no GitHub name show their picture or initials), and the GitHub names in `contributors-extra.json`. To credit someone by hand, add them to `contributors-extra.json`. Never edit the row between the `contributors:start` / `contributors:end` markers.
 2. Backers ("Supported by") are edited by hand in both the org profile (BuddhistAI/.github `profile/README.md`) and the homepage (`#people`), as text or logo cards.
 3. Only add a backer after NT confirms it. No logos without permission. WeBuddhist stays one card among others.
 4. Compute and API credit donors can be listed with the backers if they wish ([Conventions](conventions.md#credit)).

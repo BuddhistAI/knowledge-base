@@ -47,7 +47,7 @@ Some early runs did not log token counts, so they were estimated from the text l
 Yes. You can share how your project works (a workflow), check answers in your language, review a benchmark as an expert, suggest a task, add a project to the [Directory](directory/README.md), or fix a page. Most of this is a form or the "Edit this page" link. See [Contribute](CONTRIBUTING.md).
 
 **How do I submit my model or skill?**
-Paste a link on the [homepage](https://buddhistai.github.io/#submit). For a skill or any file you give to AI, you can also use the [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) form. A maintainer runs it on the benchmark. To learn the steps yourself, follow the [tutorials](learn/README.md).
+Paste a link on the [homepage](https://buddhistai.github.io/#submit). For a skill or any file you give to AI, you can also use the [Share your files](https://github.com/BuddhistAI/buddhist-prompts/issues/new?template=share.yml) form. A maintainer runs it on the benchmark. To learn the steps yourself, follow the [tutorials](learn/README.md).
 
 **Can my organization donate API credits or compute?**
 Yes, please. Use the [Donate compute or API credits form](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=donate-compute.yml). Donations pay for evaluations of everyone's submissions. They never change a score or a ranking.

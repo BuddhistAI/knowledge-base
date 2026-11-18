@@ -42,7 +42,7 @@ Today the project lead is also the only maintainer. More maintainers will be add
 
 ## How a skill becomes the best skill
 
-1. **Share.** Anyone shares a skill, or any file they give to AI. It is listed in the [prompt library](https://github.com/BuddhistAI/buddhist-prompt-library), unmeasured. A skill for a task with a benchmark is also added as a variant to the task's workshop repo.
+1. **Share.** Anyone shares a skill, or any file they give to AI. It is listed in the [prompt library](https://github.com/BuddhistAI/buddhist-prompts), unmeasured. A skill for a task with a benchmark is also added as a variant to the task's workshop repo.
 2. **Measure.** It is run on the task's benchmark with the standard models. The run gets a `result.json` in buddhist-benchmarks and a provenance record in the skill's repo.
 3. **Release.** If it is the **Top performance** (highest score) or the **Best value** (high score for at most a fifth of the top cost) on the latest data version, and it beats the current skill by more than the run-to-run noise, a maintainer copies it into buddhist-skills. The previous skill stays on the leaderboard as a challenger.
 

@@ -37,7 +37,7 @@ All repos are in the [BuddhistAI GitHub org](https://github.com/BuddhistAI), pub
 | [buddhist-benchmarks](https://github.com/BuddhistAI/buddhist-benchmarks) | Hub for task benchmarks: `tasks/index.json`, per task `TASK.md`, scorer, data, results; `models.json` (prices); `external.json` (other groups' leaderboards); `STATE.md`; `SUBMIT.md`. Builds the leaderboard site. | https://buddhistai.github.io/buddhist-benchmarks/ |
 | [buddhist-bench](https://github.com/BuddhistAI/buddhist-bench) | BuddhistBench: a Q&A benchmark of Buddhist knowledge (tracks by tradition, text and exam; language as an axis). Also the OpenRouter runner and the intervention study. Version 0.4.0, examples plus one imported set. | Shown on the leaderboard site |
 | [buddhist-skills](https://github.com/BuddhistAI/buddhist-skills) | The shelf: only released (promoted) skills in `skills/` (per task and language, the top performance and the best value skill), the router, shared glossaries in `shared/`. Builds the Claude plugin marketplace. `community/` and `drafts/` are one-line pointers since 2026-11-18. | Installed as a plugin |
-| [buddhist-prompt-library](https://github.com/BuddhistAI/buddhist-prompt-library) | Shared and not measured: personal AI files (CLAUDE.md), project instructions, style guides, glossaries, prompts, and skills or workflows with no score yet. `<topic>-<language>/<author>-<name>/` with `CARD.md` (`kind`). Holds the Share form. Created 2026-11-18. | GitHub only |
+| [buddhist-prompts](https://github.com/BuddhistAI/buddhist-prompts) | Shared and not measured: personal AI files (CLAUDE.md), project instructions, style guides, glossaries, prompts, and skills or workflows with no score yet. `<topic>-<language>/<author>-<name>/` with `CARD.md` (`kind`). Holds the Share form. Created 2026-11-18. | GitHub only |
 | [toc-extraction-tibetan](https://github.com/BuddhistAI/toc-extraction-tibetan) | The first workshop repo: every variant of the Tibetan TOC skill, the runs, and `REPORT.md`. Pins the benchmark; holds no test data. | — |
 | [research](https://github.com/BuddhistAI/research) | **Archived.** Now the [Experiments](../experiments/README.md) section of this site. | — |
 
@@ -65,9 +65,9 @@ The team decided on 2026-11-17 that each benchmark gets **its own repo** with ma
 
 | Board | Columns | Filled by |
 | --- | --- | --- |
-| [Skills board](https://github.com/orgs/BuddhistAI/projects/1) | Requested → Shared → In progress → Being measured → Released | Auto-adds open buddhist-skills issues labeled `request` or `community-share`. Share issues now open in buddhist-prompt-library and go to the Prompt library board (below). |
+| [Skills board](https://github.com/orgs/BuddhistAI/projects/1) | Requested → Shared → In progress → Being measured → Released | Auto-adds open buddhist-skills issues labeled `request` or `community-share`. Share issues now open in buddhist-prompts and go to the Prompt library board (below). |
 | [Benchmarks board](https://github.com/orgs/BuddhistAI/projects/2) | Proposed → Needs test data → In progress → Being reviewed → Live | Auto-adds open buddhist-benchmarks issues labeled `benchmark`. |
-| [Prompt library board](https://github.com/orgs/BuddhistAI/projects/4) | New → Reviewing → Listed | Auto-adds every open buddhist-prompt-library issue (Share your files). Created 2026-11-18. |
+| [Prompt library board](https://github.com/orgs/BuddhistAI/projects/4) | New → Reviewing → Listed | Auto-adds every open buddhist-prompts issue (Share your files). Created 2026-11-18. |
 | [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members | To do → In progress → In review → Done (**to add by NT:** a Design review status after To do, see [UX reviews](ux.md#board)); fields Owner and Area; views Board and Table | Team tasks, added by hand. Public since 2026-11-18. |
 
 ## Issue forms and labels
@@ -75,7 +75,7 @@ The team decided on 2026-11-17 that each benchmark gets **its own repo** with ma
 | Repo | Form | Label | What a maintainer does |
 | --- | --- | --- | --- |
 | buddhist-skills | [Request an AI solution for a task](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=request.yml) | `request` | Find or define the task; add a task page here if needed. |
-| buddhist-prompt-library | [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) (a link or uploaded files: a skill or any file given to AI) | `community-share` | Turn it into a prompt library entry and credit the author ([how-to](how-to.md#turn-a-share-issue-into-a-prompt-library-entry)). The old buddhist-skills form is a stub that links here. |
+| buddhist-prompts | [Share your files](https://github.com/BuddhistAI/buddhist-prompts/issues/new?template=share.yml) (a link or uploaded files: a skill or any file given to AI) | `community-share` | Turn it into a prompt library entry and credit the author ([how-to](how-to.md#turn-a-share-issue-into-a-prompt-library-entry)). The old buddhist-skills form is a stub that links here. |
 | buddhist-skills | [Volunteer as a language reader](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=reader.yml) | `language-reader` | Match them with data that needs a reader (see [Status](status.md#waiting-on-a-reader)). |
 | buddhist-skills | [Report a problem](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=problem.yml) | `bug` | Fix or route. |
 | buddhist-benchmarks | [Propose a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=propose-benchmark.yml) | `benchmark` | Discuss, then add the task and data ([how-to](how-to.md#add-a-benchmark)). |
