@@ -27,7 +27,7 @@ The note says the AI can be trusted for countable checks (term consistency, repe
 
 ## Why it matters for BuddhistAI
 
-- It is the source of two skills we are building: a **style profile** of the speaker and audience, and **Tibetan to French translation with a style profile**. They are credited to Drupchen as the source of the method.
+- It is the source of two draft skills, `translation-tibetan-to-french` variants `drupchen-method-units-v1` (meaning units first, then French without the Tibetan in view) and `drupchen-method-onepass-v1`, credited to Drupchen as the source of the method. See the [experiment plan](../../experiments/2026-11-tibetan-french-translation/PLAN.md).
 - Its §9 describes a way to score translations without BLEU: meaning-unit coverage, countable checks and blind preference. Its §9.3 proposes **colophons** as a first test set. This is the plan for a Tibetan colophon translation benchmark.
 
 ## How it was made
