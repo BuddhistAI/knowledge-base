@@ -17,6 +17,7 @@ Code, data and scores live in the other repos. This section holds the reasoning 
 | --- | --- | --- |
 | [2026-11-toc-tibetan-skills](2026-11-toc-tibetan-skills/) | Concluded, re-run pending | Which skill finds the sa-bcad outline of a Tibetan commentary best? |
 | [2026-11-ai-intervention-study](2026-11-ai-intervention-study/) | Planned | Does publishing reliable information about a text change what AI models answer about it, and how fast? |
+| [2026-11-tibetan-french-translation](2026-11-tibetan-french-translation/) | Planned | Do skills built from Drupchen's method translate Tibetan colophons into French better than plain Claude, and does writing from meaning units help? |
 
 Status is one of: **Planned** (plan written, not started), **Running**, **Concluded**, **Abandoned** (with a note on why). Keep this table current when an experiment changes status.
 
