@@ -1,0 +1,44 @@
+name: ux-walkthrough
+
+# Monthly (and manual): Claude reads the live sites as each persona, tries each journey in
+# ux/journeys/, and opens one issue labeled `ux-walkthrough` with what blocked each persona.
+# It reads page text; it is a guess about users, never proof. Needs ANTHROPIC_API_KEY.
+on:
+  schedule:
+    - cron: "41 5 1 * *"
+  workflow_dispatch:
+
+jobs:
+  walkthrough:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: read
+      issues: write
+      id-token: write
+    steps:
+      - name: Check the key
+        id: key
+        env:
+          KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          if [ -z "$KEY" ]; then echo "ANTHROPIC_API_KEY is not set: skipping."; echo "ok=false" >> "$GITHUB_OUTPUT"
+          else echo "ok=true" >> "$GITHUB_OUTPUT"; fi
+      - uses: actions/checkout@v4
+        if: steps.key.outputs.ok == 'true'
+      - uses: anthropics/claude-code-action@v1
+        if: steps.key.outputs.ok == 'true'
+        with:
+          anthropic_api_key: ${{ secrets.ANTHROPIC_API_KEY }}
+          github_token: ${{ github.token }}
+          claude_args: --max-turns 80 --allowedTools "Read,Glob,Grep,WebFetch,Bash(gh issue create:*)"
+          prompt: |
+            Run the monthly UX walkthrough of BuddhistAI. Read ux/README.md, every persona in ux/personas/,
+            every journey in ux/journeys/ and ux/standards/journey-standard.md.
+            For each journey and each of its personas: act as that persona (Mode WALKTHROUGH), start at the
+            first page of the journey on the live site, follow the links with WebFetch, and try to reach "Done when".
+            Use only what the persona knows. Note every place where the persona stops, guesses or would leave.
+            Then open ONE issue in ${{ github.repository }} with `gh issue create --label ux-walkthrough`,
+            title "UX walkthrough <yyyy-mm>", with one section per journey: reached the goal (yes, with help, no),
+            steps taken, and findings by severity (Blocker, Major, Nit), each with the page link. Plain English.
+            Say at the top that this is a simulated walkthrough from page text, not real user feedback.

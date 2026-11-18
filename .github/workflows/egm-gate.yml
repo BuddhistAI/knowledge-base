@@ -1,0 +1,44 @@
+name: egm-gate
+
+# Reusable. Called by the `egm` workflow in each BuddhistAI repo that has pages users see.
+# Free: no secrets, no model calls. A pull request that changes a user-facing path must
+# either include or link an EGM design (docs/designs/*.md) or tick "Small change" in the
+# pull request description. Rules: handbook/ux.md in BuddhistAI/knowledge-base.
+on:
+  workflow_call:
+    inputs:
+      paths:
+        description: Regular expression for user-facing file paths in the calling repo
+        required: true
+        type: string
+
+jobs:
+  gate:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: read
+    steps:
+      - name: Check for an EGM design
+        env:
+          GH_TOKEN: ${{ github.token }}
+          REPO: ${{ github.repository }}
+          PR: ${{ github.event.pull_request.number }}
+          BODY: ${{ github.event.pull_request.body }}
+          PATHS: ${{ inputs.paths }}
+        run: |
+          files=$(gh pr view "$PR" --repo "$REPO" --json files --jq '.files[].path')
+          ux=$(printf '%s\n' "$files" | grep -E "$PATHS" || true)
+          if [ -z "$ux" ]; then echo "No user-facing files changed. No EGM design needed."; exit 0; fi
+          echo "User-facing files changed:"; printf '  %s\n' $ux
+          if printf '%s\n' "$files" | grep -qE '^docs/designs/[^/]+\.md$' && ! printf '%s\n' "$files" | grep -qE '^docs/designs/(README|SITEMAP|TEMPLATE)\.md$' ; then
+            echo "OK: this pull request adds or changes an EGM design."; exit 0; fi
+          if printf '%s' "$BODY" | grep -qE 'docs/designs/[A-Za-z0-9._-]+\.md'; then
+            echo "OK: the description links an EGM design."; exit 0; fi
+          if printf '%s' "$BODY" | grep -qiE '\[x\] *Small change'; then
+            echo "OK: marked as a small change (no design needed)."; exit 0; fi
+          echo "::error::This pull request changes pages that users see, but has no EGM design."
+          echo "Add a design in docs/designs/ (run the buddhistai-elephant and buddhistai-ux-review skills),"
+          echo "link one in the description, or tick 'Small change' if it is a text or bug fix you can describe in two sentences."
+          echo "How: https://buddhistai.github.io/knowledge-base/handbook/ux.html"
+          exit 1

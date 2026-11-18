@@ -1,0 +1,41 @@
+name: UX feedback
+description: Something on a BuddhistAI site or form was hard to find, hard to understand or did not work
+title: "UX: "
+labels: [ux-feedback]
+body:
+  - type: markdown
+    attributes:
+      value: Thank you. Every answer helps us improve the sites for everyone. Short answers are fine.
+  - type: input
+    id: page
+    attributes:
+      label: Page
+      description: The link of the page, or its name.
+    validations: {required: true}
+  - type: textarea
+    id: trying
+    attributes:
+      label: What were you trying to do?
+    validations: {required: true}
+  - type: textarea
+    id: happened
+    attributes:
+      label: What happened?
+      description: Where did you stop, or what was not clear?
+    validations: {required: true}
+  - type: dropdown
+    id: who
+    attributes:
+      label: Which is closest to you?
+      options:
+        - Translator, editor or teacher
+        - Leader of a project, center or team
+        - Funder or coordinator
+        - I build AI solutions (skills, models, tools)
+        - I have test data or exam papers
+        - Other
+  - type: input
+    id: device
+    attributes:
+      label: Phone or computer?
+      description: Optional.

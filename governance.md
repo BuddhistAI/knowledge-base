@@ -36,6 +36,7 @@ Today the project lead is also the only maintainer. More maintainers will be add
 
 - **Day-to-day changes** (a fix, a new page, a new directory entry, a new result) are made by pull request. One maintainer or code owner reviews and merges.
 - **Bigger changes** (a new rule, a new repo, a change to how scores or cost are computed, a scorer change) start as a post in [Discussions](https://github.com/orgs/BuddhistAI/discussions) or an issue. We wait at least a week for comments. Maintainers then decide, aiming for agreement. If they do not agree, the project lead decides and writes down why.
+- **Changes to what users see** (a page, a form, install steps, the leaderboard app) start with a short design that our user personas review, and a person approves it in the pull request before it is built. Small text or bug fixes skip this. See [UX reviews](ux/README.md).
 - **Team calls** may make decisions. The decisions and open questions are written in the [handbook status page](handbook/status.md) the same day.
 - Every decision that changes how a repo, site or rule works is written in the [handbook](handbook/README.md).
 
