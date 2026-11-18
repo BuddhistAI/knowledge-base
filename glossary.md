@@ -27,11 +27,14 @@ The words we use on our sites and in our repos, in plain English. Missing a word
 **Prompt**
 : The text sent to a model. A skill is a carefully written, tested and versioned prompt, with its extras.
 
+**Prompt library**
+: The repo [buddhist-prompt-library](https://github.com/BuddhistAI/buddhist-prompt-library), where people share files they give to AI for Buddhist work (Claude files, project instructions, style guides, glossaries, prompts) and skills that have no score yet. Nothing in it is measured.
+
 **Community entry**
-: A skill, prompt, workflow or personal AI setup that someone shared in the `community/` folder of buddhist-skills. It is not measured yet.
+: An entry in the prompt library. Until 2026-11-18 these were in the `community/` folder of buddhist-skills.
 
 **Personal AI setup**
-: The files, projects and instructions one person uses with an AI assistant day to day (for example their Claude files). Can be shared as a community entry.
+: The files, projects and instructions one person uses with an AI assistant day to day (for example their Claude files). Can be shared in the prompt library.
 
 ## Measuring
 

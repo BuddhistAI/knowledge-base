@@ -43,13 +43,13 @@ For a task with a benchmark, you can test on the real items: put the text of you
 
 ## 4. Share it
 
-Open a [Share issue](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) and paste a link to your folder (or attach the file). A maintainer adds it to the `community/` folder of buddhist-skills with your name in `authors`. You do not need to know git.
+Open the [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) form and paste a link to your folder (or attach the file). A maintainer adds it to the [prompt library](https://github.com/BuddhistAI/buddhist-prompt-library) with your name in `authors`. You do not need to know git, but you need a free GitHub account. The form is public.
 
 ## 5. Have it measured
 
 If the task has a benchmark, a maintainer runs your skill on it with the standard models, or you submit a run yourself ([SUBMIT.md](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/SUBMIT.md)). The run gets a [provenance record](../handbook/provenance.md), so anyone can see exactly which version of your skill made the score. If your skill becomes the **Top performance** or **Best value** for its task, it is released in buddhist-skills and we announce it, crediting you.
 
-If the task has no benchmark yet, your skill stays in `community/` until there is one. You can help build it: [Tutorial 4](add-a-benchmark.md).
+If the task has a benchmark, a maintainer also adds your skill as a variant in the task's workshop repo. If the task has no benchmark yet, your skill stays in the prompt library until there is one. You can help build it: [Tutorial 4](add-a-benchmark.md).
 
 ## Good to know
 

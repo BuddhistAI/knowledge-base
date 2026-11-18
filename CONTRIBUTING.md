@@ -6,7 +6,7 @@ This knowledge base is the shared place to learn about Buddhist tasks: what each
 
 | You can give | How | Credit |
 | --- | --- | --- |
-| A skill, prompt, model or personal AI setup | [Share form](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) or paste a link on the [homepage](https://buddhistai.github.io/#submit) | `authors` on the entry; leaderboard row |
+| A skill, or any file you give to AI (Claude file, project instructions, style guide, glossary, prompt) | [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) (goes to the [prompt library](https://github.com/BuddhistAI/buddhist-prompt-library)), or for a model paste a link on the [homepage](https://buddhistai.github.io/#submit) | `authors` on the entry; leaderboard row |
 | Test material (exam papers, checked translations, corrected OCR) | [Propose a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=propose-benchmark.yml) | Dataset card; benchmark page |
 | **An expert review of a benchmark** | [Review a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=expert-review.yml): check items and answers in a field you know | Named as reviewer in the dataset card |
 | Reading in your language | [Volunteer as a language reader](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=reader.yml) | Named as reader |

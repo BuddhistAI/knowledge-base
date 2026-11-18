@@ -16,8 +16,8 @@ summary: Names, data format, versions, licenses, design system and writing style
 
 - **One skill = one task in one language.** Never mix languages in one skill. Language specialists own their language.
 - **Flat names:** `skills/<task>-<language>/`, for example `toc-extraction-tibetan`. A task that produces another language adds `-to-<language>`: `translation-tibetan-to-english`. Language-neutral skills (the router `ask-buddhistai`) have no suffix.
-- **Three places in buddhist-skills:** `skills/` (released, only changed by promotion), `drafts/<task>-<language>/<org>-<variant>/` (challengers), `community/<task>-<language>/<author>-<name>/` (shared, unmeasured: `CARD.md` plus `SKILL.md`, `WORKFLOW.md` or `PROMPT.md`).
-- **One plugin per language:** `scripts/build.py` writes `.claude-plugin/marketplace.json` with `buddhist-skills-<language>` per language plus the all-in-one `buddhist-skills`. Marketplace name: `buddhistai`. Install: `claude plugin marketplace add BuddhistAI/buddhist-skills`, then `claude plugin install buddhist-skills-tibetan@buddhistai`. Community entries are never in a plugin.
+- **Three places:** buddhist-skills `skills/` (released only: per task and language, the top performance and the best value skill; only changed by promotion); the task's workshop repo `variants/<variant>/` (challengers, one repo per skill, from template-skill-repo); [buddhist-prompt-library](https://github.com/BuddhistAI/buddhist-prompt-library) `<topic>-<language>/<author>-<name>/` (shared, unmeasured: `CARD.md` with `kind` plus the file).
+- **One plugin per language:** `scripts/build.py` writes `.claude-plugin/marketplace.json` with `buddhist-skills-<language>` per language plus the all-in-one `buddhist-skills`. Marketplace name: `buddhistai`. Install: `claude plugin marketplace add BuddhistAI/buddhist-skills`, then `claude plugin install buddhist-skills-tibetan@buddhistai`. Prompt library entries are never in a plugin.
 - **The router** `skills/ask-buddhistai/SKILL.md` must list every task that has a skill. Update it when a task is added or removed.
 - **Shared resources** (glossaries, transliteration tables, style guides) live only in buddhist-skills `shared/`.
 - Full design rationale: buddhist-skills [docs/design.md](https://github.com/BuddhistAI/buddhist-skills/blob/main/docs/design.md).
@@ -92,8 +92,8 @@ One look for every site. Source: [BuddhistAI/design](https://github.com/Buddhist
 
 ## Credit
 
-- Credit every author by name: `authors` in a community `CARD.md`, `metadata.authors` in a `SKILL.md`, `made_by` in `skills.json`, `contributors` on task and workflow pages. Reviewers and language readers too.
-- **Contributors** (organizations and people who build things) are shown as avatars on the homepage `#people` section and the org profile. The list is generated daily from commits, org members, community `CARD.md` files and `contributors-extra.json` ([how-to](how-to.md#add-a-contributor-or-a-backer)).
+- Credit every author by name: `authors` in a prompt library `CARD.md`, `metadata.authors` in a `SKILL.md`, `made_by` in `skills.json`, `contributors` on task and workflow pages. Reviewers and language readers too.
+- **Contributors** (organizations and people who build things) are shown as avatars on the homepage `#people` section and the org profile. The list is generated daily from commits, org members, prompt library `CARD.md` files and `contributors-extra.json` ([how-to](how-to.md#add-a-contributor-or-a-backer)).
 - **Backers** ("Supported by") are organizations that support the project, shown as text cards in alphabetical order on both pages: today Buddha Educational Foundation, OpenPecha, Unione Buddhista Italiana. Only list a backer after NT confirms it. Never rank or size them by amount.
 - **Expert reviewers** of a benchmark are named in its dataset card (`reviewers`, with the version they reviewed and the date) and in the task `CHANGELOG.md`.
 - **Donors of compute or API credits** are thanked in [News](../news/README.md) and, if they wish and NT confirms, listed with the backers under "Supported by". A donation never changes a score, a ranking or the order of any list.

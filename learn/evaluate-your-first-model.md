@@ -62,7 +62,7 @@ Run it **3 times** before you trust the number. Most models give slightly differ
 
 Two ways to put your model on the leaderboard:
 
-- **Easy:** open a [Share issue](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) with the model id, your `scores.json` and the token counts. A maintainer re-runs it and adds it.
+- **Easy:** paste your model's link on the [homepage](https://buddhistai.github.io/#submit) (choose "Model"), and add the model id, your `scores.json` and the token counts. A maintainer re-runs it and adds it.
 - **Full:** follow [SUBMIT.md](https://github.com/BuddhistAI/buddhist-benchmarks/blob/main/SUBMIT.md): a pull request with `result.json`, your outputs and `scores.json`, and a [provenance record](../handbook/provenance.md) in your own repo that says exactly how you ran it.
 
 ## Try next

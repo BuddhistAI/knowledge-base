@@ -15,7 +15,7 @@ Each guide lists the repo, the steps and the check to run. In every repo: run `p
 - [Promote a winner to buddhist-skills](#promote-a-winner-to-buddhist-skills)
 - [Handle a submission](#handle-a-submission)
 - [Announce a new leader](#announce-a-new-leader)
-- [Turn a Share issue into a community entry](#turn-a-share-issue-into-a-community-entry)
+- [Turn a Share issue into a prompt library entry](#turn-a-share-issue-into-a-prompt-library-entry)
 - [Add a benchmark](#add-a-benchmark)
 - [Add a task, a language or a model](#add-a-task-a-language-or-a-model)
 - [Add an external leaderboard](#add-an-external-leaderboard)
@@ -106,7 +106,7 @@ Repo: buddhist-skills. Full steps in its [CONTRIBUTING.md](https://github.com/Bu
 7. Update the task page here (`skills:` in the front matter), run `python3 scripts/build.py`.
 8. [Announce the new leader](#announce-a-new-leader).
 
-Never edit a released `SKILL.md` directly. Improvements start as a challenger in `drafts/` and come back through promotion.
+Never edit a released `SKILL.md` directly. Improvements start as a challenger (a variant in the task's workshop repo) and come back through promotion.
 
 ## Handle a submission
 
@@ -131,15 +131,19 @@ When a submission becomes the Top performance or Best value pick for a task and 
 
 Example: "New Best value for Tibetan TOC extraction: [skill] by [author, org] scores 0.82 on Claude Haiku 5.5 at about $0.05 per 100 pages. Install it from buddhist-skills. Leaderboard: [link]"
 
-## Turn a Share issue into a community entry
+## Turn a Share issue into a prompt library entry
 
-Repo: buddhist-skills.
+Repo: [buddhist-prompt-library](https://github.com/BuddhistAI/buddhist-prompt-library) (until 2026-11-18 this was `community/` in buddhist-skills).
 
-The [Share a skill](https://github.com/BuddhistAI/buddhist-skills/issues/new?template=share.yml) form takes either a link to a GitHub repo or uploaded files (dragged into the form). Name and picture are optional. The homepage links to it from the hero ("Upload your files") and from the Contribute section.
+The [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/issues/new?template=share.yml) form takes a link or uploaded files: a skill, or any file someone gives to AI (personal AI file such as CLAUDE.md, project instructions, style guide, glossary, prompt, workflow). Name and picture are optional. It says that the form is public and needs a GitHub account. The homepage links to it from the hero, the Contribute section and the "Art, practice and teaching" cards.
 
-1. Create `community/<task>-<language>/<author>-<name>/` with `CARD.md` (from `templates/CARD.md`) and the content as `SKILL.md`, `WORKFLOW.md`, `PROMPT.md` or, for a personal setup, its own file name with `kind: personal`. Copy linked or attached files unchanged.
-2. Credit the author in `authors` (the name they gave, or their GitHub name). Set `github` to the issue author's GitHub name, `avatar` to the picture they attached (if any) and `license` to their choice. Write `SOURCE.md` (where the files came from, author, date, license). Keep one language per entry. Use a task ID from `tasks/index.json` when one fits.
-3. Run `python3 scripts/build.py` and `python3 scripts/check.py`. Link the commit on the issue and close it. Move the card on the Skills board to "Shared".
+1. Create `<topic>-<language>/<author>-<name>/` with `CARD.md` (from `templates/CARD.md`) and the file unchanged. Set `kind` (skill, workflow, prompt, personal, project-instructions, style-guide, glossary, other) and `file` for kinds other than skill, workflow and prompt. For a repo link, copy the files at one commit and record the repo and commit in `SOURCE.md`.
+2. Credit the author in `authors` (the name they gave, or their GitHub name). Set `github` to the issue author's GitHub name, `avatar` to the picture they attached (if any) and `license` to their choice. Write `SOURCE.md` (where the files came from, author, date, license). One language per entry.
+3. Run `python3 scripts/build.py` and `python3 scripts/check.py`. Open the pull request with `Closes #<issue>`; after the merge, post the link to the entry in the issue. Add the issue to the Skills board by hand and move it to "Shared".
+4. A skill for a task that has a benchmark: also add it as a variant in the task's workshop repo so it can be measured. If the task has no workshop repo yet, note it on the task's Skills board card.
+5. A paper or a guide written for people to read goes to the knowledge base [Papers](../papers/README.md) instead.
+
+Authors ask to change or remove an entry in their issue; do it within a few days.
 
 ## Add a benchmark
 
@@ -189,7 +193,7 @@ Repo: design.
 
 ## Add a contributor or a backer
 
-1. The homepage contributor row (`#people`) is generated every day by `scripts/update_contributors.py` in buddhistai.github.io. It adds commit authors of public BuddhistAI repos, public org members, authors of community entries (`github`, `authors` and `avatar` in each buddhist-skills `community/*/*/CARD.md`; people with no GitHub name show their picture or initials), and the GitHub names in `contributors-extra.json`. To credit someone by hand, add them to `contributors-extra.json`. Never edit the row between the `contributors:start` / `contributors:end` markers.
+1. The homepage contributor row (`#people`) is generated every day by `scripts/update_contributors.py` in buddhistai.github.io. It adds commit authors of public BuddhistAI repos, public org members, authors of prompt library entries (`github`, `authors` and `avatar` in each buddhist-prompt-library `<topic>-<language>/<entry>/CARD.md`; people with no GitHub name show their picture or initials), and the GitHub names in `contributors-extra.json`. To credit someone by hand, add them to `contributors-extra.json`. Never edit the row between the `contributors:start` / `contributors:end` markers.
 2. Backers ("Supported by") are edited by hand in both the org profile (BuddhistAI/.github `profile/README.md`) and the homepage (`#people`), as text or logo cards.
 3. Only add a backer after NT confirms it. No logos without permission. WeBuddhist stays one card among others.
 4. Compute and API credit donors can be listed with the backers if they wish ([Conventions](conventions.md#credit)).
