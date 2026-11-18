@@ -36,7 +36,8 @@ You do not need git. Pick whichever is easiest:
 2. **Paste a link.** [Add a project or dataset](https://github.com/BuddhistAI/knowledge-base/issues/new?template=add-to-directory.yml) to the directory, [share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) by linking your document, or [suggest a task](https://github.com/BuddhistAI/knowledge-base/issues/new?template=suggest-task.yml) in a few sentences. A maintainer writes the page and credits you.
 3. **Write a page.** Copy [`templates/task.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/task.md) or [`templates/workflow.md`](https://github.com/BuddhistAI/knowledge-base/blob/main/templates/workflow.md) and open a pull request.
 4. **Review or support.** [Review a benchmark](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=expert-review.yml) as an expert in its field, or [donate compute or API credits](https://github.com/BuddhistAI/buddhist-benchmarks/issues/new?template=donate-compute.yml) for evaluations.
-5. **Discuss.** Ask or propose in [GitHub Discussions](https://github.com/orgs/BuddhistAI/discussions), the community home. New here? Start with the [welcome post](https://github.com/orgs/BuddhistAI/discussions/1).
+5. **Help us improve the sites.** Tell us what was hard, or review a design as a persona: [UX reviews](ux/README.md#take-part).
+6. **Discuss.** Ask or propose in [GitHub Discussions](https://github.com/orgs/BuddhistAI/discussions), the community home. New here? Start with the [welcome post](https://github.com/orgs/BuddhistAI/discussions/1).
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for ownership, credit and review.
 

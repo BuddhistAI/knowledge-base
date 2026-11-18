@@ -17,8 +17,9 @@ Last full review: 2026-11-17.
 3. **[Conventions](conventions.md)**: names, data format, versions, licenses, design system, writing style.
 4. **[How-to guides](how-to.md)**: run an evaluation, update the leaderboard, promote a winner, add a benchmark, handle a submission, announce a new leader.
 5. **[Building the leaderboard app and arena](leaderboard-app.md)**: notes for the FastAPI + React site: which files to read, which design files to use, what the homepage already promises.
-6. **[Provenance records](provenance.md)**: the standard record of what made each score (skill files, model, prompt, data, code, logs, cost), kept in the skill's own repo.
-7. **[Status, decisions and roadmap](status.md)**: what is real today, what is still a mock or a plan, decisions and open questions from the team call of 2026-11-17, and the next steps.
+6. **[UX reviews with EGM](ux.md)**: how every change that users see is designed, reviewed by user personas with Google's Elephant-Goldfish Model, approved and checked after release.
+7. **[Provenance records](provenance.md)**: the standard record of what made each score (skill files, model, prompt, data, code, logs, cost), kept in the skill's own repo.
+8. **[Status, decisions and roadmap](status.md)**: what is real today, what is still a mock or a plan, decisions and open questions from the team call of 2026-11-17, and the next steps.
 
 ## Mission
 
@@ -74,3 +75,5 @@ Ask NT for: membership or owner role in the [BuddhistAI GitHub org](https://gith
 ## Working with Claude
 
 Much of this project was built with Claude (Claude Code). Every repo has a `CLAUDE.md` and an `AGENTS.md` with the rules an agent must follow in that repo. Keep them short and current; an agent reads them before it changes anything. When you add a rule a person would need to know, put it in this handbook too.
+
+Before you change anything that users see, run an EGM review with our personas: the `buddhistai-elephant` and `buddhistai-ux-review` skills in each repo's `.claude/skills/` ([UX reviews with EGM](ux.md)).

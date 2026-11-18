@@ -1,3 +1,4 @@
 .jekyll-cache/
 _site/
 __pycache__/
+.egm-context/

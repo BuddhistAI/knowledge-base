@@ -101,3 +101,12 @@ Not decided. Today all sites are GitHub Pages under `buddhistai.github.io`. NT b
 - Planned features (arena, automatic scoring, MCP) are labelled as planned.
 - Credits are neutral: contributors listed alphabetically, no lead organization.
 - Footer links: GitHub org, Discussions, knowledge base, Directory, license (MIT).
+
+## UX reviews for the app
+
+The app is the biggest change users will see, so it uses the [UX reviews with EGM](ux.md) process from the start:
+
+- Before each screen or flow (task page, compare view, submit, arena), write a short design in the app repo's `docs/designs/` and run the `buddhistai-ux-review` skill. The journeys that matter most are [Find and use a skill](../ux/journeys/find-and-use-a-skill.md) and [Get a skill or model measured](../ux/journeys/get-measured.md).
+- Copy `.claude/settings.json`, `.claude/skills/buddhistai-*` and `.github/workflows/egm.yml` from buddhistai.github.io into the app repo, and set its user-facing paths (for example `frontend/`).
+- After each release, update the journey files in knowledge-base `ux/journeys/` if steps changed.
+

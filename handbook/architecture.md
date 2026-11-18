@@ -66,7 +66,7 @@ The Skills and Benchmarks boards are public, for contributors. The Development b
 | --- | --- | --- |
 | [Skills board](https://github.com/orgs/BuddhistAI/projects/1) | Requested → Shared → In progress → Being measured → Released | Auto-adds open buddhist-skills issues labeled `request` or `community-share`. |
 | [Benchmarks board](https://github.com/orgs/BuddhistAI/projects/2) | Proposed → Needs test data → In progress → Being reviewed → Live | Auto-adds open buddhist-benchmarks issues labeled `benchmark`. |
-| [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members | To do → In progress → In review → Done; fields Owner and Area; views Board and Table | Team tasks, added by hand. **Private** for now (only org members can open it) until NT decides whether it should be public. |
+| [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members | To do → In progress → In review → Done (**to add by NT:** a Design review status after To do, see [UX reviews](ux.md#board)); fields Owner and Area; views Board and Table | Team tasks, added by hand. **Private** for now (only org members can open it) until NT decides whether it should be public. |
 
 ## Issue forms and labels
 
@@ -84,10 +84,11 @@ The Skills and Benchmarks boards are public, for contributors. The Development b
 | knowledge-base | Share a workflow | `workflow` | Write a workflow page, credit the owner. |
 | knowledge-base | Suggest a task | `task` | Write a task page and a `planned` entry in `tasks/index.json`. |
 | knowledge-base | Idea (experiment) | `idea` | Discuss; if it goes ahead, write `PLAN.md`. |
+| knowledge-base | [UX feedback](https://github.com/BuddhistAI/knowledge-base/issues/new?template=ux-feedback.yml) | `ux-feedback` | Sort weekly: a board card for a problem, a persona's "Known pain points" for a fact about users ([UX reviews](ux.md#feedback-loop)). |
 | knowledge-base | Re-run, To-do | `re-run`, `todo` | Track work. |
 | buddhist-bench | Propose items, Propose a track, Dispute an answer (Markdown templates) | — | Follow buddhist-bench `CONTRIBUTING.md`: real items need human authors and two reviewers. |
 
-Pull request templates: buddhist-skills and knowledge-base. 
+Pull request templates: buddhist-skills, knowledge-base, buddhist-benchmarks, buddhistai.github.io and design. Each has an "EGM review" section ([UX reviews](ux.md)).
 
 ## Community: GitHub Discussions
 
@@ -110,6 +111,9 @@ Categories: Announcements (maintainers only), Introductions, Find the best AI (Q
 | buddhist-bench | `hf-sync` | `VERSION` changes on `main`, `v*` tag, manual | Checks, tags `vX.Y.Z`, publishes public splits to `BuddhistAI/buddhist-bench`. |
 | buddhist-bench | `daily` | Daily 03:00 UTC | Intervention-study runs on OpenRouter. Skips cleanly without keys. |
 | buddhist-bench | `import-nak-tham` | Manual | Imports the Thai exam set from Hugging Face (Actions can reach Hugging Face when a container cannot). |
+| knowledge-base, buddhistai.github.io, buddhist-benchmarks, buddhist-skills, design | `egm` | Pull requests | Calls `egm-gate` (free: a pull request that changes pages users see needs an EGM design or "Small change") and, with the label `egm-review`, `egm-goldfish` (one Goldfish review round, posted as a comment; needs `ANTHROPIC_API_KEY`). See [UX reviews](ux.md). |
+| knowledge-base | `egm-gate`, `egm-goldfish` | Called by `egm` | Reusable workflows used by every repo's `egm` workflow. |
+| knowledge-base | `ux-walkthrough` | 1st of each month 05:41 UTC, manual | Claude reads the live sites as each persona and opens a `ux-walkthrough` issue. Needs `ANTHROPIC_API_KEY`. |
 | knowledge-base | `agent-notes` | Mondays 04:23 UTC, manual | Opens a pull request adding the standard `CLAUDE.md` and `AGENTS.md` (from `scripts/agent-notes/CLAUDE.md`) to every org repo that has none. Needs `ORG_REPOS_TOKEN`. |
 
 Tags pushed by `GITHUB_TOKEN` do not start other workflows. That is why `hf-sync` runs on `workflow_run` after `leaderboards`.
@@ -134,7 +138,7 @@ Never commit a key. Repo or org secrets are set by NT in GitHub Settings → Sec
 | `HF_TOKEN` | `hf-sync` in buddhist-benchmarks and buddhist-bench | Set. Write token of the BuddhistAI Hugging Face org. |
 | `OPENROUTER_API_KEY` | buddhist-bench runner and `daily` workflow | **Not set.** Needed for live model runs. Dave offered sponsor keys. |
 | `BRAVE_API_KEY` | buddhist-bench `logged-search` mode | **Not set.** |
-| `ANTHROPIC_API_KEY` | Workshop runs on your own machine (toc-extraction-tibetan `bench_skills.py`) | Local only, never in a repo. |
+| `ANTHROPIC_API_KEY` | Workshop runs on your own machine (toc-extraction-tibetan `bench_skills.py`): local only. As an **org secret** for the `egm-goldfish` and `ux-walkthrough` workflows ([UX reviews](ux.md)). | **Not set** as a secret (2026-11-18). Without it, those workflows skip. Put a monthly spending limit on the key. |
 
 Automatic scoring of submissions (planned) will need an inference key as a secret too. Use a sponsor key, and put a spending limit on it.
 

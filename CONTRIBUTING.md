@@ -14,6 +14,7 @@ This knowledge base is the shared place to learn about Buddhist tasks: what each
 | How your project works | [Share a workflow](https://github.com/BuddhistAI/knowledge-base/issues/new?template=share-workflow.yml) | Owner of the workflow page |
 | A project or dataset we do not list | [Add to the Directory](https://github.com/BuddhistAI/knowledge-base/issues/new?template=add-to-directory.yml) | — |
 | A fix or a new page | "Edit this page" on any page | `contributors` on the page |
+| **Feedback on our sites, or a review of a design** | [UX reviews](ux/README.md#take-part): tell us what was hard, review a design as a persona, write a design, or suggest a persona | Named in the design or the persona |
 
 New to this? The [tutorials](learn/README.md) teach the steps by doing them. Organizations that contribute often can get their own GitHub team: see [Governance](governance.md#adding-people-and-organizations).
 

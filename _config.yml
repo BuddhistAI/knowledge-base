@@ -14,5 +14,5 @@ relative_links:
 defaults:
   - scope: {path: ""}
     values: {layout: default}
-exclude: [scripts, templates, CLAUDE.md, AGENTS.md]
+exclude: [scripts, templates, CLAUDE.md, AGENTS.md, .egm-context]
 include: [CONTRIBUTING.md]
