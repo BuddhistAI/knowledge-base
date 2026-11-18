@@ -43,6 +43,8 @@ EGM's own reviewers (design critic, comprehension, zoom-out, structural, readine
 4. Fix what you agree with. Fill in the "Goldfish review" section. Open a pull request with the design (and later the code). In the description, link the design under "EGM review".
 5. A maintainer approves. Then build. If the build changes a journey's steps, update `ux/journeys/<id>.md` in the same pull request.
 
+Every repo's `CLAUDE.md` (section "Changes users see: follow EGM") tells Claude to do steps 2 to 5 by itself, so a developer who codes with Claude follows EGM by default. The review runs in the developer's own Claude session: no API key and no CI are needed. The `egm-review` label in CI is an optional extra.
+
 Humans can do every step without Claude: write the design from the template, and ask people to review it as personas.
 
 ## CI: the egm workflows
