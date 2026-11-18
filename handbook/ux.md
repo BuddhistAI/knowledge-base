@@ -45,6 +45,8 @@ EGM's own reviewers (design critic, comprehension, zoom-out, structural, readine
 
 Every repo's `CLAUDE.md` (section "Changes users see: follow EGM") tells Claude to do steps 2 to 5 by itself, so a developer who codes with Claude follows EGM by default. The review runs in the developer's own Claude session: no API key and no CI are needed. The `egm-review` label in CI is an optional extra.
 
+EGM by itself asks the developer a lot: one question at a time, approval of each drafted section, and a decision on each finding. Our rule overrides that. Claude answers gaps from the code, the knowledge base and the personas, resolves findings itself, and asks the developer only the product decisions that no source settles, in one short list with a recommendation for each.
+
 Humans can do every step without Claude: write the design from the template, and ask people to review it as personas.
 
 ## CI: the egm workflows
