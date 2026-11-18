@@ -61,13 +61,14 @@ The team decided on 2026-11-17 that each benchmark gets **its own repo** with ma
 
 ## GitHub Projects boards
 
-The Skills and Benchmarks boards are public, for contributors. The Development board is for team work. Columns, fields and automations are set only in the GitHub web UI (Settings of each project).
+**All boards in the BuddhistAI org are public** (NT, 2026-11-18): anyone can see them, only members can edit. Keep nothing on a board that cannot be public. The Skills, Benchmarks and Prompt library boards are for contributors; the Development board is for team work. Columns, fields and automations are set only in the GitHub web UI (Settings of each project).
 
 | Board | Columns | Filled by |
 | --- | --- | --- |
-| [Skills board](https://github.com/orgs/BuddhistAI/projects/1) | Requested → Shared → In progress → Being measured → Released | Auto-adds open buddhist-skills issues labeled `request` or `community-share`. Share issues now open in [buddhist-prompt-library](https://github.com/BuddhistAI/buddhist-prompt-library/issues) (label `community-share`); the free plan allows only one auto-add rule, so a maintainer adds them to the board by hand (**to decide by NT:** a paid plan, or a small Action). |
+| [Skills board](https://github.com/orgs/BuddhistAI/projects/1) | Requested → Shared → In progress → Being measured → Released | Auto-adds open buddhist-skills issues labeled `request` or `community-share`. Share issues now open in buddhist-prompt-library and go to the Prompt library board (below). |
 | [Benchmarks board](https://github.com/orgs/BuddhistAI/projects/2) | Proposed → Needs test data → In progress → Being reviewed → Live | Auto-adds open buddhist-benchmarks issues labeled `benchmark`. |
-| [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members | To do → In progress → In review → Done (**to add by NT:** a Design review status after To do, see [UX reviews](ux.md#board)); fields Owner and Area; views Board and Table | Team tasks, added by hand. **Private** for now (only org members can open it) until NT decides whether it should be public. |
+| [Prompt library board](https://github.com/orgs/BuddhistAI/projects/4) | New → Reviewing → Listed | Auto-adds every open buddhist-prompt-library issue (Share your files). Created 2026-11-18. |
+| [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members | To do → In progress → In review → Done (**to add by NT:** a Design review status after To do, see [UX reviews](ux.md#board)); fields Owner and Area; views Board and Table | Team tasks, added by hand. Public since 2026-11-18. |
 
 ## Issue forms and labels
 

@@ -68,7 +68,7 @@ Questions, ideas and news go to [GitHub Discussions](https://github.com/orgs/Bud
 
 Who decides what, and how people and partner organizations get access, is on the public [Governance](../governance.md) page. Newcomers learn the basics in [Learn by building](../learn/README.md), the [Glossary](../glossary.md) and the [FAQ](../faq.md).
 
-Team work is tracked on the [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members (private for now).
+Team work is tracked on the [Development board](https://github.com/orgs/BuddhistAI/projects/3), for team members (public, like all BuddhistAI boards).
 
 Ask NT for: membership or owner role in the [BuddhistAI GitHub org](https://github.com/BuddhistAI), the [Hugging Face org](https://huggingface.co/BuddhistAI), repo secrets, and the `buddhistai.org` domain on Cloudflare.
 

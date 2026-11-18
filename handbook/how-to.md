@@ -139,7 +139,7 @@ The [Share your files](https://github.com/BuddhistAI/buddhist-prompt-library/iss
 
 1. Create `<topic>-<language>/<author>-<name>/` with `CARD.md` (from `templates/CARD.md`) and the file unchanged. Set `kind` (skill, workflow, prompt, personal, project-instructions, style-guide, glossary, other) and `file` for kinds other than skill, workflow and prompt. For a repo link, copy the files at one commit and record the repo and commit in `SOURCE.md`.
 2. Credit the author in `authors` (the name they gave, or their GitHub name). Set `github` to the issue author's GitHub name, `avatar` to the picture they attached (if any) and `license` to their choice. Write `SOURCE.md` (where the files came from, author, date, license). One language per entry.
-3. Run `python3 scripts/build.py` and `python3 scripts/check.py`. Open the pull request with `Closes #<issue>`; after the merge, post the link to the entry in the issue. Add the issue to the Skills board by hand and move it to "Shared".
+3. Run `python3 scripts/build.py` and `python3 scripts/check.py`. Open the pull request with `Closes #<issue>`; after the merge, post the link to the entry in the issue. The issue is on the [Prompt library board](https://github.com/orgs/BuddhistAI/projects/4) already: move it to Reviewing while you work, then Listed.
 4. A skill for a task that has a benchmark: also add it as a variant in the task's workshop repo so it can be measured. If the task has no workshop repo yet, note it on the task's Skills board card.
 5. A paper or a guide written for people to read goes to the knowledge base [Papers](../papers/README.md) instead.
 
